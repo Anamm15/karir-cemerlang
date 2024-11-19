@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="auth.css">
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- FONT NUNITO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex w-screen">
+        <div class="flex justify-center items-center w-1/2 main__content h-screen relative">
+            <div class="background rounded-2xl"></div>
+            <div class="relative content">
+                <p class="text-white ml-8 mt-20 ">LOGO KAWAN KARIR</p>
+                <p class="text-h3 ml-8 mt-20 font-semibold text text-white-1">Ayo Mulai Perjalanan Menuju Karir Sukses!</p>
+                <img src="../assets/img/Foto Model.png" alt="" class="absolute bottom-0 right-2 object-contain">
+            </div>
+        </div>
+        <div class="w-1/2 flex justify-center items-center relative">
+            <div class="auth__content">
+                <p class="text-h4 font-semibold text-center">Halo Sobat Kawan Karir!</p>
+                <p class="text-b2 mt-2 text-center">Ayo Bergabung dan Buka Jalan Menuju Sukses!</p>
+                <div class="input__group mt-10 text-black-2">
+                    <label for="email">Email</label>
+                    <div class="relative">
+                        <input type="text" placeholder="Masukkan Email Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="email" id="email">
+                        <i data-feather="at-sign" class="absolute right-4 top-6 text-black-2 w-5 h-5"></i>
+                    </div>
+                </div>
+                <div class="input__group text-black-2 mt-5">
+                    <label for="password">Password</label>
+                    <div class="relative">
+                        <input type="password" placeholder="Masukkan Kata Sandi Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="password" id="password">
+                        <i data-feather="eye" class="absolute right-4 top-6 text-black-2 cursor-pointer w-5 h-5"></i>
+                        <!-- <i data-feather="eye-off" class="absolute right-4 top-4 text-black-2 cursor-pointer"></i> -->
+                    </div>
+                </div>
+                <button class="w-full py-3 bg-primary-1 text-white font-semibold mt-12 rounded-md">Selanjutnya</button>
+            </div>
+            <div class="absolute bottom-2 mb-12">Sudah punya akun? <a href="" class="text-primary-1 underline">Masuk</a></div>
+        </div>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
