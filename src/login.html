@@ -25,7 +25,8 @@
                 <img src="../assets/img/Foto Model.png" alt="" class="absolute bottom-0 right-2 object-contain">
             </div>
         </div>
-        <div class="w-1/2 flex justify-center items-center">
+        <div class="w-1/2 flex justify-center items-center auth__content__container md:px-20 relative">
+            <a class="absolute top-4 right-4 text-primary-1 underline" href="" >Anda ingin mencari karyawan?</a>
             <div class="auth__content relative">
                 <p class="text-h4 font-semibold text-center">Halo Sobat Kawan Karir!</p>
                 <p class="text-b2 mt-2 text-center">Masuk dan Jangan Lewatkan Kesempatan Karir Terbaik</p>
@@ -33,7 +34,7 @@
                     <label for="email">Email</label>
                     <div class="relative">
                         <input type="text" placeholder="Masukkan Email Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="email" id="email">
-                        <i data-feather="at-sign" class="absolute right-4 top-6 w-5 h-5 text-black-2"></i>
+                        <i data-feather="at-sign" class="absolute right-4 top-6 w-5 h-5 text-black-3"></i>
                     </div>
                 </div>
                 <div class="input__group text-black-2 mt-5">
@@ -43,8 +44,8 @@
                     </div>
                     <div class="relative">
                         <input type="password" placeholder="Masukkan Kata Sandi Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="password" id="password">
-                        <i data-feather="eye" class="absolute right-4 top-6 text-black-2 cursor-pointer w-5 h-5"></i>
-                        <!-- <i data-feather="eye-off" class="absolute right-4 top-6 text-black-2 cursor-pointer w-5 h-5"></i> -->
+                        <i data-feather="eye" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 hidden eye"></i>
+                        <i data-feather="eye-off" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 eye-off"></i>
                     </div>
                 </div>
                 <button class="w-full py-3 bg-primary-1 text-white font-semibold mt-12 rounded-md">Masuk</button>
@@ -52,11 +53,27 @@
                     <img src="../assets/img/icon-google.png" alt="">
                     Masuk dengan Google</button>
             </div>
-            <div class="absolute bottom-2 mb-12">Belum punya akun? <a href="" class="text-primary-1 underline">Daftar</a></div>
+            <div class="absolute bottom-2 mb-12">Belum punya akun? <a href="./register.html" class="text-primary-1 underline">Daftar</a></div>
         </div>
     </div>
     <script>
         feather.replace();
+    </script>
+    
+    <script>
+        const password = document.getElementById('password');
+        const eye = document.querySelector('.eye');
+        const eyeOff = document.querySelector('.eye-off');
+        eye.addEventListener('click', () => {
+            eye.classList.add('hidden');
+            eyeOff.classList.remove('hidden');
+            password.setAttribute('type', 'password');
+        })
+        eyeOff.addEventListener('click', () => {
+            eye.classList.remove('hidden');
+            eyeOff.classList.add('hidden');
+            password.setAttribute('type', 'text');
+        })
     </script>
 </body>
 </html>

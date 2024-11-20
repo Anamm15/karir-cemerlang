@@ -15,7 +15,7 @@ module.exports = {
         'b3': '16px',
       },
       fontFamily: {
-
+        Nunito: ["Nunito", "sans-serif"],
       },
       colors: {
         "primary-1": "#0046B1",
@@ -30,6 +30,12 @@ module.exports = {
         "white-1": "#FFF",
         "white-2": "#F9F9F9",
       },
+      screens: {
+        'smartphone': '375px',
+        'tablet': '768px',
+        'laptop': '1024px',
+        'desktop': '1280px',
+      }
     },
   },
   plugins: [],

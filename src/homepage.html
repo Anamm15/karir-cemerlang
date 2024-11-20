@@ -18,124 +18,172 @@
 </head>
 <body class="bg-white-2">
     <!-- Navbar -->
-     <nav class="fixed z-50 w-screen top-0 left-0">
-        <div class="flex justify-between w-full bg-white items-center px-12">
-            <div>
-                <ul class="flex gap-x-8 items-center h-full text-black-2">
-                    <li><a href="" class="text-h6">Kawan Karir</a></li>
-                    <li><a href="" class="text-h6">Beranda</a></li>
-                    <li><a href="" class="text-b2">Lowongan Kerja</a></li>
-                    <li><a href="" class="text-b2">Perusahaan</a></li>
-                    <li><a href="" class="text-b2">Artikel Karir</a></li>
-                    <li><a href="" class="text-b2">Tentang Kami</a></li>
-                </ul>
+    <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
+        <div class="flex justify-between items-center px-6 py-4 lg:h-20">
+            <!-- Logo -->
+            <a href="./homepage.html" id="mobile-logo" class="text-h6 font-bold text-primary-1 lg:hidden">Kawan Karir</a>
+            
+            <!-- Hamburger Menu Icon -->
+            <button id="hamburger-menu" class="lg:hidden block text-primary-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-x-8 items-center text-black-2">
+                <a href="./homepage.html" class="text-h6 font-bold lg:text-sm">Kawan Karir</a>
+                <li><a href="./homepage.html" class="text-h6 lg:text-sm">Beranda</a></li>
+                <li><a href="#" class="text-b2 lg:text-sm">Lowongan Kerja</a></li>
+                <li><a href="#" class="text-b2 lg:text-sm">Perusahaan</a></li>
+                <li><a href="#" class="text-b2 lg:text-sm">Artikel Karir</a></li>
+                <li><a href="#" class="text-b2 lg:text-sm">Tentang Kami</a></li>
+            </ul>
+    
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex gap-4 items-center">
+                <button class="text-black-2 text-b2 lg:text-sm"> <a href="./register.html">Daftar</a> </button>
+                <button class="text-black-2 text-b2 lg:text-sm"><a href="./login.html">Masuk</a></button>
+                <button class="bg-primary-1 text-b2 lg:text-sm text-white px-4 py-2 rounded-lg">
+                    <a href="#">Buat Iklan Lowongan</a>
+                </button>
             </div>
-            <div class="flex gap-8 text-b2 text-black-2">
-                <button><a href="">Daftar</a></button>
-                <button><a href="">Masuk</a></button>
-            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max">
+            <ul class="flex flex-col items-start p-6 gap-y-4 text-black-2">
+                <li><a href="./homepage.html" class="text-h6">Beranda</a></li>
+                <li><a href="#" class="text-b2">Lowongan Kerja</a></li>
+                <li><a href="#" class="text-b2">Perusahaan</a></li>
+                <li><a href="#" class="text-b2">Artikel Karir</a></li>
+                <li><a href="#" class="text-b2">Tentang Kami</a></li>
+                <li class="w-full">
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./register.html">Daftar</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./login.html">Masuk</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-full text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center">
+                        <a href="#">Buat Iklan Lowongan</a>
+                    </button>
+                </li>
+            </ul>
         </div>
     </nav>
 
-     <!-- Main -->
-     <div class="h-screen bg-primary-1 main relative pt-32 ps-16">
-        <p class="text-h1 text-white main__text__title font-semibold mt-20">Temukan Karir Impianmu, Mulai Suksesmu Sekarang!</p>
-        <p class="text-b1 text-white main__text__content mt-10 ">Raih peluang karir terbaik yang sesuai dengan bakat dan passion kamu. Jelajahi lowongan dan mulai perjalanan menuju perjalanan yang cemerlang</p>
-        <div class="search px-8 py-2 mt-20 flex bg-white rounded-3xl main__content justify-between p-4 items-center">
-            <div class="h-4/6 flex flex-col justify-between">
-                <p class="text-h5 font-semibold">Jenis</p>
-                <p class="text-b1 text-black-2">Cari jenis pekerjaan</p>
-            </div>
-            <div class="h-4/6 w-0.5 bg-black-2"></div>
-            <div class="h-4/6 flex flex-col justify-between">
-                <p class="text-h5 font-semibold">Lokasi</p>
-                <p class="text-b1 text-black-2">Cari kota atau daerah</p>
-            </div>
-            <button class="flex search__button rounded-xl justify-center items-center text-b1 text-white gap-5">
-                <i data-feather="search"></i>
-                Cari
-            </button>
+    <!-- Main -->
+    <div class="h-screen bg-primary-1 main relative pt-40 ps-16">
+    <p class="text-h1 text-white main__text__title font-semibold mt-20">Temukan Karir Impianmu, Mulai Suksesmu Sekarang!</p>
+    <p class="text-b1 text-white main__text__content mt-5 ">Raih peluang karir terbaik yang sesuai dengan bakat dan passion kamu. Jelajahi lowongan dan mulai perjalanan menuju perjalanan yang cemerlang</p>
+    <div class="search px-8 py-2 mt-20 flex bg-white rounded-3xl main__content justify-between p-4 items-center gap-2">
+        <div class="h-4/6 flex flex-col justify-between">
+            <p class="text-h5 font-semibold">Jenis</p>
+            <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari jenis pekerjaan">
         </div>
-        <img src="../assets/img/Image.png" alt="" class="absolute bottom-0 right-0">
-     </div>
+        <div class="h-4/6 w-0.5 bg-black-2"></div>
+        <div class="h-4/6 flex flex-col justify-between">
+            <p class="text-h5 font-semibold">Lokasi</p>
+            <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari kota atau daerah">
+        </div>
+        <button class="flex search__button rounded-xl justify-center items-center text-b1 text-white gap-5">
+            <i data-feather="search" class="search__icon"></i>
+            <p>Cari</p>
+        </button>
+    </div>
+    <img src="../assets/img/Image.png" alt="" class="absolute bottom-0 right-0">
+    </div>
 
-     <!-- Arahan Daftar Akun -->
-     <div class="w-screen mt-40">
-        <div class="flex justify-center items-center mx-auto arahan gap-20">
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-                <img src="../assets/img/Icon Profile.png" alt="" class="">
-                <p>Daftarkan Akunmu</p>
-            </div>
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-                <div class="h-0.5 bg-secondary-1 w-28"></div>
-            </div>
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-                <img src="../assets/img/Icon Upload.png" alt="" class="">
-                <p>Unggah CV Kamu</p>
-            </div>
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-                <div class="h-0.5 bg-secondary-1 w-28"></div>
-            </div>
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-                <img src="../assets/img/Icon Work.png" alt="" class="">
-                <p>Lamar Pekerjaan</p>
-            </div>
+    <!-- Arahan Daftar Akun -->
+    <div class="w-screen mt-40 arahan__container section mx-auto">
+    <div class="flex justify-center items-center mx-auto arahan gap-20">
+        <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+            <img src="../assets/img/Icon Profile.png">
+            <p>Daftarkan Akunmu</p>
         </div>
-     </div>
+        <div class="w-max">
+            <div class="h-0.5 bg-secondary-1 w-28"></div>
+        </div>
+        <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+            <img src="../assets/img/Icon Upload.png">
+            <p>Unggah CV Kamu</p>
+        </div>
+        <div class="gap-6">
+            <div class="h-0.5 bg-secondary-1 w-28"></div>
+        </div>
+        <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+            <img src="../assets/img/Icon Work.png">
+            <p>Lamar Pekerjaan</p>
+        </div>
+    </div>
+    </div>
 
      <!-- Iklan -->
-      <div class="mt-40 iklan w-screen">
-        <img src="../assets/img/2.png" alt="" class="h-full w-full">
-      </div>
+    <div class="mt-40 iklan w-screen h-auto section relative overflow-hidden">
+        <div class="carousel flex transition-transform duration-500 ease-in-out">
+            <img src="../assets/img/2.png" alt="Image 1" class="w-screen h-auto">
+            <img src="../assets/img/2.png" alt="Image 2" class="w-screen h-auto">
+            <img src="../assets/img/2.png" alt="Image 3" class="w-screen h-auto">
+        </div>
 
-      <!-- Kategori -->
-       <div class="kategori mt-40">
-            <div class="flex justify-between">
-                <div>
-                    <p class="text-h4 font-semibold">Pilih Bidangmu, Mulai Perjalanan Karirmu!</p>
-                    <p class="text-b1 mt-2 text-black-2">Rekomendasi kategori pekerjaan untukmu!</p>
-                </div>
-                <button class="text-primary-1 text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Kategori Lainnya
-                    <i data-feather="arrow-right"></i>
-                </button>
+        <!-- Navigation Buttons -->
+        <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 rounded-full carousel__button">‹</button>
+        <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 rounded-full carousel__button">›</button>
+    </div>
+
+    <!-- Kategori -->
+    <div class="kategori mt-40 section">
+        <div class="flex justify-between section__title">
+            <div>
+                <p class="text-h4 font-semibold">Pilih Bidangmu, Mulai Perjalanan Karirmu!</p>
+                <p class="text-b1 mt-2 text-black-2">Rekomendasi kategori pekerjaan untukmu!</p>
             </div>
-            <div class="flex mt-12 kategori__content justify-between w-full gap-5">
-                <div class="relative flex items-center justify-center text-white-1">
+            <button class="text-primary-1 text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Kategori Lainnya
+                <i data-feather="arrow-right"></i>
+            </button>
+        </div>
+        <div class="relative mt-12 kategori__carousel overflow-hidden">
+            <div class="flex kategori__content gap-5 transition-transform duration-500">
+                <div class="relative flex-shrink-0 w-full max-w-sm">
                     <img src="../assets/img/Teknologi.png" alt="" class="brightness-50 w-full h-full rounded-xl object-cover">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Teknologi & Pengembangan</p>
                 </div>
-                <div class="relative flex items-center justify-center text-white-1">
+                <div class="relative flex-shrink-0 w-full max-w-sm">
                     <img src="../assets/img/Keuangan.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Keuangan & Akuntansi</p>
                 </div>
-                <div class="relative flex items-center justify-center text-white-1">
+                <div class="relative flex-shrink-0 w-full max-w-sm">
                     <img src="../assets/img/Marketing.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Marketing & Komunikasi</p>
                 </div>
-                <div class="relative flex items-center justify-center text-white-1">
+                <div class="relative flex-shrink-0 w-full max-w-sm">
                     <img src="../assets/img/HR.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Sumber Daya Manusia & Rekrutmen</p>
                 </div>
-                <div class="relative flex items-center justify-center text-white-1">
+                <div class="relative flex-shrink-0 w-full max-w-sm">
                     <img src="../assets/img/Desain.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Desain & Kreatif</p>
                 </div>
             </div>
-       </div>
+        </div>
+                 
+    </div>
 
-       <!-- Pekerjaan -->
-        <div class="pekerjaan mt-40">
-            <div class="flex justify-between">
-                <div>
-                    <p class="text-h4 font-semibold">Temukan Karir yang Sesuai dengan Passionmu!</p>
-                    <p class="text-b1 mt-2 text-black-2">Lihat daftar lowongan terbaru dari berbagai bidang dan industri</p>
-                </div>
-                <button class="text-primary-1 text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Pekerjaan Lainnya
-                    <i data-feather="arrow-right"></i>
-                </button>
+    <!-- Pekerjaan -->
+    <div class="pekerjaan mt-40 section">
+        <div class="flex justify-between pekerjaan__title section__title">
+            <div>
+                <p class="text-h4 font-semibold">Temukan Karir yang Sesuai dengan Passionmu!</p>
+                <p class="text-b1 mt-2 text-black-2">Lihat daftar lowongan terbaru dari berbagai bidang dan industri</p>
             </div>
-            <div class="flex flex-wrap mt-10 gap-3">
-                <div class="pekerjaan__content bg-white-1 p-6">
+            <button class="text-primary-1 text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Pekerjaan Lainnya
+                <i data-feather="arrow-right"></i>
+            </button>
+        </div>
+        <div class="relative mt-12 pekerjaan__carousel overflow-hidden">
+            <div class="flex flex-wrap transition-transform duration-500 mt-10 gap-3 pekerjaan__content">
+                <div class="pekerjaan__card relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -144,7 +192,7 @@
                                 <p class="text-b3">2 jam lalu</p>
                             </div>
                         </div>
-                        <img src="../assets//img/Icon-Save.png" class="w-5 h-8 cursor-pointer" alt="">
+                        <img src="../assets/img/Icon-Save Blue.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
                     </div>
                     <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
                     <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
@@ -160,7 +208,7 @@
                     </div>
                     <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
                 </div>
-                <div class="pekerjaan__content bg-white-1 p-6">
+                <div class="pekerjaan__card relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -169,7 +217,7 @@
                                 <p class="text-b3">2 jam lalu</p>
                             </div>
                         </div>
-                        <img src="../assets//img/Icon-Save.png" class="w-5 h-8 cursor-pointer" alt="">
+                        <img src="../assets/img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
                     </div>
                     <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
                     <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
@@ -185,7 +233,7 @@
                     </div>
                     <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
                 </div>
-                <div class="pekerjaan__content bg-white-1 p-6">
+                <div class="pekerjaan__card relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -194,7 +242,7 @@
                                 <p class="text-b3">2 jam lalu</p>
                             </div>
                         </div>
-                        <img src="../assets//img/Icon-Save.png" class="w-5 h-8 cursor-pointer" alt="">
+                        <img src="../assets/img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
                     </div>
                     <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
                     <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
@@ -210,7 +258,7 @@
                     </div>
                     <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
                 </div>
-                <div class="pekerjaan__content bg-white-1 p-6">
+                <div class="pekerjaan__card relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -219,7 +267,7 @@
                                 <p class="text-b3">2 jam lalu</p>
                             </div>
                         </div>
-                        <img src="../assets//img/Icon-Save.png" class="w-5 h-8 cursor-pointer" alt="">
+                        <img src="../assets/img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
                     </div>
                     <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
                     <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
@@ -235,7 +283,7 @@
                     </div>
                     <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
                 </div>
-                <div class="pekerjaan__content bg-white-1 p-6">
+                <div class="pekerjaan__card relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -244,7 +292,7 @@
                                 <p class="text-b3">2 jam lalu</p>
                             </div>
                         </div>
-                        <img src="../assets//img/Icon-Save.png" class="w-5 h-8 cursor-pointer" alt="">
+                        <img src="../assets//img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
                     </div>
                     <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
                     <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
@@ -262,125 +310,151 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Perusahaan -->
-        <div class="w-screen perusahaan bg-primary-3 mt-40 relative flex justify-center gap-32 p-20">
-            <img src="../assets/img/person.png" alt="" class="z-10 my-auto">
-            <div class="perusahaan__content">
-                <p class="text-h3 font-semibold">Terhubung dengan Perusahaan yang Mendukung Karirmu!</p>
-                <p class="text-b1 mt-2 text-black-2">Kami menghadirkan peluang dari perusahaan yang terbuka untuk talenta di berbagai lokasi. Mulailah karir yang sesuai, di mana pun Anda tinggal.</p>
-                <div class="flex gap-4 flex-wrap mt-10">
-                    <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
-                        <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
-                        <div>
-                            <p class="text-h6 font-semibold">Valktive</p>
-                            <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
-                        <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
-                        <div>
-                            <p class="text-h6 font-semibold">Valktive</p>
-                            <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
-                        <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
-                        <div>
-                            <p class="text-h6 font-semibold">Valktive</p>
-                            <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
-                        <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
-                        <div>
-                            <p class="text-h6 font-semibold">Valktive</p>
-                            <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
-                        </div>
+    <!-- Perusahaan -->
+    <div class="w-screen perusahaan bg-primary-3 mt-40 relative flex justify-center section gap-32 p-20">
+        <img src="../assets/img/person.png" alt="" class="z-10 my-auto">
+        <div class="perusahaan__content flex flex-col">
+            <p class="text-h3 font-semibold">Terhubung dengan Perusahaan yang Mendukung Karirmu!</p>
+            <p class="text-b1 mt-2 text-black-2">Kami menghadirkan peluang dari perusahaan yang terbuka untuk talenta di berbagai lokasi. Mulailah karir yang sesuai, di mana pun Anda tinggal.</p>
+            <div class="flex gap-4 flex-wrap mt-10">
+                <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
+                    <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
+                    <div class="flex flex-col items-center">
+                        <p class="text-h6 font-semibold">Valktive</p>
+                        <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
                     </div>
                 </div>
-                <button class="mt-16 border border-primary-2 rounded-lg text-primary-1 text-h6 font-semibold px-4 py-3 flex items-center gap-2 hover:text-white-1 hover:bg-primary-1">Temukan Perusahaan Lainnya
-                    <i data-feather="arrow-right"></i>
-                </button>
+                <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center justify-center">
+                    <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
+                    <div class="flex flex-col items-center">
+                        <p class="text-h6 font-semibold">Valktive</p>
+                        <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
+                    </div>
+                </div>
+                <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
+                    <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
+                    <div class="flex flex-col items-center">
+                        <p class="text-h6 font-semibold">Valktive</p>
+                        <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
+                    </div>
+                </div>
+                <div class="flex bg-white-1 p-4 rounded-md gap-4 items-center">
+                    <img src="../assets/img/Blue PNG 1.png" alt="" class="w-11 h-8">
+                    <div >
+                        <p class="text-h6 font-semibold">Valktive</p>
+                        <p class="text-b3 text-primary-2">8 Pekerjaan Tersedia</p>
+                    </div>
+                </div>
             </div>
-            <img src="../assets/img/Ellipse-left.png" alt="" class="absolute bottom-0 right-0">
-            <img src="../assets/img/Ellipse-right.png" alt="" class="absolute left-0 bottom-0">
+            <button class="mt-16 border w-max border-primary-2 rounded-lg text-primary-1 text-h6 font-semibold px-4 py-3 flex items-center gap-2 hover:text-white-1 hover:bg-primary-1">Temukan Perusahaan Lainnya
+                <i data-feather="arrow-right"></i>
+            </button>
         </div>
+        <img src="../assets/img/Ellipse-left.png" alt="" class="absolute bottom-0 right-0 decoration">
+        <img src="../assets/img/Ellipse-right.png" alt="" class="absolute left-0 bottom-0 decoration">
+    </div>
 
-        <!-- Artikel -->
-        <div class="artikel mt-40">
-            <div class="flex justify-between">
-                <div>
-                    <p class="text-h4 font-semibold">Dapatkan Tips Karir Terbaik untuk Masa Depan yang Cerah!</p>
-                    <p class="text-b1 mt-2 text-black-2">Lihat artikel karir kami yang penuh dengan inspirasi, informasi, dan tips praktis untuk membantu perjalanan karirmu.</p>
-                </div>
-                <button class="text-primary-1 text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Artikel Lainnya
-                    <i data-feather="arrow-right"></i>
-                </button>
+    <!-- Artikel -->
+    <div class="artikel mt-40 section">
+        <div class="flex justify-between section__title">
+            <div>
+                <p class="text-h4 font-semibold">Dapatkan Tips Karir Terbaik untuk Masa Depan yang Cerah!</p>
+                <p class="text-b1 mt-2 text-black-2">Lihat artikel karir kami yang penuh dengan inspirasi, informasi, dan tips praktis untuk membantu perjalanan karirmu.</p>
             </div>
-            <div class="artikel__content mt-12 flex justify-between">
-                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1">
-                    <img src="../assets//img/Interview.png" alt="">
+            <button class="text-primary-1 text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Artikel Lainnya
+                <i data-feather="arrow-right"></i>
+            </button>
+        </div>
+        <div class="carousel__artikel overflow-hidden mt-12 relative">
+            <div class="artikel__content flex gap-4 justify-between transition-transform duration-500">
+                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
+                    <img src="../assets//img/Interview.png" class="w-full object-cover object-center" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
-                    <Button class="mx-4 text-primary-1 border py-3 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
+                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
                         <i data-feather="arrow-right"></i> 
                     </Button>
                 </div>
-                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1">
+                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
                     <img src="../assets//img/Interview.png" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
-                    <Button class="mx-4 text-primary-1 border py-3 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
+                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
                         <i data-feather="arrow-right"></i> 
                     </Button>
                 </div>
-                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1">
+                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
                     <img src="../assets//img/Interview.png" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
-                    <Button class="mx-4 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
+                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
                         <i data-feather="arrow-right"></i>                        
                     </Button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Ajakan -->
-         <div class="w-screen mt-40 text-white bg-primary-1 relative">
-            <div class="ajakan mx-auto display flex flex-col justify-center items-center">
-                <p class="text-b2">Platform Andalan Pencari Kerja Profesional</p>
-                <p class="text-h2 font-semibold w-3/5 text-center mt-6">Temukan Langkah Karier Anda Selanjutnya Dengan Mudah</p>
-                <button class="text-primary-1 text-h6 font-semibold border px-4 py-2 bg-white-1 rounded-md mt-20 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Mulai Mencari Pekerjaan
-                    <i data-feather="arrow-right"></i>
-                </button>
-            </div>
-            <img src="../assets/img/Ellipse-left-bottom.png" alt="" class="absolute bottom-0 left-0">
-            <img src="../assets/img/Ellipse-right-ajakan.png" alt="" class="absolute right-0 top-0">
-         </div>
-
-         <!-- Footer -->
-        <div class="w-screen footer bg-primary-3 mt-40 flex flex-col justify-center items-center">
-            <p class="text-h6 font-semibold">LOGO KAWAN KARIR</p>
-            <div class="mt-4 px-10 py-4 bg-primary-1 text-white-1 rounded-lg">
-                <ul class="flex gap-10 text-b2 ">
-                    <li> <a href="">Beranda</a> </li>
-                    <li>|</li>
-                    <li> <a href="">Lowongan Kerja</a> </li>
-                    <li>|</li>
-                    <li> <a href="">Perusahaan</a> </li>
-                    <li>|</li>
-                    <li> <a href="">Artikel Karir</a> </li>
-                    <li>|</li>
-                    <li> <a href="">Tentang Kami</a> </li>
-                </ul>
-            </div>
-            <p class="text-b3 mt-4">Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp imuvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde. </p>
-            <p class="text-b3 mt-10">Hak Cipta  © 2024 | Kawan Karir</p>
+    <!-- Ajakan -->
+        <div class="w-screen mt-40 text-white bg-primary-1 relative section">
+        <div class="ajakan mx-auto display flex flex-col justify-center items-center">
+            <p class="text-b2">Platform Andalan Pencari Kerja Profesional</p>
+            <p class="text-h2 font-semibold w-3/5 text-center mt-6">Temukan Langkah Karier Anda Selanjutnya Dengan Mudah</p>
+            <button class="text-primary-1 text-h6 font-semibold border px-4 py-2 bg-white-1 rounded-md mt-20 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Mulai Mencari Pekerjaan
+                <i data-feather="arrow-right"></i>
+            </button>
+        </div>
+        <img src="../assets/img/Ellipse-left-bottom.png" alt="" class="absolute bottom-0 left-0 decoration">
+        <img src="../assets/img/Ellipse-right-ajakan.png" alt="" class="absolute right-0 top-0 decoration">
         </div>
 
-        <script>
-            feather.replace();
-        </script>
+    <!-- Footer -->
+    <div class="w-screen bg-primary-3 py-10 text-center text-black-1 footer">
+        <p class="text-h6 font-semibold sm:mt-5">LOGO KAWAN KARIR</p>
+    
+        <div class="mt-4 px-10 py-4 bg-primary-1 text-white-1 rounded-lg inline-block">
+            <ul class="flex flex-wrap justify-center gap-6 text-b2">
+                <li><a href="#" class="hover:underline">Beranda</a></li>
+                <li>|</li>
+                <li><a href="#" class="hover:underline">Lowongan Kerja</a></li>
+                <li>|</li>
+                <li><a href="#" class="hover:underline">Perusahaan</a></li>
+                <li>|</li>
+                <li><a href="#" class="hover:underline">Artikel Karir</a></li>
+                <li>|</li>
+                <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+            </ul>
+        </div>
+    
+        <p class="text-b3 mt-6 mx-auto max-w-2xl leading-relaxed">
+            Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp imuvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
+        </p>
+    
+        <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="./script.js"></script>
+
+    <script>
+        const saveIcons = document.querySelectorAll('.save__icon');
+        console.log(saveIcons);
+        saveIcons.forEach((icon) => {
+            icon.addEventListener('click', () => {
+                const currentSrc = icon.getAttribute('src');
+                
+                const newSrc = currentSrc === '../assets/img/Icon-Save.svg' 
+                    ? '../assets/img/Icon-Save Blue.svg' 
+                    : '../assets/img/Icon-Save.svg';
+                
+                icon.setAttribute('src', newSrc);
+            });
+        });
+    </script>
 </body>
 </html>
