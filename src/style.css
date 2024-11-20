@@ -41,6 +41,7 @@ nav div {
 .iklan {
     position: relative;
     overflow: hidden;
+    padding: 0 !important;
 }
 
 .carousel {
@@ -173,6 +174,7 @@ nav div {
     }
     .main__text__title {
         font-size: 2rem;
+        margin-top: 8rem;
         width: 90vw;
     }
     .main__text__content {
@@ -208,7 +210,6 @@ nav div {
         padding-bottom: 2rem;
     }
     .arahan {
-        width: 100vw;
         height: max-content;
         gap: 1rem;
         background: none;
@@ -221,6 +222,7 @@ nav div {
     .arahan div {
         font-size: .5rem;
         gap: 8px;
+        text-align: center;
     }
     .arahan div:nth-child(even) div {
         width: 10vw;
@@ -302,6 +304,9 @@ nav div {
     .perusahaan img {
         width: 60vw;
         height: auto;
+    }
+    .perusahaan button img {
+        width: 1rem;
     }
     .perusahaan .logo {
         width: 2rem;
@@ -481,6 +486,7 @@ nav div {
         height: max-content;
     }
     .main__text__title {
+        margin-top: 8rem;
         font-size: 2rem;
         width: 60vw;
     }
@@ -513,7 +519,6 @@ nav div {
         padding-bottom: 2rem;
     }
     .arahan {
-        width: 100vw;
         height: max-content;
         gap: 1rem;
         background: none;
@@ -593,9 +598,11 @@ nav div {
         width: 80%;
         height: auto;
     }
+    .perusahaan button img {
+        width: 1rem;
+    }
     .perusahaan .logo {
-        width: 2rem;
-        height: 1.63em;
+        width: 5rem;
     }
     .perusahaan__content {
         width: 90vw;
@@ -754,6 +761,7 @@ nav div {
         height: 65%;
     }
     .main__text__title {
+        margin-top: 8rem;
         font-size: 2rem;
         width: 50vw;
     }
@@ -786,7 +794,6 @@ nav div {
         padding-bottom: 2rem;
     }
     .arahan {
-        width: 100vw;
         height: max-content;
         gap: 1rem;
         background: none;
@@ -869,6 +876,9 @@ nav div {
     .perusahaan img {
         width: 80%;
     }
+    .perusahaan button img {
+        width: 1rem;
+    }
     .perusahaan .logo {
         width: 5rem;
     }
@@ -891,13 +901,13 @@ nav div {
     }
     .perusahaan__content div div {
         width: 30vw;
-        height: 8vh;
+        height: 10vh;
     }
     .perusahaan__content div div p:nth-child(1) {
         font-size: 1.25rem;
     }
     .perusahaan__content div div p:nth-child(2) {
-        font-size: 1rem;
+        font-size: .875rem;
     }
     .decoration {
         display: none;
@@ -1027,23 +1037,20 @@ nav div {
     .section__title button {
         margin-right: 1rem;
     }
-    button#prev, button#next {
-        display: none;
-    }
     .main {
         padding-top: 4rem;
         height: max-content+2rem;
     }
     .main__text__title {
         font-size: 3rem;
+        margin-top: 8rem;
     }
     .main__text__content {
         font-size: 1.5rem;
     }
     .main__content {
-        padding: .5rem 1rem;    
+        padding: 1rem 1rem;    
         margin-top: 4rem;
-        align-items: center;
         width: 40vw;
         border-radius: 1rem;
     }
@@ -1069,6 +1076,9 @@ nav div {
         padding: 5rem 1rem;
         height: max-content;
         gap: 5rem;
+    }
+    .perusahaan button img {
+        width: 1rem;
     }
     .artikel__card {
         height: max-content;

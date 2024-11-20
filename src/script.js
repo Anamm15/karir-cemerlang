@@ -150,10 +150,14 @@ function updateCarouselArtikel() {
 // pekerjaan
 let currentSlidePekerjaan = 0;
 const pekerjaan = document.querySelector('.pekerjaan__content');
-const totalSlidesPekerjaan = document.querySelectorAll('.pekerjaan__content > div').length;
+const pekerjaanSlides = document.querySelectorAll('.pekerjaan__content > div');
+const totalSlidesPekerjaan = pekerjaanSlides.length;
 
 let startXPekerjaan = 0;
 let isPekerjaanDragging = false;
+
+// Hitung total lebar container pekerjaan__content
+const pekerjaanWidth = pekerjaan.offsetWidth;
 
 pekerjaan.style.transition = 'transform 0.3s ease-in-out';
 
@@ -161,32 +165,47 @@ pekerjaan.addEventListener('touchstart', (e) => {
     startXPekerjaan = e.touches[0].clientX;
     isPekerjaanDragging = true;
 
-    pekerjaan.style.transition = 'none';
+    pekerjaan.style.transition = 'none'; // Nonaktifkan transisi saat dragging
 });
 
 pekerjaan.addEventListener('touchmove', (e) => {
     if (!isPekerjaanDragging) return;
+
     const currentX = e.touches[0].clientX;
     const diffX = currentX - startXPekerjaan;
 
-    pekerjaan.style.transform = `translateX(calc(-${currentSlidePekerjaan * -100}% + ${diffX}px))`;
+    // Hitung posisi saat ini berdasarkan lebar slide
+    const currentPosition = currentSlidePekerjaan * pekerjaanWidth - diffX;
+
+    // Cegah scrolling keluar batas
+    if (currentPosition < 0 || currentPosition > (totalSlidesPekerjaan - 1) * pekerjaanWidth) {
+        return;
+    }
+
+    pekerjaan.style.transform = `translateX(calc(-${currentSlidePekerjaan * 100}% + ${diffX}px))`;
 });
 
 pekerjaan.addEventListener('touchend', (e) => {
     isPekerjaanDragging = false;
+
     const endX = e.changedTouches[0].clientX;
     const diffX = endX - startXPekerjaan;
 
-    pekerjaan.style.transition = 'transform 0.3s ease-in-out';
+    pekerjaan.style.transition = 'transform 0.3s ease-in-out'; // Aktifkan kembali transisi
 
+    // Geser ke slide sebelumnya jika swipe kanan cukup jauh dan bukan di slide pertama
     if (diffX > 50 && currentSlidePekerjaan > 0) {
-        currentSlidePekerjaan = (currentSlidePekerjaan - 1 + totalSlidesPekerjaan) % totalSlidesPekerjaan;
-    } else if (diffX < -50 && currentSlidePekerjaan < totalSlidesPekerjaan - 1) {
-        currentSlidePekerjaan = (currentSlidePekerjaan + 1) % totalSlidesPekerjaan;
+        currentSlidePekerjaan--;
     }
+    // Geser ke slide berikutnya jika swipe kiri cukup jauh dan bukan di slide terakhir
+    else if (diffX < -50 && currentSlidePekerjaan < totalSlidesPekerjaan - 1) {
+        currentSlidePekerjaan++;
+    }
+
     updateCarouselPekerjaan();
 });
 
 function updateCarouselPekerjaan() {
+    // Tetapkan transformasi sesuai slide saat ini
     pekerjaan.style.transform = `translateX(-${currentSlidePekerjaan * 100}%)`;
 }
