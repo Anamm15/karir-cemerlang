@@ -1,6 +1,6 @@
 body {
     font-family: Nunito;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
 }
 
@@ -10,7 +10,7 @@ nav div {
 
 .main img {
     height: 78%;
-    width: 50%;
+    width: auto;
 }
 
 .main__text__title {
@@ -96,7 +96,7 @@ nav div {
 .perusahaan {
     background-image: url('../assets/img/Group 16.png');
     height: max-content;
-    background-size: contain; 
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -296,6 +296,10 @@ nav div {
         width: 60vw;
         height: auto;
     }
+    .perusahaan .logo {
+        width: 2rem;
+        height: 1.45rem;
+    }
     .perusahaan__content {
         width: 90vw;
         align-items: center;
@@ -317,7 +321,7 @@ nav div {
         height: 7vh;
     }
     .perusahaan__content div div p:nth-child(1) {
-        font-size: .875rem;
+        font-size: 1rem;
     }
     .perusahaan__content div div p:nth-child(2) {
         font-size: .5rem;
@@ -581,6 +585,10 @@ nav div {
         width: 80%;
         height: auto;
     }
+    .perusahaan .logo {
+        width: 2rem;
+        height: 1.63em;
+    }
     .perusahaan__content {
         width: 90vw;
         align-items: center;
@@ -606,7 +614,7 @@ nav div {
         font-size: 1rem;
     }
     .perusahaan__content div div p:nth-child(2) {
-        font-size: .75rem;
+        font-size: .625rem;
     }
     .decoration {
         display: none;
@@ -620,7 +628,6 @@ nav div {
     }
     .artikel__content > div {
         flex-shrink: 0;
-        width: 100%; 
         width: 70%;
         margin: auto;
     }
@@ -732,27 +739,31 @@ nav div {
         display: none;
     }
     .main {
-        padding: 4rem 1rem;
+        padding: 4rem 1rem 2rem 1rem;
         height: max-content;
+    }
+    .main img {
+        height: 65%;
     }
     .main__text__title {
         font-size: 2rem;
-        width: 60vw;
+        width: 50vw;
     }
     .main__text__content {
-        width: 60vw;
+        width: 50vw;
+        font-size: 1rem;
     }
     .main__content {
-        width: 60vw;
+        width: 50vw;
         padding: .5rem 1rem;    
         margin-top: 2rem;
-        align-items: center ;
+        align-items: center;
     }
     .main__content p{
-        font-size: 1rem;
+        font-size: .875rem;
     }
     .main__content input {
-        font-size: 1rem;
+        font-size: .78rem;
     }
     .search__icon {
         width: 60%;
@@ -850,6 +861,9 @@ nav div {
     .perusahaan img {
         width: 80%;
     }
+    .perusahaan .logo {
+        width: 5rem;
+    }
     .perusahaan__content {
         width: 90vw;
         align-items: center;
@@ -872,8 +886,7 @@ nav div {
         height: 8vh;
     }
     .perusahaan__content div div p:nth-child(1) {
-        margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .perusahaan__content div div p:nth-child(2) {
         font-size: 1rem;
@@ -929,7 +942,7 @@ nav div {
         width: 40%;
         font-size: 1rem;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .main__hero {
         height: max-content;
@@ -1010,10 +1023,10 @@ nav div {
         padding-top: 6rem;
     }
     .main__text__title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .main__text__content {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .main__content {
         padding: .5rem 1rem;    
@@ -1023,7 +1036,7 @@ nav div {
         border-radius: 1rem;
     }
     .main__content p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .main__content input {
         font-size: 1rem;
@@ -1037,14 +1050,19 @@ nav div {
         height: 50%;
     }
     .pekerjaan__card {
-        width: 28vw;
+        width: 31.8vw;
     }
     .perusahaan {
         padding: 5rem 1rem;
+        height: max-content;
+        gap: 5rem;
     }
     .artikel__card {
         height: max-content;
         padding-bottom: 1rem;
+    }
+    .ajakan button {
+        margin-top: 1rem;
     }
     .main__hero {
         height: max-content;

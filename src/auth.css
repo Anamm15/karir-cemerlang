@@ -6,6 +6,9 @@ body {
 .main__content {
     background-image: url('../assets/img/login-background.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .background {
@@ -77,11 +80,14 @@ body {
 
 @media (min-width: 1026px) and (max-width: 1440px) {
     .content img {
-        width: 80%;
+        width: 65%;
+        z-index: -1;
     }
-
     .main__content__text {
-        width: 5vw;
+        display: block;
+        width: 55% !important;
+        margin-top: 1.3rem;
+        font-size: 2rem;
     }
 }
   
