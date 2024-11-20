@@ -32,6 +32,12 @@ nav div {
     background-color: #0046B1;
 }
 
+.search__icon {
+    width: 18% !important;
+    height: auto !important;
+    margin-left: .5rem;
+}
+
 .iklan {
     position: relative;
     overflow: hidden;
@@ -49,7 +55,7 @@ nav div {
 
 .carousel__button {
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0.1;
     cursor: pointer;
 }
 
@@ -57,12 +63,11 @@ nav div {
     opacity: 1;
 }
   
-
 .arahan {
     background-image: url('../assets/img/Group 15.png');
     width: 91vw;
     height: 22.22vh;
-    background-size: contain; 
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -90,7 +95,7 @@ nav div {
 }
 
 .kategori__content img {
-    filter: brightness(50%); /* Redupkan gambar */
+    filter: brightness(50%);
 }
 
 .perusahaan {
@@ -190,10 +195,15 @@ nav div {
         font-size: 0.75rem;
     }
     .search__button {
-        height: 2rem;
+        height: 2rem !important;
+        width: 3rem !important;
     }
     .search__button p {
         display: none;
+    }
+    .search__icon {
+        width: 60% !important;
+        height: auto !important;
     }
     .arahan__container {
         margin-top: -1px;
@@ -494,7 +504,8 @@ nav div {
         font-size: .875rem;
     }
     .search__button {
-        height: 3rem;
+        height: 3rem !important;
+        width: 3rem !important;
     }
     .search__button p {
         display: none;
@@ -766,8 +777,8 @@ nav div {
         font-size: .78rem;
     }
     .search__icon {
-        width: 60%;
-        height: 60%;
+        width: auto !important;
+        height: 50% !important;
     }
     .search__button p {
         display: none;
@@ -1016,11 +1027,15 @@ nav div {
         margin-top: 2rem;
         padding: 0 1rem;
     }
+    .section__title button {
+        margin-right: 1rem;
+    }
     button#prev, button#next {
         display: none;
     }
     .main {
-        padding-top: 6rem;
+        padding-top: 4rem;
+        height: max-content+2rem;
     }
     .main__text__title {
         font-size: 3rem;
@@ -1046,8 +1061,9 @@ nav div {
         padding-right: 1rem;
     }
     .search__icon {
-        width: 50%;
-        height: 50%;
+        width: auto !important;
+        height: 43% !important;
+        margin-left: .2rem;
     }
     .pekerjaan__card {
         width: 31.8vw;

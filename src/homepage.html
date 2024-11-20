@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- ICONS -->
-    <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- FONT NUNITO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,7 +86,7 @@
                 <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari kota atau daerah">
             </div>
             <button class="flex search__button rounded-xl justify-center items-center text-b1 text-white gap-2">
-                <i data-feather="search" class="search__icon"></i>
+                <img src="../assets/img/search-icon.png" class="search__icon" alt="">
                 <p>Cari</p>
             </button>
         </div>
@@ -97,26 +95,26 @@
 
     <!-- Arahan Daftar Akun -->
     <div class="w-screen mt-40 arahan__container section mx-auto">
-    <div class="flex justify-center items-center mx-auto arahan gap-20">
-        <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-            <img src="../assets/img/Icon Profile.png">
-            <p>Daftarkan Akunmu</p>
+        <div class="flex justify-center items-center mx-auto arahan gap-20">
+            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+                <img src="../assets/img/Icon Profile.png">
+                <p>Daftarkan Akunmu</p>
+            </div>
+            <div class="w-max">
+                <div class="h-0.5 bg-secondary-1 w-28"></div>
+            </div>
+            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+                <img src="../assets/img/Icon Upload.png">
+                <p>Unggah CV Kamu</p>
+            </div>
+            <div class="gap-6">
+                <div class="h-0.5 bg-secondary-1 w-28"></div>
+            </div>
+            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+                <img src="../assets/img/Icon Work.png">
+                <p>Lamar Pekerjaan</p>
+            </div>
         </div>
-        <div class="w-max">
-            <div class="h-0.5 bg-secondary-1 w-28"></div>
-        </div>
-        <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-            <img src="../assets/img/Icon Upload.png">
-            <p>Unggah CV Kamu</p>
-        </div>
-        <div class="gap-6">
-            <div class="h-0.5 bg-secondary-1 w-28"></div>
-        </div>
-        <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
-            <img src="../assets/img/Icon Work.png">
-            <p>Lamar Pekerjaan</p>
-        </div>
-    </div>
     </div>
 
      <!-- Iklan -->
@@ -128,8 +126,8 @@
         </div>
 
         <!-- Navigation Buttons -->
-        <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 rounded-full carousel__button">‹</button>
-        <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 rounded-full carousel__button">›</button>
+        <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 w-10 h-10 rounded-full carousel__button">‹</button>
+        <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 w-10 h-10 rounded-full carousel__button">›</button>
     </div>
 
     <!-- Kategori -->
@@ -140,7 +138,7 @@
                 <p class="xl:text-b2 2xl:text-b1 mt-2 text-black-2">Rekomendasi kategori pekerjaan untukmu!</p>
             </div>
             <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Kategori Lainnya
-                <i data-feather="arrow-right"></i>
+                <img src="../assets/img/Arrow-Icon.png" alt="">
             </button>
         </div>
         <div class="relative mt-12 kategori__carousel overflow-hidden">
@@ -178,7 +176,7 @@
                 <p class="xl:text-b2 2xl:text-b1 mt-2 text-black-2">Lihat daftar lowongan terbaru dari berbagai bidang dan industri</p>
             </div>
             <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Pekerjaan Lainnya
-                <i data-feather="arrow-right"></i>
+                <img src="../assets/img/Arrow-Icon.png" alt="">
             </button>
         </div>
         <div class="relative mt-12 pekerjaan__carousel overflow-hidden">
@@ -349,7 +347,7 @@
                 </div>
             </div>
             <button class="mt-16 border w-max border-primary-2 rounded-lg text-primary-1 text-h6 font-semibold px-4 py-3 flex items-center gap-2 hover:text-white-1 hover:bg-primary-1">Temukan Perusahaan Lainnya
-                <i data-feather="arrow-right"></i>
+                <img src="../assets/img/Arrow-Icon.png" alt="">
             </button>
         </div>
     </div>
@@ -362,7 +360,7 @@
                 <p class="xl:text-b2 2xl:text-b1 mt-2 text-black-2">Lihat artikel karir kami yang penuh dengan inspirasi, informasi, dan tips praktis untuk membantu perjalanan karirmu.</p>
             </div>
             <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Artikel Lainnya
-                <i data-feather="arrow-right"></i>
+                <img src="../assets/img/Arrow-Icon.png" alt="">
             </button>
         </div>
         <div class="carousel__artikel overflow-hidden mt-12 relative">
@@ -372,7 +370,7 @@
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
                     <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
-                        <i data-feather="arrow-right"></i> 
+                        <img src="../assets/img/Arrow-Icon.png" alt=""> 
                     </Button>
                 </div>
                 <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
@@ -380,7 +378,7 @@
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
                     <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
-                        <i data-feather="arrow-right"></i> 
+                        <img src="../assets/img/Arrow-Icon.png" alt=""> 
                     </Button>
                 </div>
                 <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
@@ -388,7 +386,7 @@
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
                     <Button class="mx-4 text-primary-1 border py-3 w-11/12 hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
-                        <i data-feather="arrow-right"></i>                        
+                        <img src="../assets/img/Arrow-Icon.png" alt="">                        
                     </Button>
                 </div>
             </div>
@@ -401,7 +399,7 @@
         <p class="lg:text-b3 2xl:text-b2">Platform Andalan Pencari Kerja Profesional</p>
         <p class="lg:text-h4 xl:text-h3 2xl:text-h2 font-semibold w-3/5 text-center mt-6">Temukan Langkah Karier Anda Selanjutnya Dengan Mudah</p>
         <button class="text-primary-1 text-h6 font-semibold border px-4 py-2 bg-white-1 rounded-md mt-20 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Mulai Mencari Pekerjaan
-            <i data-feather="arrow-right"></i>
+            <img src="../assets/img/Arrow-Icon.png" alt="">
         </button>
     </div>
     </div>
@@ -430,10 +428,6 @@
     
         <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
     </div>
-
-    <script>
-        feather.replace();
-    </script>
 
     <script src="./script.js"></script>
     <script>
