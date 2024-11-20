@@ -824,7 +824,7 @@ nav div {
     }
     .pekerjaan__content > div {
         flex-shrink: 0;
-        width: 42%;
+        width: 48%;
         margin: auto;
     }
     .pekerjaan__card {
@@ -1049,9 +1049,6 @@ nav div {
     .main__hero {
         height: max-content;
         padding: auto 1rem;
-    }
-    .main__hero div {
-        flex-direction: column;
     }
     .main__hero p, .main__hero a{
         font-size: 14px;

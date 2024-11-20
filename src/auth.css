@@ -1,6 +1,6 @@
 body {
     overflow: hidden;
-    font-family: Nunito;
+    font-family: 'Nunito';
 }
 
 .main__content {
@@ -12,8 +12,7 @@ body {
     position: absolute;
     width: 40.8vw;
     height: 83vh;
-    background-color: #66A0D3;
-    z-index: 1;
+    background-color: #D6E9FA;
     opacity: 0.5;
     pointer-events: none;
 }
