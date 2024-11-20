@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+    font-family: Nunito;
+}
+
+.main__content {
+    background-image: url('../assets/img/login-background.png');
+    background-repeat: no-repeat;
+}
+
+.background {
+    position: absolute;
+    width: 40.8vw;
+    height: 83vh;
+    background-color: #66A0D3;
+    z-index: 1;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    width: 40.8vw;
+    height: 83vh;
+    z-index: 2;
+}
+
+.main__content .text {
+    width: 462px;
+}
+
+.auth__content {
+    width: 492px;
+}
+
+@media (max-width: 575.98px) {
+    body {
+      font-size: 14px;
+    }
+    .main__content {
+      display: none;
+    }
+    .auth__content__container {
+        width: 100vw;
+        height: 100vh;
+        padding: 14px;
+    }
+    input {
+        padding: 0 .5rem;
+    }
+}  
+
+@media (min-width: 576px) and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    .main__content {
+        display: none;
+    }
+    .auth__content__container {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+    .main__content {
+        display: none;
+    }
+    .auth__content__container {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1440px) {
+    .content img {
+        width: 80%;
+    }
+
+    .main__content__text {
+        width: 5vw;
+    }
+}
+  

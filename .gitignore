@@ -8,10 +8,6 @@ yarn-error.log*
 dist/
 build/
 
-# Tailwind CSS generated files
-*.css.map
-*.css
-
 # IDE/Editor specific
 .idea/
 .vscode/

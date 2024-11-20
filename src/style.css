@@ -1,0 +1,1110 @@
+body {
+    font-family: Nunito;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav div {
+    height: 10vh;
+}
+
+.main img {
+    height: 78%;
+    width: 50%;
+}
+
+.main__text__title {
+    width: 45vw;
+}
+
+.main__text__content {
+    width: 45vw;
+}
+
+.main__content {
+    width: 40.7vw;
+    height: max-content;
+}
+
+.search__button {
+    width: 19.5%;
+    height: 4rem;
+    background-color: #0046B1;
+}
+
+.iklan {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+}
+
+.carousel img {
+    flex-shrink: 0; 
+    width: 100%;
+}
+
+.carousel__button {
+    z-index: 10;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.carousel__button:hover {
+    opacity: 1;
+}
+  
+
+.arahan {
+    background-image: url('../assets/img/Group 15.png');
+    width: 91vw;
+    height: 22.22vh;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.kategori {
+    padding: 0 70px;
+}
+
+.kategori__content div {
+    width: 17.86vw;
+    height: 20vh;
+}
+
+.kategori__content > div {
+    position: relative; 
+}
+
+.kategori__content p {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    color: white; 
+}
+
+.kategori__content img {
+    filter: brightness(50%); /* Redupkan gambar */
+}
+
+.perusahaan {
+    background-image: url('../assets/img/Group 16.png');
+    height: max-content;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.perusahaan__content {
+    width: 38vw;
+}
+
+.artikel {
+    padding: 0 70px;
+}
+
+.artikel__card {
+    width: 30.21vw;
+    height: 63vh;
+}
+
+.artikel__card img {
+    height: 50%;
+}
+
+.pekerjaan {
+    padding: 0 70px;
+}
+
+.pekerjaan__card {
+    width: 22.4vw;
+    height: max-content;
+}
+
+.ajakan {
+    height: 55vh;
+    background-image: url('../assets/img/ajakan.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__step {
+    height: 90vh;
+}
+
+.horizontal-line {
+    width: 77.6vw;
+    gap: 25.87vw;
+}
+
+.step {
+    width: 1490px;
+    gap: 120px;
+}
+
+.step div {
+    width: 600px;
+}
+
+@media (max-width: 576px) {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    button#prev, button#next {
+        display: none;
+    }
+    .main {
+        padding: 2rem 1rem;
+        height: max-content;
+    }
+    .main__text__title {
+        font-size: 2rem;
+        width: 90vw;
+    }
+    .main__text__content {
+        width: 90vw;
+    }
+    .main__content {
+        width: 90vw;
+        padding: .5rem 1rem;
+        margin: 1.5rem auto;
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    .main__content p{
+        font-size: 0.75rem;
+    }
+    .main__content input {
+        font-size: 0.75rem;
+    }
+    .search__button {
+        height: 2rem;
+    }
+    .search__button p {
+        display: none;
+    }
+    .arahan__container {
+        margin-top: -1px;
+        background-color: #0046B1;
+        padding-bottom: 2rem;
+    }
+    .arahan {
+        width: 100vw;
+        height: max-content;
+        gap: 1rem;
+        background: none;
+        padding: 1rem;
+    }
+    .arahan img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .arahan div {
+        font-size: .5rem;
+        gap: 8px;
+    }
+    .arahan div:nth-child(even) div {
+        width: 10vw;
+    }
+    .iklan {
+        margin-top: 2rem;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .section__title {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        gap: 1rem;
+    }
+    .section__title p:nth-child(1) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .section__title p:nth-child(2) {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .section button {
+        width: 80%;
+        font-size: 0.875rem;
+        justify-content: center;
+    }
+    .kategori__carousel {
+        position: relative;
+        width: 100%; 
+        overflow: hidden; 
+    }
+    .kategori__content {
+        display: flex;
+        transition: transform 0.5s ease; 
+    }
+    .kategori__content > div {
+        flex-shrink: 0;
+        width: 100%; 
+        max-width: 90%; 
+        margin: auto;
+    }
+    .pekerjaan__carousel {
+        width: 100%;
+    }
+    .pekerjaan__content {
+        display: flex;
+        transition: transform 0.5s ease;
+        flex-wrap: nowrap;
+    }
+    .pekerjaan__content > div {
+        flex-shrink: 0;
+        width: 100%; 
+        width: 95%;
+        margin: auto;
+    }
+    .pekerjaan__card {
+        gap: 1rem;
+        height: max-content;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+    .pekerjaan__card button {
+        margin-left: 2.4rem;
+    }
+    .perusahaan {
+        background-image: none;
+        flex-direction: column;
+        height: max-content;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+        background-color: #D6E9FA;
+        align-items: center;
+    }
+    .perusahaan img {
+        width: 60vw;
+        height: auto;
+    }
+    .perusahaan__content {
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .perusahaan__content p:nth-child(1) {
+        font-size: 20px;  
+        text-align: center; 
+    }
+    .perusahaan__content p:nth-child(2) {
+        text-align: center; 
+        font-size: 10px;
+    }
+    .perusahaan__content div {
+        justify-content: center;
+    }
+    .perusahaan__content div div {
+        width: 40vw;
+        height: 7vh;
+    }
+    .perusahaan__content div div p:nth-child(1) {
+        font-size: .875rem;
+    }
+    .perusahaan__content div div p:nth-child(2) {
+        font-size: .5rem;
+    }
+    .decoration {
+        display: none;
+    }
+    .artikel__carousel {
+        width: 100%;
+    }
+    .artikel__content {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .artikel__content > div {
+        flex-shrink: 0;
+        width: 100%; 
+        width: 95%;
+        margin: auto;
+    }
+    .artikel__card {
+        gap: 1rem;
+        height: max-content;
+        padding-bottom: 2rem;
+    }
+    .artikel__card p:nth-child(2) {
+        font-size: 1rem;
+    }
+    .artikel__card p:nth-child(3) {
+        font-size: 0.875rem;
+    }
+    .ajakan {
+        background-color: #0046B1;
+        background-image: none;
+        height: max-content;
+        width: 90vw;
+        padding: 2rem 1rem;
+    }
+    .ajakan p:nth-child(1) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .ajakan p:nth-child(2) {
+        width: 90vw;
+        font-size: 0.875rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .ajakan button {
+        width: 80%;
+        font-size: 0.875rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .main img {
+        display: none;
+    }
+    .main__hero {
+        height: max-content;
+        padding: auto 1rem;
+    }
+    .main__hero div {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .main__hero p, .main__hero a{
+        font-size: 14px;
+        text-align: center;
+    }
+    .main__hero img{
+        display: none;
+    }
+    .main__step {
+        height: max-content;
+        margin-top: -1px;
+    }
+    .main__step__background {
+        display: none;
+        position: relative;
+    }   
+    .step__title {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .horizontal-line {
+        width: 8px;
+        height: 35rem;
+        flex-direction: column;
+        gap: 11rem;
+        margin-left: 2rem;
+        margin-top: -.5rem;
+    }
+    .horizontal-line div{
+        height: 1rem;
+        width: 1rem;
+        margin-top: 0;
+    }
+    .step__container {
+        display: flex;
+        width: 100vw;
+        margin-top: -1rem;
+        padding: 1rem;
+    }
+    .step {
+        flex-direction: column;
+        width: 100vw;
+        margin-left: 2rem;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    .step div {
+        width: 70vw;
+    }
+    .step div p {
+        font-size: 1.2rem;
+    }
+    .step div img {
+        margin-top: 1rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    .footer {
+        height: max-content;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+} 
+
+@media (min-width: 576px) and (max-width: 768px)  {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    button#prev, button#next {
+        display: none;
+    }
+    .main {
+        padding: 2rem 1rem;
+        height: max-content;
+    }
+    .main__text__title {
+        font-size: 2rem;
+        width: 60vw;
+    }
+    .main__text__content {
+        font-size: 1rem;
+        width: 60vw;
+    }
+    .main__content {
+        width: 50vw;
+        padding: .5rem 1rem;    
+        margin-top: 2rem;
+        align-items: center ;
+    }
+    .main__content p{
+        font-size: .875rem;
+    }
+    .main__content input {
+        font-size: .875rem;
+    }
+    .search__button {
+        height: 3rem;
+    }
+    .search__button p {
+        display: none;
+    }
+    .arahan__container {
+        margin-top: -1px;
+        background-color: #0046B1;
+        padding-bottom: 2rem;
+    }
+    .arahan {
+        width: 100vw;
+        height: max-content;
+        gap: 1rem;
+        background: none;
+        padding: 1rem;
+    }
+    .arahan img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .arahan div {
+        font-size: 1rem;
+        gap: 8px;
+    }
+    .arahan div:nth-child(even) div {
+        width: 10vw;
+    }
+    .iklan {
+        margin-top: 2rem;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .section__title {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        gap: 1rem;
+    }
+    .section__title p:nth-child(1) {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .section__title p:nth-child(2) {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .section button {
+        width: 80%;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .pekerjaan__carousel {
+        width: 100%;
+    }
+    .pekerjaan__content {
+        display: flex;
+        transition: transform 0.5s ease;
+        flex-wrap: nowrap;
+    }
+    .pekerjaan__content > div {
+        flex-shrink: 0;
+        width: 100%; 
+        width: 60%;
+        margin: auto;
+    }
+    .pekerjaan__card {
+        gap: 1rem;
+        height: max-content;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+    .pekerjaan__card button {
+        margin-left: 2.4rem;
+    }
+    .perusahaan {
+        flex-direction: column;
+        height: max-content;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+        background-color: #D6E9FA;
+        background-image: none;
+        align-items: center;
+    }
+    .perusahaan img {
+        width: 80%;
+        height: auto;
+    }
+    .perusahaan__content {
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .perusahaan__content p:nth-child(1) {
+        font-size: 30px;  
+        text-align: center; 
+    }
+    .perusahaan__content p:nth-child(2) {
+        text-align: center; 
+        font-size: 15px;
+    }
+    .perusahaan__content div {
+        justify-content: center;
+    }
+    .perusahaan__content div div {
+        width: 30vw;
+        height: 7vh;
+    }
+    .perusahaan__content div div p:nth-child(1) {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .perusahaan__content div div p:nth-child(2) {
+        font-size: .75rem;
+    }
+    .decoration {
+        display: none;
+    }
+    .artikel__carousel {
+        width: 100%;
+    }
+    .artikel__content {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .artikel__content > div {
+        flex-shrink: 0;
+        width: 100%; 
+        width: 70%;
+        margin: auto;
+    }
+    .artikel__card {
+        gap: 1rem;
+        height: max-content;
+        padding-bottom: 2rem;
+    }
+    .artikel__card p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .artikel__card p:nth-child(3) {
+        font-size: 1.2rem;
+    }
+    .ajakan {
+        height: max-content;
+        width: 90vw;
+        padding: 2rem 1rem;
+    }
+    .ajakan p:nth-child(1) {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .ajakan p:nth-child(2) {
+        width: 90vw;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .ajakan button {
+        width: 80%;
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .main__hero {
+        height: max-content;
+        padding: auto 1rem;
+    }
+    .main__hero div {
+        flex-direction: column;
+        padding: auto 1rem;
+    }
+    .main__hero p, .main__hero a{
+        font-size: 14px;
+    }
+    .main__step {
+        height: max-content;
+    } 
+    .step__title {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .horizontal-line {
+        margin-top: 1rem;
+    }
+    .horizontal-line div{
+        height: 1rem;
+        width: 1rem;
+        margin-top: 0;
+    }
+    .step__container {
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1rem;
+        justify-items: center;
+    }
+    .step {
+        width: 100vw;
+        margin-left: 2rem;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    .step div {
+        width: 20vw;
+    }
+    .step div p {
+        font-size: 1.2rem;
+    }
+    .step div img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    button#prev, button#next {
+        display: none;
+    }
+    .main {
+        padding: 4rem 1rem;
+        height: max-content;
+    }
+    .main__text__title {
+        font-size: 2rem;
+        width: 60vw;
+    }
+    .main__text__content {
+        width: 60vw;
+    }
+    .main__content {
+        width: 60vw;
+        padding: .5rem 1rem;    
+        margin-top: 2rem;
+        align-items: center ;
+    }
+    .main__content p{
+        font-size: 1rem;
+    }
+    .main__content input {
+        font-size: 1rem;
+    }
+    .search__icon {
+        width: 60%;
+        height: 60%;
+    }
+    .search__button p {
+        display: none;
+    }
+    .arahan__container {
+        margin-top: -1px;
+        background-color: #0046B1;
+        padding-bottom: 2rem;
+    }
+    .arahan {
+        width: 100vw;
+        height: max-content;
+        gap: 1rem;
+        background: none;
+        padding: 1rem;
+    }
+    .arahan img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .arahan div {
+        font-size: 1rem;
+        gap: 8px;
+    }
+    .arahan div:nth-child(even) div {
+        width: 10vw;
+    }
+    .iklan {
+        margin-top: 2rem;
+    }
+    .kategori__content > div {
+        width: 50%;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .section__title {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+    .section__title p:nth-child(1) {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .section__title p:nth-child(2) {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .section button {
+        width: 50%;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .pekerjaan__carousel {
+        width: 100%;
+    }
+    .pekerjaan__content {
+        display: flex;
+        transition: transform 0.5s ease;
+        flex-wrap: nowrap;
+    }
+    .pekerjaan__content > div {
+        flex-shrink: 0;
+        width: 42%;
+        margin: auto;
+    }
+    .pekerjaan__card {
+        gap: 1rem;
+        height: max-content;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+    .pekerjaan__card button {
+        margin-left: 1.2rem;
+        width: 90%;
+    }
+    .perusahaan {
+        flex-direction: column;
+        height: max-content;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+        background-image: none;
+        background-color: #D6E9FA;
+        align-items: center;
+    }
+    .perusahaan img {
+        width: 80%;
+    }
+    .perusahaan__content {
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .perusahaan__content p:nth-child(1) {
+        font-size: 2rem;  
+        text-align: center; 
+    }
+    .perusahaan__content p:nth-child(2) {
+        text-align: center; 
+        font-size: 1.5rem;
+    }
+    .perusahaan__content div {
+        justify-content: center;
+    }
+    .perusahaan__content div div {
+        width: 30vw;
+        height: 8vh;
+    }
+    .perusahaan__content div div p:nth-child(1) {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .perusahaan__content div div p:nth-child(2) {
+        font-size: 1rem;
+    }
+    .decoration {
+        display: none;
+    }
+    .artikel__carousel {
+        width: 100%;
+    }
+    .artikel__content {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .artikel__content > div {
+        flex-shrink: 0;
+        width: 50%;
+        margin: auto;
+    }
+    .artikel__card {
+        gap: 1rem;
+        height: max-content;
+        padding-bottom: 2rem;
+    }
+    .artikel__card button {
+        width: 90%;
+    }
+    .artikel__card p:nth-child(2) {
+        font-size: 1.8rem;
+    }
+    .artikel__card p:nth-child(3) {
+        font-size: 1.3rem;
+    }
+    .ajakan {
+        height: max-content;    
+        width: 90vw;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #0046B1;
+        background-image: none;
+    }
+    .ajakan p:nth-child(1) {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .ajakan p:nth-child(2) {
+        width: 90vw;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .ajakan button {
+        width: 40%;
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .main__hero {
+        height: max-content;
+        padding: auto 1rem;
+    }
+    .main__hero div {
+        flex-direction: column;
+    }
+    .main__hero p, .main__hero a{
+        font-size: 14px;
+    }
+    .main__step {
+        height: max-content;
+        padding-bottom: 1rem;
+    } 
+    .step__title {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .horizontal-line {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .horizontal-line div{
+        height: 1rem;
+        width: 1rem;
+    }
+    .step__container {
+        width: 100vw;
+        margin-top: -1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .step {
+        gap: 4rem;
+        justify-content: center;
+    }
+    .step div {
+        width: 20vw;
+    }
+    .step div p {
+        font-size: 1.2rem;
+    }
+    .step div img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .section {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    button#prev, button#next {
+        display: none;
+    }
+    .main {
+        padding-top: 6rem;
+    }
+    .main__text__title {
+        font-size: 4rem;
+    }
+    .main__text__content {
+        font-size: 1.7rem;
+    }
+    .main__content {
+        padding: .5rem 1rem;    
+        margin-top: 4rem;
+        align-items: center;
+        width: 40vw;
+        border-radius: 1rem;
+    }
+    .main__content p{
+        font-size: 1.3rem;
+    }
+    .main__content input {
+        font-size: 1rem;
+    }
+    .search__button {
+        height: 3rem;
+        padding-right: 1rem;
+    }
+    .search__icon {
+        width: 50%;
+        height: 50%;
+    }
+    .pekerjaan__card {
+        width: 28vw;
+    }
+    .perusahaan {
+        padding: 5rem 1rem;
+    }
+    .artikel__card {
+        height: max-content;
+        padding-bottom: 1rem;
+    }
+    .main__hero {
+        height: max-content;
+        padding: auto 1rem;
+    }
+    .main__hero div {
+        flex-direction: column;
+    }
+    .main__hero p, .main__hero a{
+        font-size: 14px;
+    }
+    .main__step {
+        height: max-content;
+        padding-bottom: 1rem;
+    } 
+    .step__title {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .horizontal-line {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .horizontal-line div{
+        height: 1rem;
+        width: 1rem;
+    }
+    .step__container {
+        width: 100vw;
+        margin-top: -1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .step {
+        gap: 4rem;
+        justify-content: center;
+    }
+    .step div {
+        width: 20vw;
+    }
+    .step div p {
+        font-size: 1.2rem;
+    }
+    .step div img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
