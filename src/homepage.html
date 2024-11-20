@@ -73,22 +73,24 @@
 
     <!-- Main -->
     <div class="h-screen bg-primary-1 main relative pt-40 ps-16">
-        <p class="xl:text-h2 2xl:text-h1 text-white main__text__title font-semibold mt-20 relative z-10">Temukan Karir Impianmu, Mulai Suksesmu Sekarang!</p>
-        <p class="text-b1 text-white main__text__content mt-5 relative z-10">Raih peluang karir terbaik yang sesuai dengan bakat dan passion kamu. Jelajahi lowongan dan mulai perjalanan menuju perjalanan yang cemerlang</p>
-        <div class="search px-8 pt-4 mt-20 flex bg-white rounded-3xl main__content justify-between p-4 items-center gap-2 relative z-10">
-            <div class="h-4/6 flex flex-col justify-between w-1/3">
-                <p class="text-h5 font-semibold">Jenis</p>
-                <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari jenis pekerjaan">
+        <div class="flex flex-col justify-center h-full -mt-12">
+            <p class="xl:text-h2 2xl:text-h1 text-white main__text__title font-semibold mt-20 relative z-10">Temukan Karir Impianmu, Mulai Suksesmu Sekarang!</p>
+            <p class="text-b1 text-white main__text__content mt-5 relative z-10">Raih peluang karir terbaik yang sesuai dengan bakat dan passion kamu. Jelajahi lowongan dan mulai perjalanan menuju perjalanan yang cemerlang</p>
+            <div class="search px-8 pt-4 mt-20 flex bg-white rounded-3xl main__content justify-between p-4 items-center gap-2 relative z-10">
+                <div class="h-4/6 flex flex-col justify-between w-1/3">
+                    <p class="text-h5 font-semibold">Jenis</p>
+                    <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari jenis pekerjaan">
+                </div>
+                <div class="h-4/6 w-0.5 bg-black-2"></div>
+                <div class="h-4/6 flex flex-col justify-between w-1/3">
+                    <p class="text-h5 font-semibold">Lokasi</p>
+                    <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari kota atau daerah">
+                </div>
+                <button class="flex search__button rounded-xl justify-center items-center text-b1 text-white gap-2">
+                    <img src="../assets/img/search-icon.png" class="search__icon" alt="">
+                    <p>Cari</p>
+                </button>
             </div>
-            <div class="h-4/6 w-0.5 bg-black-2"></div>
-            <div class="h-4/6 flex flex-col justify-between w-1/3">
-                <p class="text-h5 font-semibold">Lokasi</p>
-                <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari kota atau daerah">
-            </div>
-            <button class="flex search__button rounded-xl justify-center items-center text-b1 text-white gap-2">
-                <img src="../assets/img/search-icon.png" class="search__icon" alt="">
-                <p>Cari</p>
-            </button>
         </div>
         <img src="../assets/img/Image.png" alt="" class="absolute bottom-0 right-0">
     </div>
@@ -119,7 +121,7 @@
 
      <!-- Iklan -->
     <div class="mt-40 iklan w-screen h-auto section relative overflow-hidden">
-        <div class="carousel flex transition-transform duration-500 ease-in-out">
+        <div class="carousel flex transition-transform duration-500 ease-in-out w-full">
             <img src="../assets/img/2.png" alt="Image 1" class="w-screen h-auto">
             <img src="../assets/img/2.png" alt="Image 2" class="w-screen h-auto">
             <img src="../assets/img/2.png" alt="Image 3" class="w-screen h-auto">
@@ -180,7 +182,7 @@
             </button>
         </div>
         <div class="relative mt-12 pekerjaan__carousel overflow-hidden">
-            <div class="flex flex-wrap px-auto transition-transform duration-500 mt-10 gap-3 pekerjaan__content">
+            <div class="flex flex-wrap px-auto transition-transform duration-500 mt-10 gap-3 pekerjaan__content overflow-hidden">
                 <div class="pekerjaan__card relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
@@ -364,7 +366,7 @@
             </button>
         </div>
         <div class="carousel__artikel overflow-hidden mt-12 relative">
-            <div class="artikel__content flex gap-4 justify-between transition-transform duration-500">
+            <div class="artikel__content flex gap-4 justify-between transition-transform duration-500 overflow-hidden">
                 <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
                     <img src="../assets//img/Interview.png" class="w-full object-cover object-center" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>

@@ -1,7 +1,7 @@
 body {
-    font-family: Nunito;
-    overflow-x: hidden !important;
+    font-family: 'Nunito';
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 nav div {
@@ -135,7 +135,7 @@ nav div {
 .ajakan {
     height: 55vh;
     background-image: url('../assets/img/ajakan.png');
-    background-size: contain; 
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -166,9 +166,6 @@ nav div {
     .section {
         margin-top: 2rem;
         padding: 0 1rem;
-    }
-    button#prev, button#next {
-        display: none;
     }
     .main {
         padding: 2rem 1rem;
