@@ -155,7 +155,7 @@ button:hover .arrow__icon path {
 }
 
 .artikel__card {
-    width: 30vw !important;
+    width: 29.8vw !important;
     height: max-content !important;
     padding-bottom: 1.5rem !important;
 }
@@ -232,11 +232,11 @@ button:hover .arrow__icon path {
         display: none;
     }
     .search__icon {
-        width: 60% !important;
-        height: auto !important;
+        width: 80% !important;
+        display: block !important;
+        margin-left: 0;
     }
     .arahan__container {
-        margin-top: -1px;
         background-color: #0046B1;
         padding-bottom: 2rem;
     }
