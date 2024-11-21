@@ -303,6 +303,10 @@ button:hover .arrow__icon path {
         max-width: 96%; 
         margin: auto;
     }
+    .kategori__content div a {
+        width: 100%;
+        height: 100%;
+    }
     .swiper-button {
         display: none !important;
     }
@@ -590,6 +594,10 @@ button:hover .arrow__icon path {
         width: 100% !important; 
         max-width: 60%; 
         margin: auto;
+    }
+    .kategori__content div a {
+        height: 100%;
+        width: 100%;
     }
     .swiper-button {
         display: none !important;
@@ -883,6 +891,10 @@ button:hover .arrow__icon path {
         max-width: 48%; 
         margin: auto;
     }
+    .kategori__content div a {
+        width: 100%;
+        height: 100%;
+    }
     .swiper-button {
         display: none !important;
     }
@@ -1142,7 +1154,7 @@ button:hover .arrow__icon path {
     }
     .kategori__content div {
         width: 21.3vw !important;
-        height: 20vh !important;
+        height: auto !important;
     }    
     .pekerjaan__card {
         width: 28vw !important;
