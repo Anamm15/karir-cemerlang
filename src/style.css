@@ -325,8 +325,8 @@ button:hover .arrow__icon path {
         padding-bottom: 2rem;
         justify-content: center;
     }
-    .pekerjaan__card button {
-        margin-left: 2.4rem;
+    .pekerjaan__card a {
+        width: 100%;
     }
     .perusahaan {
         background-image: none;
@@ -639,8 +639,8 @@ button:hover .arrow__icon path {
         padding-bottom: 2rem;
         justify-content: center;
     }
-    .pekerjaan__card button {
-        margin-left: 2.4rem;
+    .pekerjaan__card a {
+        width: 100%;
     }
     .perusahaan {
         flex-direction: column;
@@ -931,11 +931,12 @@ button:hover .arrow__icon path {
         gap: 1rem;
         height: max-content;
         padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
-    .pekerjaan__card button {
-        margin-left: 1.2rem;
-        width: 90%;
+    .pekerjaan__card a {
+        width: 100%;
     }
     .perusahaan {
         flex-direction: column;
