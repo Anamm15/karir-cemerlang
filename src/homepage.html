@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+    <!-- SWIPER CAROUSEL -->
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+
     <title>KARIR CEMERLANG</title>
 </head>
 <body class="bg-white-2">
@@ -39,7 +42,7 @@
             </ul>
     
             <!-- Desktop Buttons -->
-            <div class="hidden lg:flex gap-4 items-center">
+            <div class="hidden lg:flex gap-4 items-center me-4">
                 <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"> <a href="./register.html">Daftar</a> </button>
                 <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"><a href="./login.html">Masuk</a></button>
                 <button class="bg-primary-1 xl:text-b3 lg:text-sm 2xl:text-b2 text-white px-4 py-2 rounded-lg">
@@ -72,7 +75,7 @@
     </nav>
 
     <!-- Main -->
-    <div class="h-screen bg-primary-1 main relative pt-40 ps-16">
+    <div class="h-max bg-primary-1 main relative pt-40 ps-16">
         <div class="flex flex-col justify-center h-full -mt-12">
             <p class="xl:text-h2 2xl:text-h1 text-white main__text__title font-semibold mt-20 relative z-10">Temukan Karir Impianmu, Mulai Suksesmu Sekarang!</p>
             <p class="text-b1 text-white main__text__content mt-5 relative z-10">Raih peluang karir terbaik yang sesuai dengan bakat dan passion kamu. Jelajahi lowongan dan mulai perjalanan menuju perjalanan yang cemerlang</p>
@@ -86,9 +89,11 @@
                     <p class="text-h5 font-semibold">Lokasi</p>
                     <input class="text-b1 text-black-2 border-none focus:outline-none" placeholder="Cari kota atau daerah">
                 </div>
-                <button class="flex search__button rounded-xl justify-center items-center text-b1 text-white gap-2">
-                    <img src="../assets/img/search-icon.png" class="search__icon" alt="">
-                    <p>Cari</p>
+                <button class="search__button rounded-xl text-b1 text-white flex justify-center items-center">
+                    <a href="" class="flex justify-center items-center gap-4">
+                        <img src="../assets/img/search-icon.png" class="search__icon" alt="">
+                        <p>Cari</p>
+                    </a>
                 </button>
             </div>
         </div>
@@ -96,23 +101,23 @@
     </div>
 
     <!-- Arahan Daftar Akun -->
-    <div class="w-screen mt-40 arahan__container section mx-auto">
-        <div class="flex justify-center items-center mx-auto arahan gap-20">
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+    <div class="w-screen mt-40 arahan__container section me-5">
+        <div class="flex justify-center items-center arahan gap-20 mx-auto">
+            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6 text-center">
                 <img src="../assets/img/Icon Profile.png">
                 <p>Daftarkan Akunmu</p>
             </div>
             <div class="w-max">
                 <div class="h-0.5 bg-secondary-1 w-28"></div>
             </div>
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6 text-center">
                 <img src="../assets/img/Icon Upload.png">
                 <p>Unggah CV Kamu</p>
             </div>
             <div class="gap-6">
                 <div class="h-0.5 bg-secondary-1 w-28"></div>
             </div>
-            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6">
+            <div class="text-h5 font-semibold flex flex-col items-center text-white-1 gap-6 text-center">
                 <img src="../assets/img/Icon Work.png">
                 <p>Lamar Pekerjaan</p>
             </div>
@@ -129,7 +134,7 @@
 
         <!-- Navigation Buttons -->
         <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 w-10 h-10 rounded-full carousel__button">‹</button>
-        <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 w-10 h-10 rounded-full carousel__button">›</button>
+        <button id="next" class="absolute top-1/2 right-8 transform -translate-y-1/2 bg-black-2 text-white px-4 py-2 w-10 h-10 rounded-full carousel__button">›</button>
     </div>
 
     <!-- Kategori -->
@@ -139,35 +144,42 @@
                 <p class="xl:text-h5 2xl:text-h4 font-semibold">Pilih Bidangmu, Mulai Perjalanan Karirmu!</p>
                 <p class="xl:text-b2 2xl:text-b1 mt-2 text-black-2">Rekomendasi kategori pekerjaan untukmu!</p>
             </div>
-            <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Kategori Lainnya
-                <img src="../assets/img/Arrow-Icon.png" alt="">
-            </button>
+            <a href="#">
+                <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Pekerjaan Lainnya
+                    <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </a>
         </div>
-        <div class="relative mt-12 kategori__carousel overflow-hidden">
-            <div class="flex kategori__content gap-5 transition-transform duration-500">
-                <div class="relative flex-shrink-0 w-full max-w-sm">
+        <div class="relative mt-12 kategori__carousel overflow-hidden swiper">
+            <div class="swiper-wrapper flex kategori__content gap-5">
+                <div class="relative flex-shrink-0 w-full max-w-sm kategori__slide swiper-slide ms-6">
                     <img src="../assets/img/Teknologi.png" alt="" class="brightness-50 w-full h-full rounded-xl object-cover">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Teknologi & Pengembangan</p>
                 </div>
-                <div class="relative flex-shrink-0 w-full max-w-sm">
+                <div class="relative flex-shrink-0 w-full max-w-sm kategori__slide swiper-slide">
                     <img src="../assets/img/Keuangan.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Keuangan & Akuntansi</p>
                 </div>
-                <div class="relative flex-shrink-0 w-full max-w-sm">
+                <div class="relative flex-shrink-0 w-full max-w-sm kategori__slide swiper-slide">
                     <img src="../assets/img/Marketing.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Marketing & Komunikasi</p>
                 </div>
-                <div class="relative flex-shrink-0 w-full max-w-sm">
+                <div class="relative flex-shrink-0 w-full max-w-sm kategori__slide swiper-slide">
                     <img src="../assets/img/HR.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Sumber Daya Manusia & Rekrutmen</p>
                 </div>
-                <div class="relative flex-shrink-0 w-full max-w-sm">
+                <div class="relative flex-shrink-0 w-full max-w-sm kategori__slide swiper-slide">
                     <img src="../assets/img/Desain.png" alt="" class="brightness-50 w-full h-full rounded-xl">
                     <p class="absolute text-h5 font-semibold w-10/12 text-center">Desain & Kreatif</p>
                 </div>
             </div>
-        </div>
-                 
+        
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+        </div>        
     </div>
 
     <!-- Pekerjaan -->
@@ -177,13 +189,18 @@
                 <p class="xl:text-h5 2xl:text-h4 font-semibold">Temukan Karir yang Sesuai dengan Passionmu!</p>
                 <p class="xl:text-b2 2xl:text-b1 mt-2 text-black-2">Lihat daftar lowongan terbaru dari berbagai bidang dan industri</p>
             </div>
-            <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Pekerjaan Lainnya
-                <img src="../assets/img/Arrow-Icon.png" alt="">
-            </button>
+            <a href="#">
+                <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Pekerjaan Lainnya
+                    <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </a>
         </div>
         <div class="relative mt-12 pekerjaan__carousel overflow-hidden">
-            <div class="flex flex-wrap px-auto transition-transform duration-500 mt-10 gap-3 pekerjaan__content">
-                <div class="pekerjaan__card relative bg-white-1 p-6">
+            <div class="flex flex-wrap px-auto transition-transform duration-500 mt-10 gap-3 pekerjaan__content swiper-wrapper">
+                <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -206,9 +223,11 @@
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Kerja di kantor</p>
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Penuh waktu</p>
                     </div>
-                    <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    <a href="#">
+                        <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    </a>
                 </div>
-                <div class="pekerjaan__card relative bg-white-1 p-6">
+                <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -231,9 +250,11 @@
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Kerja di kantor</p>
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Penuh waktu</p>
                     </div>
-                    <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    <a href="#">
+                        <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    </a>
                 </div>
-                <div class="pekerjaan__card relative bg-white-1 p-6">
+                <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -256,9 +277,11 @@
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Kerja di kantor</p>
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Penuh waktu</p>
                     </div>
-                    <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    <a href="#">
+                        <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    </a>
                 </div>
-                <div class="pekerjaan__card relative bg-white-1 p-6">
+                <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -281,9 +304,11 @@
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Kerja di kantor</p>
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Penuh waktu</p>
                     </div>
-                    <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    <a href="#">
+                        <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    </a>
                 </div>
-                <div class="pekerjaan__card relative bg-white-1 p-6">
+                <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -306,9 +331,11 @@
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Kerja di kantor</p>
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Penuh waktu</p>
                     </div>
-                    <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    <a href="#">
+                        <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    </a>
                 </div>
-                <div class="pekerjaan__card relative bg-white-1 p-6">
+                <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6">
                     <div class="flex justify-between">
                         <div class="flex items-center gap-4">
                             <img src="../assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
@@ -331,14 +358,16 @@
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Kerja di kantor</p>
                         <p class="py-1 px-3 bg-primary-3 rounded-md">Penuh waktu</p>
                     </div>
-                    <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    <a href="#">
+                        <Button class="w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">Lamar Pekerjaan Sekarang</Button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Perusahaan -->
-    <div class="w-screen perusahaan mt-40 relative flex justify-center section gap-32 p-20">
+    <div class="w-screen perusahaan mt-40 relative flex justify-center gap-32 p-20">
         <img src="../assets/img/person.png" alt="" class="z-10 my-auto w-2/5">
         <div class="perusahaan__content flex flex-col">
             <p class="lg:text-h5 xl:text-h4 2xl:text-h3 font-semibold">Terhubung dengan Perusahaan yang Mendukung Karirmu!</p>
@@ -373,9 +402,14 @@
                     </div>
                 </div>
             </div>
-            <button class="mt-16 border w-max border-primary-2 rounded-lg text-primary-1 text-h6 font-semibold px-4 py-3 flex items-center gap-2 hover:text-white-1 hover:bg-primary-1">Temukan Perusahaan Lainnya
-                <img src="../assets/img/Arrow-Icon.png" alt="">
-            </button>
+            <a href="#">
+                <button class="mt-16 border w-max border-primary-2 rounded-lg text-primary-1 text-h6 font-semibold px-4 py-3 flex items-center gap-2 hover:text-white-1 hover:bg-primary-1">Temukan Perusahaan Lainnya
+                    <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </a>
         </div>
     </div>
 
@@ -386,34 +420,51 @@
                 <p class="xl:text-h5 2xl:text-h4 font-semibold">Dapatkan Tips Karir Terbaik untuk Masa Depan yang Cerah!</p>
                 <p class="xl:text-b2 2xl:text-b1 mt-2 text-black-2">Lihat artikel karir kami yang penuh dengan inspirasi, informasi, dan tips praktis untuk membantu perjalanan karirmu.</p>
             </div>
-            <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Artikel Lainnya
-                <img src="../assets/img/Arrow-Icon.png" alt="">
-            </button>
+            <a href="#">
+                <button class="text-primary-1 xl:text-b3 2xl:text-h6 font-semibold border rounded-lg px-4 h-16 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Temukan Artikel Lainnya
+                    <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </a>
         </div>
-        <div class="carousel__artikel overflow-hidden mt-12 relative">
-            <div class="artikel__content flex gap-4 justify-between transition-transform duration-500">
-                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
+        <div class="artikel__carousel overflow-hidden mt-12 relative swiper">
+            <div class="artikel__content flex gap-4 justify-between swiper-wrapper transition-transform duration-500">
+                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative swiper-slide">
                     <img src="../assets//img/Interview.png" class="w-full object-cover object-center" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
-                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
-                        <img src="../assets/img/Arrow-Icon.png" alt=""> 
+                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">
+                        <a href="" class="flex gap-2 items-center">
+                            Baca Selengkapnya
+                            <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </a>
                     </Button>
                 </div>
-                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
+                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative swiper-slide">
                     <img src="../assets//img/Interview.png" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
                     <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
-                        <img src="../assets/img/Arrow-Icon.png" alt=""> 
+                        <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
                     </Button>
                 </div>
-                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative items-center">
+                <div class="flex flex-col artikel__card gap-8 hover:shadow-lg rounded-lg bg-white-1 relative swiper-slide">
                     <img src="../assets//img/Interview.png" alt="">
                     <p class="text-h5 font-semibold mx-4">Tips Sukses Wawancara Kerja </p>
                     <p class="text-b2 mx-4">Ingin tampil percaya diri dan meninggalkan kesan positif saat wawancara kerja? Persiapan adalah kuncinya! Mulailah dengan riset tentang perusahaan dan posisi yang kamu lamar...</p>
-                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
-                        <img src="../assets/img/Arrow-Icon.png" alt="">                        
+                    <Button class="mx-4 text-primary-1 border py-3 w-11/12 text-center hover:text-white-1 hover:bg-primary-1 rounded-lg flex gap-2 justify-center items-center">Baca Selengkapnya
+                        <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
                     </Button>
                 </div>
             </div>
@@ -422,13 +473,16 @@
 
     <!-- Ajakan -->
     <div class="w-screen mt-40 text-white relative section">
-    <div class="ajakan mx-auto display flex flex-col justify-center items-center">
-        <p class="lg:text-b3 2xl:text-b2">Platform Andalan Pencari Kerja Profesional</p>
-        <p class="lg:text-h4 xl:text-h3 2xl:text-h2 font-semibold w-3/5 text-center mt-6">Temukan Langkah Karier Anda Selanjutnya Dengan Mudah</p>
-        <button class="text-primary-1 text-h6 font-semibold border px-4 py-2 bg-white-1 rounded-md mt-20 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Mulai Mencari Pekerjaan
-            <img src="../assets/img/Arrow-Icon.png" alt="">
-        </button>
-    </div>
+        <div class="ajakan mx-auto display flex flex-col justify-center items-center py-10">
+            <p class="lg:text-b3 2xl:text-b2">Platform Andalan Pencari Kerja Profesional</p>
+            <p class="lg:text-h4 xl:text-h3 2xl:text-h2 font-semibold w-3/5 text-center mt-6">Temukan Langkah Karier Anda Selanjutnya Dengan Mudah</p>
+            <button class="text-primary-1 text-h6 font-semibold border px-4 py-2 bg-white-1 rounded-md mt-10 flex gap-2 items-center hover:text-white-1 hover:bg-primary-1">Mulai Mencari Pekerjaan
+                <svg width="17" height="17" class="arrow__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -456,6 +510,7 @@
         <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
     </div>
 
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
     <script>
         const saveIcons = document.querySelectorAll('.save__icon');

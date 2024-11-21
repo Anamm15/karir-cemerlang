@@ -63,149 +63,51 @@ carousel.addEventListener('touchend', (e) => {
   updateCarousel();
 });
 
-// kategori
-let currentSlide = 0;
-const kategori = document.querySelector('.kategori__content');
-const totalSlides = document.querySelectorAll('.kategori__content > div').length;
-
-let startXKategori = 0;
-let isKategoriDragging = false;
-
-kategori.addEventListener('touchstart', (e) => {
-    startXKategori = e.touches[0].clientX;
-    isKategoriDragging = true;
+const kategoriSwiper = new Swiper('.kategori__carousel', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        // Responsive settings
+        576: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 4 },
+        1440: { slidesPerView: 5 },
+        1920: { slidesPerView: 5 },
+    },
 });
 
-kategori.addEventListener('touchmove', (e) => {
-    if (!isKategoriDragging) return;
-    const currentX = e.touches[0].clientX;
-    const diffX = currentX - startXKategori;
-
-    kategori.style.transform = `translateX(calc(-${currentSlide * -100}% + ${diffX}px))`;
+const artikelSwiper = new Swiper('.artikel__carousel', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        // Responsive settings
+        576: { slidesPerView: 1 },
+        768: { slidesPerView: 1.75 },
+        1026: { 
+            enabled: false
+         },
+    },
 });
 
-kategori.addEventListener('touchend', (e) => {
-    isKategoriDragging = false;
-    const endX = e.changedTouches[0].clientX;
-    const diffX = endX - startXKategori;
-
-    if (diffX > 50 && currentSlide > 0) {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    } else if (diffX < -50 && currentSlide < totalSlides - 1) {
-        currentSlide = (currentSlide + 1) % totalSlides;
-    }
-
-    updateCarouselKategori();
+const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        // Responsive settings
+        576: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 2.05 },
+        1025: { 
+            enabled: false,
+         },
+    },
 });
-
-function updateCarouselKategori() {
-    kategori.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
-
-// artikel
-let currentSlideArtikel = 0;
-const artikel = document.querySelector('.artikel__content');
-const totalSlidesArtikel = document.querySelectorAll('.artikel__content > div').length;
-
-let startXartikel = 0;
-let isArtikelDragging = false;
-
-artikel.style.transition = 'transform 0.3s ease-in-out';
-
-artikel.addEventListener('touchstart', (e) => {
-    startXartikel = e.touches[0].clientX;
-    isArtikelDragging = true;
-
-    artikel.style.transition = 'none';
-});
-
-artikel.addEventListener('touchmove', (e) => {
-    if (!isArtikelDragging) return;
-    const currentX = e.touches[0].clientX;
-    const diffX = currentX - startXartikel;
-
-    artikel.style.transform = `translateX(calc(-${currentSlideArtikel * -100}% + ${diffX}px))`;
-});
-
-artikel.addEventListener('touchend', (e) => {
-    isArtikelDragging = false;
-    const endX = e.changedTouches[0].clientX;
-    const diffX = endX - startXartikel;
-
-    artikel.style.transition = 'transform 0.3s ease-in-out';
-
-    if (diffX > 50 && currentSlideArtikel > 0) {
-        currentSlideArtikel = (currentSlideArtikel - 1 + totalSlidesArtikel) % totalSlidesArtikel;
-    } else if (diffX < -50 && currentSlideArtikel < totalSlidesArtikel - 1) {
-        currentSlideArtikel = (currentSlideArtikel + 1) % totalSlidesArtikel;
-    }
-    updateCarouselArtikel();
-});
-
-function updateCarouselArtikel() {
-    artikel.style.transform = `translateX(-${currentSlideArtikel * 100}%)`;
-}
-
-
-// pekerjaan
-let currentSlidePekerjaan = 0;
-const pekerjaan = document.querySelector('.pekerjaan__content');
-const pekerjaanSlides = document.querySelectorAll('.pekerjaan__content > div');
-const totalSlidesPekerjaan = pekerjaanSlides.length;
-
-let startXPekerjaan = 0;
-let isPekerjaanDragging = false;
-
-// Hitung total lebar container pekerjaan__content
-const pekerjaanWidth = pekerjaan.offsetWidth;
-
-pekerjaan.style.transition = 'transform 0.3s ease-in-out';
-
-pekerjaan.addEventListener('touchstart', (e) => {
-    startXPekerjaan = e.touches[0].clientX;
-    isPekerjaanDragging = true;
-
-    pekerjaan.style.transition = 'none'; // Nonaktifkan transisi saat dragging
-});
-
-pekerjaan.addEventListener('touchmove', (e) => {
-    if (!isPekerjaanDragging) return;
-
-    const currentX = e.touches[0].clientX;
-    const diffX = currentX - startXPekerjaan;
-
-    // Hitung posisi saat ini berdasarkan lebar slide
-    const currentPosition = currentSlidePekerjaan * pekerjaanWidth - diffX;
-
-    // Cegah scrolling keluar batas
-    if (currentPosition < 0 || currentPosition > (totalSlidesPekerjaan - 1) * pekerjaanWidth) {
-        return;
-    }
-
-    pekerjaan.style.transform = `translateX(calc(-${currentSlidePekerjaan * 100}% + ${diffX}px))`;
-});
-
-pekerjaan.addEventListener('touchend', (e) => {
-    isPekerjaanDragging = false;
-
-    const endX = e.changedTouches[0].clientX;
-    const diffX = endX - startXPekerjaan;
-
-    pekerjaan.style.transition = 'transform 0.3s ease-in-out'; // Aktifkan kembali transisi
-
-    // Geser ke slide sebelumnya jika swipe kanan cukup jauh dan bukan di slide pertama
-    if (diffX > 50 && currentSlidePekerjaan > 0) {
-        currentSlidePekerjaan--;
-    }
-    // Geser ke slide berikutnya jika swipe kiri cukup jauh dan bukan di slide terakhir
-    else if (diffX < -50 && currentSlidePekerjaan < totalSlidesPekerjaan - 1) {
-        currentSlidePekerjaan++;
-    }
-
-    updateCarouselPekerjaan();
-});
-
-function updateCarouselPekerjaan() {
-    // Tetapkan transformasi sesuai slide saat ini
-    pekerjaan.style.transform = `translateX(-${currentSlidePekerjaan * 100}%)`;
-}

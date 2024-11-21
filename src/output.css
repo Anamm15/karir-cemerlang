@@ -554,46 +554,6 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -632,6 +592,10 @@ video {
 
 .right-4 {
   right: 1rem;
+}
+
+.right-8 {
+  right: 2rem;
 }
 
 .top-0 {
@@ -685,6 +649,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -731,6 +699,30 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ms-5 {
+  margin-inline-start: 1.25rem;
+}
+
+.ms-7 {
+  margin-inline-start: 1.75rem;
+}
+
+.ms-4 {
+  margin-inline-start: 1rem;
+}
+
+.ms-6 {
+  margin-inline-start: 1.5rem;
+}
+
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
+.me-5 {
+  margin-inline-end: 1.25rem;
 }
 
 .block {
@@ -1073,10 +1065,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1131,6 +1119,10 @@ video {
   padding-left: 1rem;
 }
 
+.ps-10 {
+  padding-inline-start: 2.5rem;
+}
+
 .ps-16 {
   padding-inline-start: 4rem;
 }
@@ -1145,6 +1137,10 @@ video {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.ps-5 {
+  padding-inline-start: 1.25rem;
 }
 
 .text-left {
@@ -1245,14 +1241,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1314,10 +1302,6 @@ video {
     display: none;
   }
 
-  .lg\:h-20 {
-    height: 5rem;
-  }
-
   .lg\:h-24 {
     height: 6rem;
   }
@@ -1341,10 +1325,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:flex {
-    display: flex;
-  }
-
   .xl\:text-b2 {
     font-size: 20px;
   }

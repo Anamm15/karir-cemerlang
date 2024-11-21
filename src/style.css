@@ -1,11 +1,42 @@
 body {
     font-family: 'Nunito';
+    overflow-y: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden !important;
+    box-sizing: border-box;
 }
 
 nav div {
     height: 10vh;
+}
+
+.arrow__icon path {
+    stroke: #0046b1;
+}
+
+button:hover .arrow__icon path {
+    stroke: white;
+}
+
+.swiper-button, .swiper-button {
+    background-color: transparent;  /* Menghapus latar belakang biru */
+    color: #666666;  /* Mengatur warna ikon anak panah ke abu-abu */
+    border: none;  /* Pastikan tidak ada border biru */
+}
+
+/* Pastikan untuk menghilangkan efek saat tombol difokuskan atau di-hover */
+.swiper-button:focus, .swiper-button:focus,
+.swiper-button:hover, .swiper-button:hover {
+    outline: none;  /* Menghapus outline biru saat fokus */
+    background-color: transparent;  /* Menghapus latar belakang saat hover */
+    color: #666666;  /* Menjaga warna teks/ikon tetap sama saat hover/focus */
+}
+
+
+.main {
+    min-height: 82vh;
+    height: max-content;
+    padding-bottom: 18vh;
 }
 
 .main img {
@@ -33,7 +64,7 @@ nav div {
 }
 
 .search__icon {
-    width: 18% !important;
+    width: 33% !important;
     height: auto !important;
     margin-left: .5rem;
 }
@@ -78,8 +109,8 @@ nav div {
 }
 
 .kategori__content div {
-    width: 17.86vw;
-    height: 20vh;
+    width: 17vw !important;
+    height: 20vh !important;
 }
 
 .kategori__content > div {
@@ -99,6 +130,14 @@ nav div {
     filter: brightness(50%);
 }
 
+.pekerjaan {
+    padding: 0 70px;
+}
+.pekerjaan__card {
+    width: 22vw !important;
+    height: max-content !important;
+}
+
 .perusahaan {
     background-image: url('../assets/img/Group 16.png');
     height: max-content;
@@ -116,25 +155,21 @@ nav div {
 }
 
 .artikel__card {
-    width: 30.21vw;
-    height: 63vh;
+    width: 30vw !important;
+    height: max-content !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.artikel__card p, .artikel__card button {
+    margin-top: 2rem;
 }
 
 .artikel__card img {
-    height: 50%;
-}
-
-.pekerjaan {
-    padding: 0 70px;
-}
-
-.pekerjaan__card {
-    width: 22.4vw;
-    height: max-content;
+    height: 50% !important;
 }
 
 .ajakan {
-    height: 55vh;
+    height: max-content;
     background-image: url('../assets/img/ajakan.png');
     background-size: cover; 
     background-position: center;
@@ -164,13 +199,9 @@ nav div {
       font-size: 14px;
       width: 100vw;
     }
-    .section {
-        margin-top: 2rem;
-        padding: 0 1rem;
-    }
     .main {
         padding: 2rem 1rem;
-        height: max-content;
+        min-height: max-content;
     }
     .main__text__title {
         font-size: 2rem;
@@ -248,9 +279,14 @@ nav div {
         text-align: center;
         font-size: 1rem;
     }
-    .section button {
+    .section a {
         width: 80%;
         font-size: 0.875rem;
+        display: flex;
+        justify-content: center;
+    }
+    .section button {
+        width: 100%;
         justify-content: center;
     }
     .kategori__carousel {
@@ -263,10 +299,12 @@ nav div {
         transition: transform 0.5s ease; 
     }
     .kategori__content > div {
-        flex-shrink: 0;
-        width: 100%; 
-        max-width: 90%; 
+        width: 100% !important; 
+        max-width: 96%; 
         margin: auto;
+    }
+    .swiper-button {
+        display: none !important;
     }
     .pekerjaan__carousel {
         width: 100%;
@@ -278,13 +316,12 @@ nav div {
     }
     .pekerjaan__content > div {
         flex-shrink: 0;
-        width: 100%; 
-        width: 95%;
+        width: 97% !important;
         margin: auto;
     }
     .pekerjaan__card {
         gap: 1rem;
-        height: max-content;
+        height: max-content !important;
         padding-bottom: 2rem;
         justify-content: center;
     }
@@ -341,29 +378,30 @@ nav div {
     .decoration {
         display: none;
     }
-    .artikel__carousel {
-        width: 100%;
-    }
     .artikel__content {
-        display: flex;
-        transition: transform 0.5s ease;
+        display: flex  !important;
+        transition: transform 0.5s ease !important;
     }
     .artikel__content > div {
         flex-shrink: 0;
-        width: 100%; 
-        width: 95%;
-        margin: auto;
+        width: 97% !important;
+        margin: auto  !important;
     }
     .artikel__card {
-        gap: 1rem;
-        height: max-content;
-        padding-bottom: 2rem;
+        height: max-content  !important;
+        padding-bottom: 2rem  !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1rem;
+        font-size: 1rem !important;
+        margin-top: 1rem;
     }
     .artikel__card p:nth-child(3) {
-        font-size: 0.875rem;
+        margin-top: 1rem;
+        font-size: 0.875rem !important;
+    }
+    .artikel__card button {
+        margin-top: 1rem;
+        width: 90% !important;
     }
     .ajakan {
         background-color: #0046B1;
@@ -474,16 +512,12 @@ nav div {
       font-size: 14px;
       width: 100vw;
     }
-    .section {
-        margin-top: 2rem;
-        padding: 0 1rem;
-    }
     button#prev, button#next {
         display: none;
     }
     .main {
         padding: 2rem 1rem;
-        height: max-content;
+        min-height: max-content;
     }
     .main__text__title {
         margin-top: 8rem;
@@ -507,8 +541,13 @@ nav div {
         font-size: .875rem;
     }
     .search__button {
-        height: 3rem !important;
-        width: 3rem !important;
+        height: 3rem;
+        width: 3rem;
+    }
+    .search__icon {
+        width: auto !important;
+        height: 43% !important;
+        margin-left: .2rem;
     }
     .search__button p {
         display: none;
@@ -538,6 +577,23 @@ nav div {
     .iklan {
         margin-top: 2rem;
     }
+    .kategori__carousel {
+        position: relative;
+        width: 100%; 
+        overflow: hidden; 
+    }
+    .kategori__content {
+        display: flex;
+        transition: transform 0.5s ease; 
+    }
+    .kategori__content > div {
+        width: 100% !important; 
+        max-width: 60%; 
+        margin: auto;
+    }
+    .swiper-button {
+        display: none !important;
+    }
     .section {
         margin-top: 2rem;
         padding: 0 1rem;
@@ -556,13 +612,15 @@ nav div {
         text-align: center;
         font-size: 1.5rem;
     }
-    .section button {
+    .section a {
         width: 80%;
-        font-size: 1rem;
+        font-size: 0.875rem;
+        display: flex;
         justify-content: center;
     }
-    .pekerjaan__carousel {
-        width: 100%;
+    .section button {
+        width: 80%;
+        justify-content: center;
     }
     .pekerjaan__content {
         display: flex;
@@ -571,13 +629,13 @@ nav div {
     }
     .pekerjaan__content > div {
         flex-shrink: 0;
-        width: 100%; 
-        width: 60%;
+        width: 100%  !important; 
+        width: 60%  !important;
         margin: auto;
     }
     .pekerjaan__card {
         gap: 1rem;
-        height: max-content;
+        height: max-content  !important;
         padding-bottom: 2rem;
         justify-content: center;
     }
@@ -634,28 +692,29 @@ nav div {
     .decoration {
         display: none;
     }
-    .artikel__carousel {
-        width: 100%;
-    }
     .artikel__content {
-        display: flex;
+        display: flex  !important;
         transition: transform 0.5s ease;
     }
     .artikel__content > div {
-        flex-shrink: 0;
-        width: 70%;
-        margin: auto;
+        flex-shrink: 0 !important;
+        width: 70% !important;
     }
     .artikel__card {
-        gap: 1rem;
-        height: max-content;
-        padding-bottom: 2rem;
+        height: max-content !important;
+        padding-bottom: 2rem !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
+        margin-top: 1.2rem !important;
     }
     .artikel__card p:nth-child(3) {
         font-size: 1.2rem;
+        margin-top: 1.2rem !important;
+    }
+    .artikel__card button {
+        margin-top: 1.2rem !important;
+        width: 90% !important;
     }
     .ajakan {
         height: max-content;
@@ -755,7 +814,7 @@ nav div {
     }
     .main {
         padding: 4rem 1rem 2rem 1rem;
-        height: max-content;
+        min-height: max-content;
     }
     .main img {
         height: 65%;
@@ -774,6 +833,7 @@ nav div {
         padding: .5rem 1rem;    
         margin-top: 2rem;
         align-items: center;
+        border-radius: 15px;
     }
     .main__content p{
         font-size: .875rem;
@@ -781,9 +841,14 @@ nav div {
     .main__content input {
         font-size: .78rem;
     }
+    .search__button {
+        height: 2.2rem;
+        width: 3.2rem;
+    }
     .search__icon {
         width: auto !important;
         height: 50% !important;
+        margin: auto !important;
     }
     .search__button p {
         display: none;
@@ -814,7 +879,12 @@ nav div {
         margin-top: 2rem;
     }
     .kategori__content > div {
-        width: 50%;
+        width: 100% !important; 
+        max-width: 48%; 
+        margin: auto;
+    }
+    .swiper-button {
+        display: none !important;
     }
     .section {
         margin-top: 2rem;
@@ -835,9 +905,14 @@ nav div {
         text-align: center;
         font-size: 1.5rem;
     }
+    .section a {
+        width: 80%;
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: center;
+    }
     .section button {
-        width: 50%;
-        font-size: 1rem;
+        width: 60%;
         justify-content: center;
     }
     .pekerjaan__carousel {
@@ -850,8 +925,7 @@ nav div {
     }
     .pekerjaan__content > div {
         flex-shrink: 0;
-        width: 48%;
-        margin: auto;
+        width: 48% !important;
     }
     .pekerjaan__card {
         gap: 1rem;
@@ -912,31 +986,30 @@ nav div {
     .decoration {
         display: none;
     }
-    .artikel__carousel {
-        width: 100%;
-    }
     .artikel__content {
-        display: flex;
-        transition: transform 0.5s ease;
+        display: flex !important;
+        transition: transform 0.5s ease !important;
     }
     .artikel__content > div {
-        flex-shrink: 0;
-        width: 50%;
-        margin: auto;
+        flex-shrink: 0 !important;
+        width: 55% !important;
+        margin: auto !important;
     }
     .artikel__card {
-        gap: 1rem;
-        height: max-content;
-        padding-bottom: 2rem;
+        height: max-content !important;
+        padding-bottom: 2rem !important;
     }
     .artikel__card button {
-        width: 90%;
+        width: 90%  !important;
+        margin-top: 1.5rem !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-size: 1.8rem  !important;
     }
     .artikel__card p:nth-child(3) {
-        font-size: 1.3rem;
+        margin-top: 1rem;
+        font-size: 1.3rem  !important;
     }
     .ajakan {
         height: max-content;    
@@ -1030,10 +1103,6 @@ nav div {
         font-size: 14px;
         width: 100vw;
     }
-    .section {
-        margin-top: 2rem;
-        padding: 0 1rem;
-    }
     .section__title button {
         margin-right: 1rem;
     }
@@ -1062,15 +1131,20 @@ nav div {
     }
     .search__button {
         height: 3rem;
-        padding-right: 1rem;
+    }
+    .search__button a {
+        gap: .25rem;
     }
     .search__icon {
         width: auto !important;
         height: 43% !important;
-        margin-left: .2rem;
     }
+    .kategori__content div {
+        width: 21.3vw !important;
+        height: 20vh !important;
+    }    
     .pekerjaan__card {
-        width: 31.8vw;
+        width: 28vw !important;
     }
     .perusahaan {
         padding: 5rem 1rem;
@@ -1083,6 +1157,7 @@ nav div {
     .artikel__card {
         height: max-content;
         padding-bottom: 1rem;
+        width: 27vw !important;
     }
     .ajakan button {
         margin-top: 1rem;
