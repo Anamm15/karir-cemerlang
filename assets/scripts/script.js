@@ -88,7 +88,6 @@ const artikelSwiper = new Swiper('.artikel__carousel', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        // Responsive settings
         576: { slidesPerView: 1 },
         768: { slidesPerView: 1.75 },
         1026: { 
@@ -103,8 +102,9 @@ const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    loop: true,
+    watchOverflow: true,
     breakpoints: {
-        // Responsive settings
         576: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
         1024: { slidesPerView: 2.05 },
