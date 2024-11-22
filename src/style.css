@@ -199,6 +199,9 @@ button:hover .arrow__icon path {
       font-size: 14px;
       width: 100vw;
     }
+    button#prev, button#next {
+        display: none;
+    }
     .main {
         padding: 2rem 1rem;
         min-height: max-content;
