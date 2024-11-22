@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="auth.css">
+    <<link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
 
     <!-- ICONS -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -22,44 +22,39 @@
             <div class="relative content">
                 <p class="text-white ml-8 mt-20">LOGO KAWAN KARIR</p>
                 <p class="xl:text-h4 2xl:text-h3 ml-8 mt-20 font-semibold text text-white-1 main__content__text">Ayo Mulai Perjalanan Menuju Karir Sukses!</p>
-                <img src="../assets/img/Foto Model.png" alt="" class="absolute bottom-0 right-2 object-contain">
+                <img src="./assets/img/Foto Model.png" alt="" class="absolute bottom-0 right-2 object-contain">
             </div>
         </div>
-        <div class="w-1/2 flex justify-center items-center auth__content__container md:px-20 relative">
-            <a class="absolute top-4 right-4 text-primary-1 underline" href="" >Anda ingin mencari karyawan?</a>
-            <div class="auth__content relative">
+        <div class="w-1/2 flex justify-center auth__content__container items-center relative">
+            <a class="absolute top-4 right-4 text-primary-1 underline" href="">Anda ingin mencari karyawan?</a>
+            <div class="auth__content">
                 <p class="text-h4 font-semibold text-center">Halo Sobat Kawan Karir!</p>
-                <p class="text-b2 mt-2 text-center">Masuk dan Jangan Lewatkan Kesempatan Karir Terbaik</p>
+                <p class="text-b2 mt-2 text-center">Ayo Bergabung dan Buka Jalan Menuju Sukses!</p>
                 <div class="input__group mt-10 text-black-2">
                     <label for="email">Email</label>
                     <div class="relative">
                         <input type="text" placeholder="Masukkan Email Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="email" id="email">
-                        <i data-feather="at-sign" class="absolute right-4 top-6 w-5 h-5 text-black-3"></i>
+                        <i data-feather="at-sign" class="absolute right-4 top-6 text-black-3 w-5 h-5"></i>
                     </div>
                 </div>
                 <div class="input__group text-black-2 mt-5">
-                    <div class="flex justify-between">
-                        <label for="password">Password</label>
-                        <a href="" class="text-primary-1 underline">Lupa kata sandi?</a>
-                    </div>
+                    <label for="password">Password</label>
                     <div class="relative">
                         <input type="password" placeholder="Masukkan Kata Sandi Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="password" id="password">
                         <i data-feather="eye" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 hidden eye"></i>
                         <i data-feather="eye-off" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 eye-off"></i>
                     </div>
                 </div>
-                <button class="w-full py-3 bg-primary-1 text-white font-semibold mt-12 rounded-md">Masuk</button>
-                <button class="text-b2 py-2 w-full flex justify-center mt-5 border rounded-md border-black-1 items-center gap-5">
-                    <img src="../assets/img/icon-google.png" alt="">
-                    Masuk dengan Google</button>
-                </div>
-                <div class="absolute bottom-2 mb-12 question">Belum punya akun? <a href="./register.html" class="text-primary-1 underline">Daftar</a></div>
+                <button class="w-full py-3 bg-primary-1 text-white font-semibold mt-12 rounded-md">
+                    <a href="./register-2.html">Selanjutnya</a>
+                </button>
+            </div>
+            <div class="absolute bottom-2 mb-12 question">Sudah punya akun? <a href="./login.html" class="text-primary-1 underline">Masuk</a></div>
         </div>
     </div>
     <script>
         feather.replace();
     </script>
-    
     <script>
         const password = document.getElementById('password');
         const eye = document.querySelector('.eye');

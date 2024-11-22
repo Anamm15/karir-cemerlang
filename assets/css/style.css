@@ -18,21 +18,6 @@ button:hover .arrow__icon path {
     stroke: white;
 }
 
-.swiper-button, .swiper-button {
-    background-color: transparent;  /* Menghapus latar belakang biru */
-    color: #666666;  /* Mengatur warna ikon anak panah ke abu-abu */
-    border: none;  /* Pastikan tidak ada border biru */
-}
-
-/* Pastikan untuk menghilangkan efek saat tombol difokuskan atau di-hover */
-.swiper-button:focus, .swiper-button:focus,
-.swiper-button:hover, .swiper-button:hover {
-    outline: none;  /* Menghapus outline biru saat fokus */
-    background-color: transparent;  /* Menghapus latar belakang saat hover */
-    color: #666666;  /* Menjaga warna teks/ikon tetap sama saat hover/focus */
-}
-
-
 .main {
     min-height: 82vh;
     height: max-content;
@@ -57,8 +42,12 @@ button:hover .arrow__icon path {
     height: max-content;
 }
 
+.main input {
+    font-size: 19.5px;
+}
+
 .search__button {
-    width: 19.5%;
+    width: max-content;
     height: 4rem;
     background-color: #0046B1;
 }
@@ -96,7 +85,7 @@ button:hover .arrow__icon path {
 }
   
 .arahan {
-    background-image: url('../assets/img/Group 15.png');
+    background-image: url('../img/Group 15.png');
     width: 91vw;
     height: 22.22vh;
     background-size: cover; 
@@ -108,9 +97,12 @@ button:hover .arrow__icon path {
     padding: 0 70px;
 }
 
+.kategori__content {
+    gap: 1.35rem;
+}
 .kategori__content div {
-    width: 17vw !important;
-    height: 20vh !important;
+    width: 16.85vw !important;
+    height: auto !important;
 }
 
 .kategori__content > div {
@@ -134,12 +126,12 @@ button:hover .arrow__icon path {
     padding: 0 70px;
 }
 .pekerjaan__card {
-    width: 22vw !important;
+    width: 21.8vw !important;
     height: max-content !important;
 }
 
 .perusahaan {
-    background-image: url('../assets/img/Group 16.png');
+    background-image: url('../img/Group 16.png');
     height: max-content;
     background-size: cover; 
     background-position: center;
@@ -155,7 +147,7 @@ button:hover .arrow__icon path {
 }
 
 .artikel__card {
-    width: 29.8vw !important;
+    width: 29.6vw !important;
     height: max-content !important;
     padding-bottom: 1.5rem !important;
 }
@@ -170,7 +162,7 @@ button:hover .arrow__icon path {
 
 .ajakan {
     height: max-content;
-    background-image: url('../assets/img/ajakan.png');
+    background-image: url('../img/ajakan.png');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -213,6 +205,7 @@ button:hover .arrow__icon path {
     }
     .main__text__content {
         width: 90vw;
+        font-weight: 600;
     }
     .main__content {
         width: 90vw;
@@ -298,12 +291,12 @@ button:hover .arrow__icon path {
         overflow: hidden; 
     }
     .kategori__content {
-        display: flex;
         transition: transform 0.5s ease; 
+        justify-content: start;
     }
     .kategori__content > div {
         width: 100% !important; 
-        max-width: 96%; 
+        max-width: 95%; 
         margin: auto;
     }
     .kategori__content div a {
@@ -434,7 +427,8 @@ button:hover .arrow__icon path {
         margin-top: 1rem;
     }
     .main img {
-        display: none;
+        height: 50%;
+        filter: brightness(0.7);
     }
     .main__hero {
         height: max-content;
@@ -590,12 +584,12 @@ button:hover .arrow__icon path {
         overflow: hidden; 
     }
     .kategori__content {
-        display: flex;
         transition: transform 0.5s ease; 
+        justify-content: start;
     }
     .kategori__content > div {
         width: 100% !important; 
-        max-width: 60%; 
+        max-width: 57%; 
         margin: auto;
     }
     .kategori__content div a {
@@ -694,11 +688,10 @@ button:hover .arrow__icon path {
         height: 7vh;
     }
     .perusahaan__content div div p:nth-child(1) {
-        margin-top: 1rem;
         font-size: 1rem;
     }
     .perusahaan__content div div p:nth-child(2) {
-        font-size: .625rem;
+        font-size: .6rem;
     }
     .decoration {
         display: none;
@@ -888,6 +881,9 @@ button:hover .arrow__icon path {
     }
     .iklan {
         margin-top: 2rem;
+    }
+    .kategori__content {
+        justify-content: start;
     }
     .kategori__content > div {
         width: 100% !important; 
@@ -1155,8 +1151,11 @@ button:hover .arrow__icon path {
         width: auto !important;
         height: 43% !important;
     }
+    .kategori__content {
+        justify-content: start;
+    }
     .kategori__content div {
-        width: 21.3vw !important;
+        width: 23.25% !important;
         height: auto !important;
     }    
     .pekerjaan__card {

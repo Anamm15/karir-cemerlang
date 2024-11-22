@@ -64,20 +64,22 @@ carousel.addEventListener('touchend', (e) => {
 });
 
 const kategoriSwiper = new Swiper('.kategori__carousel', {
-    slidesPerView: 1,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        // Responsive settings
-        576: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 },
-        1440: { slidesPerView: 5 },
-        1920: { slidesPerView: 5 },
-    },
+  slidesPerView: 1,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  watchOverflow: true,
+  breakpoints: {
+      576: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 },
+      1440: { slidesPerView: 5 }, 
+      1920: { slidesPerView: 5 }, 
+  },
 });
+
 
 const artikelSwiper = new Swiper('.artikel__carousel', {
     slidesPerView: 1,
