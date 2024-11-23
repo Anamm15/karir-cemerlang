@@ -206,6 +206,7 @@ button:hover .arrow__icon path {
     .main__text__content {
         width: 90vw;
         font-weight: 600;
+        font-size: 1rem;
     }
     .main__content {
         width: 90vw;
@@ -376,6 +377,9 @@ button:hover .arrow__icon path {
     }
     .perusahaan__content div div p:nth-child(2) {
         font-size: .5rem;
+    }
+    .perusahaan button {
+        font-size: 14px;
     }
     .decoration {
         display: none;
@@ -1237,5 +1241,11 @@ button:hover .arrow__icon path {
         text-align: center;
         margin: 1rem auto;
         font-size: 14px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1675px) {
+    .main__text__title {
+        width: 50vw;
     }
 }
