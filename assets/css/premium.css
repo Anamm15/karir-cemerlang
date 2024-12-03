@@ -37,6 +37,44 @@ nav div {
     font-size: 14px;
 }
 
+@media (max-width: 575px) {
+    .layanan__premium {
+        padding: 1rem;
+    }
+    .layanan__premium__content {
+        border: none;
+    }
+    .table-auto {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .table-auto thead {
+        display: none; 
+    }
+    .table-auto tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #66A0D3;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+    .table-auto td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .table-auto td:first-child {
+        font-weight: bold;
+    }
+    .table-auto td:last-child {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 768px)  {
     body {
       font-size: 14px;
@@ -64,6 +102,20 @@ nav div {
     html {
         font-size: 14px;
         width: 100vw;
+    }
+    .layanan__premium {
+        margin-top: 6rem;
+    }
+    .text-h4 {
+        font-size: 1.75rem;
+    }
+    .text-b2 {
+        font-size: 1.15rem;
+    }
+    .table-auto th, 
+    .table-auto td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
     }
     .footer {
         height: max-content;
