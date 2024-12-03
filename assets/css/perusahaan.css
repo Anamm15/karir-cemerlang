@@ -69,6 +69,9 @@ nav div {
       font-size: 11px;
       width: 100vw;
     }
+    .text-b2 {
+        font-size: 1rem;
+    }
     .main__container {
         background-position: left;
         min-height: 25vh;
@@ -111,12 +114,24 @@ nav div {
         width: max-content;
     }
     .search__container button p {
-        /* display: none; */
         font-size: 1rem;
     }
+    .main__container__detail .text-b2 {
+        font-size: 1rem;
+    }
+    .content {
+        position: relative;
+        margin-top: 33rem;
+    }
     .perusahaan__info {
-        top: 100%;
-        display: none;
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-top: 35vh;
+    }
+    .perusahaan__info__detail {
+        flex-direction: column;
+        gap: .7rem;
     }
     .main__content {
         flex-direction: column;
@@ -204,6 +219,9 @@ nav div {
         font-size: 1.5rem;
         padding: 0 3rem;
     }
+    .main__container__detail .text-b2 {
+        font-size: 1.1rem;
+    }
     .perusahaan__card {
         width: 48%;
     }
@@ -221,10 +239,13 @@ nav div {
         gap: .35rem;
     }
     .perusahaan__info {
-        top: 50%;
+        top: 60%;
     }
     .content, .pekerjaan, .search, .perusahaan {
         padding: 0 3rem;
+    }
+    .content {
+        margin-top: 14rem;
     }
     .main__content {
         gap: 3rem;

@@ -182,9 +182,6 @@ nav div {
     .input form {
         width: 32%;
     }
-    .pekerjaan__card__container {
-        justify-content: center;
-    }
     .pekerjaan__card {
         width: 48% !important;
      }
@@ -211,21 +208,25 @@ nav div {
     .search__container {
         gap: .5rem;
     }
+    .pekerjaan__card__container {
+        column-gap: 3%;
+        justify-content: center;
+    }
     .pekerjaan__card {
-        width: 25vw !important;
+        width: 25.5vw !important;
         height: max-content !important;
     }
     .pekerjaan__card__nama, .pekerjaan__card__harga, .pekerjaan__card__lokasi, .pekerjaan__card__deskripsi {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .pekerjaan__card__jam {
-        font-size: .8rem;
+        font-size: .85rem;
     }
     .pekerjaan__card__jenis {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
     .pekerjaan__card button {
-        margin-top: 1rem !important;
+        margin-top: 2rem !important;
     }
     .footer {
         height: max-content;
@@ -244,6 +245,6 @@ nav div {
 
 @media (min-width: 1441px) and (max-width: 1700px) {
     .pekerjaan__card {
-        width: 21.1vw !important;
+        width: 24vw !important;
     }
 }
