@@ -92,6 +92,21 @@ nav div {
         font-size: 1.35rem;
         width: 58.5%;
     }
+    .text-h5, .text-b1 {
+        font-size: 1.25rem;
+    }
+    .text-h6 {
+        font-size: 1rem;
+    }
+    .text-h4 {
+        font-size: 2rem;
+    }
+    table tr th:nth-child(1) {
+        width: 27%;
+    }
+    table tr th:nth-child(2) {
+        width: 55%;
+    }
     .footer {
         height: max-content;
         margin-bottom: 0;

@@ -804,10 +804,6 @@ video {
   margin-top: -3rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -1072,8 +1068,8 @@ video {
   width: 33.333333%;
 }
 
-.w-1\/4 {
-  width: 25%;
+.w-1\/5 {
+  width: 20%;
 }
 
 .w-10 {
@@ -1112,6 +1108,10 @@ video {
   width: 0.75rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-3\/5 {
   width: 60%;
 }
@@ -1142,10 +1142,6 @@ video {
 
 .w-\[24\.3\%\] {
   width: 24.3%;
-}
-
-.w-\[63\%\] {
-  width: 63%;
 }
 
 .w-\[7\.13vw\] {
@@ -2202,6 +2198,18 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-tl-sm {
+  border-top-left-radius: 0.125rem;
+}
+
+.rounded-tl-2xl {
+  border-top-left-radius: 1rem;
+}
+
+.rounded-tr-2xl {
+  border-top-right-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2317,6 +2325,11 @@ video {
 .bg-white-2 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .decoration-slice {
@@ -2438,6 +2451,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-20 {
   padding: 5rem;
 }
@@ -2456,6 +2473,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-1 {
@@ -2483,11 +2504,6 @@ video {
   padding-right: 5rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2513,11 +2529,6 @@ video {
   padding-right: 2rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2538,14 +2549,19 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-8 {
@@ -2629,6 +2645,10 @@ video {
   vertical-align: super;
 }
 
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 .text-b1 {
   font-size: 24px;
 }
@@ -2651,6 +2671,11 @@ video {
 
 .text-h6 {
   font-size: 20px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -3316,10 +3341,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mt-4 {
-    margin-top: 1rem;
-  }
-
   .xl\:text-b2 {
     font-size: 20px;
   }
@@ -3346,10 +3367,6 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mt-8 {
-    margin-top: 2rem;
-  }
-
   .\32xl\:w-\[55vw\] {
     width: 55vw;
   }
