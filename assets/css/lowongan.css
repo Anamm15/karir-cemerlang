@@ -212,6 +212,15 @@ nav div {
         column-gap: 3%;
         justify-content: center;
     }
+    .content, .pekerjaan {
+        padding: 0 4rem;
+    }
+    .content__left {
+        width: 76%;
+    }
+    .main__content {
+        gap: 5rem;
+    }
     .pekerjaan__card {
         width: 25.5vw !important;
         height: max-content !important;
