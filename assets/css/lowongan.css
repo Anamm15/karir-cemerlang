@@ -21,7 +21,7 @@ nav div {
 }
 
 .pekerjaan__card {
-    width: 21.5vw;
+    width: 21.5vw !important;
     height: max-content !important;
 }
 
@@ -49,6 +49,62 @@ nav div {
     text-align: center;
     margin: 1rem auto;
     font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    .search__container {
+        gap: .5rem;
+    }
+    .search__container button p {
+        display: none;
+    }
+    .input form {
+        width: 47%;
+    }
+    .pekerjaan__carousel {
+        width: 100%;
+    }
+    .pekerjaan__card__container {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.5s ease;
+        width: 100% !important;
+        gap: 0;
+    }
+    .pekerjaan__card {
+        width: 100% !important;
+    }   
+    .perusahaan__info .text-h5 {
+        font-size: 1.3rem;
+    }
+    .input, .card, .search, .content, .pekerjaan {
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+    .main__content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .content__left {
+        width: 100%;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px)  {
@@ -79,6 +135,35 @@ nav div {
         font-size: 14px;
         width: 100vw;
     }
+    .perusahaan__info {
+        top: 85%;
+    }
+    .input, .card, .search, .content, .pekerjaan {
+        padding: 0 3rem;
+        width: 100%;
+     }
+     .main__content {
+        gap: 3rem;
+        flex-direction: column;
+     }
+     .content__left {
+        width: 80%;
+     }
+     .search__container {
+        gap: .5rem;
+    }
+    .search__container button {
+        width: 16%;
+    }
+    .input form {
+        width: 32%;
+    }
+    .pekerjaan__card__container {
+        justify-content: center;
+    }
+    .pekerjaan__card {
+        width: 48% !important;
+     }
     .footer {
         height: max-content;
         margin-bottom: 0;

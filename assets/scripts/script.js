@@ -98,10 +98,6 @@ const artikelSwiper = new Swiper('.artikel__carousel', {
 
 const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
     slidesPerView: 1,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
     loop: true,
     watchOverflow: true,
     breakpoints: {
@@ -113,3 +109,4 @@ const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
          },
     },
 });
+

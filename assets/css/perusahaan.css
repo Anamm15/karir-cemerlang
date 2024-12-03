@@ -64,13 +64,101 @@ nav div {
     font-size: 14px;
 }
 
+@media  (max-width: 576px) {
+    body {
+      font-size: 11px;
+      width: 100vw;
+    }
+    .content, .pekerjaan, .search, .perusahaan {
+        padding: 0 1.5rem;
+    }
+    .perusahaan__card__container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .perusahaan__card {
+        width: 100%;
+    }
+    .perusahaan__card__title {
+        font-size: 1.1rem;
+    }
+    .perusahaan__card__location {
+        font-size: 1rem;
+    }
+    .perusahaan__card__description {
+        font-size: .8rem;
+        padding: 0 1.5rem;
+    }
+    .search__container {
+        flex-direction: column;
+    }
+    .search__container input, .search__container div {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .search__container button {
+        width: max-content;
+    }
+    .search__container button p {
+        /* display: none; */
+        font-size: 1rem;
+    }
+    .perusahaan__info {
+        top: 100%;
+        display: none;
+    }
+    .main__content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .content__life div {
+        justify-content: center;
+    }   
+    .img-left {
+        width: 50%;
+    }
+    .img-right {
+        width: 100%;
+    }
+    .content__left {
+        width: 100%;
+    }   
+    .pekerjaan__card__container {
+        flex-wrap: nowrap !important;
+        gap: 0;
+    }
+    .pekerjaan__card {
+        width: 100% !important;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 768px)  {
     body {
       font-size: 14px;
       width: 100vw;
     }
-    button#prev, button#next {
-        display: none;
+    .perusahaan__card__title {
+        font-size: 1.1rem;
+    }
+    .perusahaan__card__location {
+        font-size: 1rem;
+    }
+    .perusahaan__card__description {
+        font-size: .8rem;
+        padding: 0 1.5rem;
     }
     .footer {
         height: max-content;
@@ -91,6 +179,57 @@ nav div {
     html {
         font-size: 14px;
         width: 100vw;
+    }
+    /* .main__container {
+        background-size: contain;
+        height: 50vh;
+    } */
+    .perusahaan__card {
+        width: 48%;
+    }
+    .perusahaan__card__title {
+        font-size: 1.1rem;
+    }
+    .perusahaan__card__location {
+        font-size: 1rem;
+    }
+    .perusahaan__card__description {
+        font-size: .8rem;
+        padding: 0 1.5rem;
+    }
+    .search__container {
+        gap: .35rem;
+    }
+    .perusahaan__info {
+        top: 50%;
+    }
+    .content, .pekerjaan, .search, .perusahaan {
+        padding: 0 3rem;
+    }
+    .main__content {
+        gap: 3rem;
+    }
+    .content__left {
+        width: 80%;
+    }
+    .content__life div {
+        flex-direction: column;
+    }
+    .img-left {
+        width: 100%;
+    }
+    .content__life div div {
+        flex-direction: row;
+    }
+    .img-right {
+        width: 48.7%;
+    }
+    .pekerjaan__card__container {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .pekerjaan__card {
+        width: 47% !important;
     }
     .footer {
         height: max-content;
@@ -129,7 +268,7 @@ nav div {
         top: 40%;
     }
     .content, .pekerjaan {
-        padding: 0 7rem;
+        padding: 0 4rem;
     }
     .content__left {
         width: 76%;
