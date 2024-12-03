@@ -125,6 +125,7 @@ button:hover .arrow__icon path {
 .pekerjaan {
     padding: 0 70px;
 }
+
 .pekerjaan__card {
     width: 21.8vw !important;
     height: max-content !important;
@@ -158,6 +159,8 @@ button:hover .arrow__icon path {
 
 .artikel__card img {
     height: 50% !important;
+    object-fit: cover;
+    object-position: center;
 }
 
 .ajakan {
@@ -650,6 +653,15 @@ button:hover .arrow__icon path {
         height: max-content  !important;
         padding-bottom: 2rem;
         justify-content: center;
+    }
+    .pekerjaan__card__nama, .pekerjaan__card__harga, .pekerjaan__card__lokasi, .pekerjaan__card__deskripsi {
+        font-size: 1rem;
+    }
+    .pekerjaan__card__jam {
+        font-size: .8rem;
+    }
+    .pekerjaan__card__jenis {
+        font-size: 1.25rem;
     }
     .pekerjaan__card a {
         width: 100%;

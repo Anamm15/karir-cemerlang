@@ -19,9 +19,9 @@
 <body class="bg-white-2">
     <!-- Navbar -->
     <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
-        <div class="flex justify-between items-center px-6 py-4">
+        <div class="flex justify-between items-center px-6 py-4 lg:h-24">
             <!-- Logo -->
-            <a href="#" id="mobile-logo" class="text-h6 font-bold text-primary-1 lg:hidden">Kawan Karir</a>
+            <a href="./index.html" id="mobile-logo" class="text-h6 font-bold text-primary-1 lg:hidden">Kawan Karir</a>
             
             <!-- Hamburger Menu Icon -->
             <button id="hamburger-menu" class="lg:hidden block text-primary-1">
@@ -32,20 +32,20 @@
             
             <!-- Desktop Menu -->
             <ul class="hidden lg:flex gap-x-8 items-center text-black-2">
-                <a href="#" class="text-h6 font-bold">Kawan Karir</a>
-                <li><a href="#" class="text-h6">Beranda</a></li>
-                <li><a href="#" class="text-b2">Lowongan Kerja</a></li>
-                <li><a href="#" class="text-b2">Perusahaan</a></li>
-                <li><a href="#" class="text-b2">Artikel Karir</a></li>
-                <li><a href="#" class="text-b2">Tentang Kami</a></li>
+                <a href="./index.html" class="font-bold lg:text-sm 2xl:text-h6 xl:text-b3">Kawan Karir</a>
+                <li><a href="./index.html" class="lg:text-sm 2xl:text-h6 xl:text-b3">Beranda</a></li>
+                <li><a href="./lowongan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Artikel Karir</a></li>
+                <li><a href="#" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Tentang Kami</a></li>
             </ul>
     
             <!-- Desktop Buttons -->
-            <div class="hidden lg:flex gap-4 items-center">
-                <button class="text-black-2 text-b2">Daftar</button>
-                <button class="text-black-2 text-b2">Masuk</button>
-                <button class="bg-primary-1 text-b2 text-white px-4 py-2 rounded-lg">
-                    Buat Iklan Lowongan
+            <div class="hidden lg:flex gap-4 items-center me-4">
+                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"> <a href="./register.html">Daftar</a> </button>
+                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"><a href="./login.html">Masuk</a></button>
+                <button class="bg-primary-1 xl:text-b3 lg:text-sm 2xl:text-b2 text-white px-4 py-2 rounded-lg">
+                    <a href="#">Buat Iklan Lowongan</a>
                 </button>
             </div>
         </div>
@@ -53,20 +53,20 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max">
             <ul class="flex flex-col items-start p-6 gap-y-4 text-black-2">
-                <li><a href="#" class="text-h6">Beranda</a></li>
-                <li><a href="#" class="text-b2">Lowongan Kerja</a></li>
-                <li><a href="#" class="text-b2">Perusahaan</a></li>
-                <li><a href="#" class="text-b2">Artikel Karir</a></li>
+                <li><a href="./index.html" class="text-h6">Beranda</a></li>
+                <li><a href="./lowongan.html" class="text-b2">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class="text-b2">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class="text-b2">Artikel Karir</a></li>
                 <li><a href="#" class="text-b2">Tentang Kami</a></li>
                 <li class="w-full">
-                    <button class="w-full text-b2 text-left text-black-2">Daftar</button>
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./register.html">Daftar</a></button>
                 </li>
                 <li class="w-full">
-                    <button class="w-full text-b2 text-left text-black-2">Masuk</button>
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./login.html">Masuk</a></button>
                 </li>
                 <li class="w-full">
-                    <button class="w-full text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center">
-                        Buat Iklan Lowongan
+                    <button class="w-max text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center">
+                        <a href="#">Buat Iklan Lowongan</a>
                     </button>
                 </li>
             </ul>

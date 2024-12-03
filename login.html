@@ -30,29 +30,31 @@
             <div class="auth__content relative">
                 <p class="text-h4 font-semibold text-center">Halo Sobat Kawan Karir!</p>
                 <p class="text-b2 mt-2 text-center">Masuk dan Jangan Lewatkan Kesempatan Karir Terbaik</p>
-                <div class="input__group mt-10 text-black-2">
-                    <label for="email">Email</label>
-                    <div class="relative">
-                        <input type="text" placeholder="Masukkan Email Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="email" id="email">
-                        <i data-feather="at-sign" class="absolute right-4 top-6 w-5 h-5 text-black-3"></i>
+                <form action="" method="post">
+                    <div class="input__group mt-10 text-black-2">
+                        <label for="email">Email</label>
+                        <div class="relative">
+                            <input type="text" placeholder="Masukkan Email Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="email" id="email">
+                            <i data-feather="at-sign" class="absolute right-4 top-6 w-5 h-5 text-black-3"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="input__group text-black-2 mt-5">
-                    <div class="flex justify-between">
-                        <label for="password">Password</label>
-                        <a href="" class="text-primary-1 underline">Lupa kata sandi?</a>
+                    <div class="input__group text-black-2 mt-5">
+                        <div class="flex justify-between">
+                            <label for="password">Password</label>
+                            <a href="" class="text-primary-1 underline">Lupa kata sandi?</a>
+                        </div>
+                        <div class="relative">
+                            <input type="password" placeholder="Masukkan Kata Sandi Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="password" id="password">
+                            <i data-feather="eye" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 hidden eye"></i>
+                            <i data-feather="eye-off" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 eye-off"></i>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <input type="password" placeholder="Masukkan Kata Sandi Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="password" id="password">
-                        <i data-feather="eye" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 hidden eye"></i>
-                        <i data-feather="eye-off" class="absolute right-4 top-6 text-black-3 cursor-pointer w-5 h-5 eye-off"></i>
+                    <button type="submit" class="w-full py-2 bg-primary-1 text-white mt-12 font-semibold rounded-md text-b2 btn">Masuk</button>
+                    <button type="submit" class="text-b2 py-2 w-full flex justify-center mt-5 border rounded-md border-black-1 items-center gap-5">
+                        <img src="./assets/img/icon-google.png" alt="">
+                        Masuk dengan Google</button>
                     </div>
-                </div>
-                <button class="w-full py-2 bg-primary-1 text-white mt-12 font-semibold rounded-md text-b2">Masuk</button>
-                <button class="text-b2 py-2 w-full flex justify-center mt-5 border rounded-md border-black-1 items-center gap-5">
-                    <img src="./assets/img/icon-google.png" alt="">
-                    Masuk dengan Google</button>
-                </div>
+                </form>
                 <div class="absolute bottom-2 mb-12 question">Belum punya akun? <a href="./register.html" class="text-primary-1 underline">Daftar</a></div>
         </div>
     </div>

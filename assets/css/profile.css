@@ -1,0 +1,189 @@
+body {
+    font-family: 'Nunito';
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+nav div {
+    height: 10vh;
+}
+
+.main__container {
+    width: 100%;
+    height: 35vh;
+    background-image: url('../img/Place.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    height: max-content;
+}
+.footer ul {
+    font-size: 1rem;
+}
+.footer p {
+    width: 80vw;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .text-h5 {
+        font-size: 1.25rem;
+    }
+    .text-b2 {
+        font-size: 1.15rem;
+    }
+    .informasi, .pengalaman, .keahlian, .portofolio {
+        padding: 0 1rem;
+    }
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+        width: 100%;
+        padding: 2rem;
+    }
+    .informasi__pp {
+        margin: 0 auto;
+        width: 12rem;
+    }
+    .informasi__data form {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+    .informasi__data form div {
+        width: 100%;
+        text-wrap: wrap;
+    }
+    .footer {
+        height: max-content;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px)  {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    .text-h5 {
+        font-size: 1.35rem;
+    }
+    .text-b2 {
+        font-size: 1.2rem;
+    }
+    .informasi, .pengalaman, .keahlian, .portofolio {
+        padding: 0 1.5rem;
+    }
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+        width: 100%;
+        padding: 2.5rem;
+    }
+    .informasi__pp {
+        margin: 0 auto;
+        width: 12rem;
+    }
+    .informasi__data form {
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .informasi__data form div {
+        width: 100%;
+        text-wrap: wrap;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    html {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+        width: 100%;
+        padding: 3rem;
+    }
+    .informasi__pp {
+        margin: 0 auto;
+        width: 12rem;
+    }
+    .informasi__data form {
+        margin-top: 4rem;
+    }
+    .informasi__data form div {
+        width: 50%;
+        text-wrap: wrap;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+        width: 100%;
+        padding: 3rem;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1700px) {
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+        width: 100%;
+        padding: 4rem;
+    }
+}

@@ -1,0 +1,114 @@
+body {
+    font-family: 'Nunito';
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+nav div {
+    height: 10vh;
+}
+
+.main__container__detail {
+    background-image: url('../img/background-premium.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35vh;
+}
+
+.perusahaan__info {
+    top: 80%;
+}
+
+.footer {
+    height: max-content;
+}
+.footer ul {
+    font-size: 1rem;
+}
+.footer p {
+    width: 80vw;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 14px;
+}
+
+@media (min-width: 576px) and (max-width: 768px)  {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    button#prev, button#next {
+        display: none;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    html {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    .body__content__paket {
+        font-size: 1.35rem;
+    }
+    .body__content__fitur {
+        font-size: 1.35rem;
+        width: 58.5%;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1675px) {
+    .body__content__fitur {
+        width: 60%;
+    }
+}

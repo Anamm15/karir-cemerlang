@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/lowongan.css">
+
+    <!-- FONT NUNITO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>KARIR CEMERLANG</title>
+</head>
+<body>
+    <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
+        <div class="flex justify-between items-center px-6 py-4 lg:h-24">
+            <!-- Logo -->
+            <a href="./index.html" id="mobile-logo" class="text-h6 font-bold text-primary-1 lg:hidden">Kawan Karir</a>
+            
+            <!-- Hamburger Menu Icon -->
+            <button id="hamburger-menu" class="lg:hidden block text-primary-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-x-8 items-center text-black-2">
+                <a href="./index.html" class="font-bold lg:text-sm 2xl:text-h6 xl:text-b3">Kawan Karir</a>
+                <li><a href="./index.html" class="lg:text-sm 2xl:text-h6 xl:text-b3">Beranda</a></li>
+                <li><a href="./lowongan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Artikel Karir</a></li>
+                <li><a href="#" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Tentang Kami</a></li>
+            </ul>
+    
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex gap-4 items-center me-4">
+                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"> <a href="./register.html">Daftar</a> </button>
+                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"><a href="./login.html">Masuk</a></button>
+                <button class="bg-primary-1 xl:text-b3 lg:text-sm 2xl:text-b2 text-white px-4 py-2 rounded-lg">
+                    <a href="#">Buat Iklan Lowongan</a>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max">
+            <ul class="flex flex-col items-start p-6 gap-y-4 text-black-2">
+                <li><a href="./index.html" class="text-h6">Beranda</a></li>
+                <li><a href="./lowongan.html" class="text-b2">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class="text-b2">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class="text-b2">Artikel Karir</a></li>
+                <li><a href="#" class="text-b2">Tentang Kami</a></li>
+                <li class="w-full">
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./register.html">Daftar</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./login.html">Masuk</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-max text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center">
+                        <a href="#">Buat Iklan Lowongan</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main__container__detail mt-24 relative flex justify-center">
+            <div class="perusahaan__info bg-white rounded-lg p-7 absolute">
+                <div class="flex gap-4 items-center">
+                    <img src="./assets/img/Logo 1.png" alt="" class="rounded-full w-14 h-14">
+                    <div>
+                        <p class="text-h5 font-semibold">PT Valktive - Digital Agency</p>
+                        <p class="text-b2 text-black-2 mt-0.5">Elevate your brand with a stunning website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="content mt-40 px-40">
+        <div class="content__container">
+            <div class="main__content flex gap-56">
+                <div class="content__left w-3/5">
+                    <div class="content__deskripsi">
+                        <h5 class="text-h5 font-semibold">Deskripsi Pekerjaan</h5>
+                        <p style="white-space: pre-line;" class="text-b2 text-black-2">Mengembangkan dan mengimplementasikan strategi desain UI/UX yang selaras dengan visi perusahaan dan tujuan produk, melakukan riset pasar dan analisis kompetitor untuk mengidentifikasi tren desain terkini dan kebutuhan pengguna, membuat roadmap desain jangka panjang dan mengelola prioritas proyek.</p>
+                    </div>
+                    <div class="content__syarat mt-8">
+                        <h5 class="text-h5 font-semibold">Persyaratan Kerja</h5>
+                        <p class="text-b2 text-black-2"  style="white-space: pre-line;">Keterampilan Teknis
+                            Penguasaan Software Desain: Adobe XD, Figma, Sketch, atau alat desain lainnya.
+                            Bahasa Pemrograman Dasar: HTML, CSS, JavaScript.
+                            Versi Kontrol: Git atau alat serupa.
+                            Prototyping Tools: Alat untuk membuat prototipe interaktif.
+                            
+                            Keterampilan Soft Skills
+                            Kreativitas: Mampu menghasilkan ide-ide desain yang inovatif.
+                            Problem Solving: Mampu memecahkan masalah desain dengan efektif.
+                            Komunikasi: Mampu menyampaikan ide desain dengan jelas.
+                            Kolaborasi: Mampu bekerja sama dalam tim.
+                            Attention to Detail: Memiliki perhatian yang tinggi terhadap detail.
+                            Analisis: Mampu menganalisis data dan metrik.
+                            
+                            Pengalaman Kerja
+                            Pengalaman Relevan: Pengalaman dalam mendesain antarmuka pengguna untuk website atau aplikasi.
+                            Portfolio: Memiliki portofolio desain yang kuat.
+                            Spesialisasi: Pengalaman di bidang desain tertentu (misalnya, desain interaksi, desain visualisasi data).</p>
+                    </div>
+                    <div class="content__benefit mt-8">
+                        <h5 class="text-h5 font-semibold">Keuntungan Bekerja di Valktive</h5>
+                        <p class="text-b2 text-black-2" style="white-space: pre-line;">Kerja Fleksibel
+                            Bonus Gaji
+                            Asuransi
+                            Relasi
+                            Inovasi
+                        </p>
+                    </div>
+                </div>
+                <div class="content__right">
+                    <div class="text-h5 font-semibold">Kontak dan Alamat</div>
+                    <div class="flex gap-4 items-center mt-3">
+                        <img src="./assets/img/lokasi-v2.png" alt="" class="w-4 h-6">
+                        <p class="text-b2 text-black-2">Kabupaten Serang, Banten, Indonesia</p>
+                    </div>
+                    <div class="flex gap-4 items-center mt-3">
+                        <img src="./assets/img/earth.png" alt="" class="w-4 h-4 ">
+                        <p class="text-b2 text-black-2">valktive.com</p>
+                    </div>
+                    <div class="flex gap-4 items-center mt-3">
+                        <img src="./assets/img/instagram.png" alt="" class="w-4 h-4">
+                        <p class="text-b2 text-black-2">valktive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pekerjaan mt-10 px-40">
+        <h1 class="text-h5 font-semibold">Lowongan Kerja Lainnya di Valktive</h1>
+        <div class="card__container mt-8 flex flex-wrap justify-between">
+            <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6 rounded-lg">
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="./assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
+                        <div>
+                            <p class="text-h6 font-semibold">Valktive</p>
+                            <p class="text-b3">2 jam lalu</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
+                </div>
+                <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
+                <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
+                <div class="font-semibold text-h6 mt-4">Rp. 6.000.000 - 10.000.000 (Perbulan)</div>
+                <div class="mt-1 flex items-center gap-x-2 mb-10">
+                    <img src="./assets/img/lokasi.png" alt="">
+                    <p class="text-b2 text-black-2">Kabupaten Serang, Karangwatu</p>
+                </div>
+                <a href="./lowongan-detail.html">
+                    <button class="transition w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">
+                        Lamar Pekerjaan Sekarang
+                    </button>
+                </a>                
+            </div>
+            <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6 rounded-lg">
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="./assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
+                        <div>
+                            <p class="text-h6 font-semibold">Valktive</p>
+                            <p class="text-b3">2 jam lalu</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
+                </div>
+                <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
+                <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
+                <div class="font-semibold text-h6 mt-4">Rp. 6.000.000 - 10.000.000 (Perbulan)</div>
+                <div class="mt-1 flex items-center gap-x-2 mb-10">
+                    <img src="./assets/img/lokasi.png" alt="">
+                    <p class="text-b2 text-black-2">Kabupaten Serang, Karangwatu</p>
+                </div>
+                <a href="./lowongan-detail.html">
+                    <button class="transition w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">
+                        Lamar Pekerjaan Sekarang
+                    </button>
+                </a>                
+            </div>
+            <div class="pekerjaan__card swiper-slide relative bg-white-1 p-6 rounded-lg">
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="./assets/img/Logo 1.png" alt="" class="rounded-full w-12 h-12">
+                        <div>
+                            <p class="text-h6 font-semibold">Valktive</p>
+                            <p class="text-b3">2 jam lalu</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/Icon-Save.svg" class="w-5 h-8 save__icon cursor-pointer" alt="">
+                </div>
+                <div class="text-h5 font-semibold mt-8">Senior UI/UX Desainer </div>
+                <div class="text-b2 text-black-2 mt-2">Merancang tampilan visual dari sebuah aplikasi atau situs web agar menarik dan mudah diakses.</div>
+                <div class="font-semibold text-h6 mt-4">Rp. 6.000.000 - 10.000.000 (Perbulan)</div>
+                <div class="mt-1 flex items-center gap-x-2 mb-10">
+                    <img src="./assets/img/lokasi.png" alt="">
+                    <p class="text-b2 text-black-2">Kabupaten Serang, Karangwatu</p>
+                </div>
+                <a href="./lowongan-detail.html">
+                    <button class="transition w-full mt-8 text-primary-1 border py-3 hover:text-white-1 hover:bg-primary-1 rounded-lg">
+                        Lamar Pekerjaan Sekarang
+                    </button>
+                </a>                
+            </div>
+        </div>
+        <div class="button__container mt-10 w-full flex justify-center">
+            <a href="">
+                <button class="border font-semibold text-blue-700 py-3 px-6 rounded-lg"> Muat lebih banyak </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="w-screen bg-primary-3 py-10 text-center text-black-1 footer mt-10">
+            <p class="text-h6 font-semibold sm:mt-5">LOGO KAWAN KARIR</p>
+        
+            <div class="mt-4 px-10 py-4 bg-primary-1 text-white-1 rounded-lg inline-block">
+                <ul class="flex flex-wrap justify-center gap-6 text-b2">
+                    <li><a href="#" class="hover:underline">Beranda</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Lowongan Kerja</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Perusahaan</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Artikel Karir</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+                </ul>
+            </div>
+        
+            <p class="text-b3 mt-6 mx-auto max-w-2xl leading-relaxed">
+                Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp imuvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
+            </p>
+        
+            <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/navbar.js"></script>
+</body>
+</html>

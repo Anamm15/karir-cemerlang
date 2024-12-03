@@ -35,6 +35,14 @@ body {
     width: 492px;
 }
 
+.btn {
+    transition: ease 300ms all;
+}
+
+.btn:hover {
+    background-color: #045ada;
+}
+
 @media (max-width: 575.98px) {
     body {
       font-size: 14px;
@@ -119,6 +127,7 @@ body {
         font-size: 2rem;
     }
 }
+
 @media (min-height: 976px) and (min-width: 1025px) and (max-width: 1440px) {
     .content img {
         height: 80%;

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/premium.css">
+
+    <!-- FONT NUNITO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>KARIR CEMERLANG</title>
+</head>
+<body>
+    <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
+        <div class="flex justify-between items-center px-6 py-4 lg:h-24">
+            <!-- Logo -->
+            <a href="./index.html" id="mobile-logo" class="text-h6 font-bold text-primary-1 lg:hidden">Kawan Karir</a>
+            
+            <!-- Hamburger Menu Icon -->
+            <button id="hamburger-menu" class="lg:hidden block text-primary-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-x-8 items-center text-black-2">
+                <a href="./index.html" class="font-bold lg:text-sm 2xl:text-h6 xl:text-b3">Kawan Karir</a>
+                <li><a href="./index.html" class="lg:text-sm 2xl:text-h6 xl:text-b3">Beranda</a></li>
+                <li><a href="./lowongan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Artikel Karir</a></li>
+                <li><a href="#" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Tentang Kami</a></li>
+            </ul>
+    
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex gap-4 items-center me-4">
+                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"> <a href="./register.html">Daftar</a> </button>
+                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"><a href="./login.html">Masuk</a></button>
+                <button class="bg-primary-1 xl:text-b3 lg:text-sm 2xl:text-b2 text-white px-4 py-2 rounded-lg">
+                    <a href="#">Buat Iklan Lowongan</a>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max">
+            <ul class="flex flex-col items-start p-6 gap-y-4 text-black-2">
+                <li><a href="./index.html" class="text-h6">Beranda</a></li>
+                <li><a href="./lowongan.html" class="text-b2">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class="text-b2">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class="text-b2">Artikel Karir</a></li>
+                <li><a href="#" class="text-b2">Tentang Kami</a></li>
+                <li class="w-full">
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./register.html">Daftar</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-full text-b2 text-left text-black-2"><a href="./login.html">Masuk</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-max text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center">
+                        <a href="#">Buat Iklan Lowongan</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main__container__detail mt-24 relative flex justify-center">
+            <div class="perusahaan__info bg-white rounded-lg py-7 px-16 absolute">
+                <p class="text-h5 font-semibold text-primary-1 text-center">Fitur Premium </p>
+                <p class="text-b2 text-black-2 mt-0.5">Memaksimalkan visibilitas lowongan lebih luas</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="layanan__premium px-20 mt-60">
+        <h4 class="text-h4 font-semibold">Layanan Fitur Premium Pencari Kerja</h4>
+        <p class="text-b2 mt-4">Penawaran lengkap untuk mendukung karir Anda</p>
+        <div class="layanan__premium__content border rounded-2xl mt-10">
+            <div class="header w-full bg-primary-1 text-white-1 py-8 px-20 flex rounded-t-2xl">
+                <h5 class="text-h5 font-semibold w-1/4">Paket</h5>
+                <h5 class="text-h5 font-semibold">Fitur</h5>
+            </div>
+            <div class="body px-20 flex flex-col">
+                <div class="body__content flex py-6 items-center">
+                    <p class="text-b1 text-primary-1 whitespace-pre-line w-1/4 body__content__paket">Starter
+                        (Rp. XXX)</p>
+                    <p class="text-b1 whitespace-pre-line w-[63%] body__content__fitur">- Profil terlihat oleh perusahaan.
+                        - Notifikasi khusus untuk lowongan yang sesuai.
+                        - Akses ke statistik profil dasar.</p>
+                    <button class="text-b2 border border-primary-1 h-max text-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white">Cek Sekarang</button>
+                </div>
+                <div class="body__content flex py-6 items-center">
+                    <p class="text-b1 text-primary-1 whitespace-pre-line w-1/4 body__content__paket">Pro Seeker
+                        (Rp. XXX)</p>
+                    <p class="text-b1 whitespace-pre-line w-[63%] body__content__fitur">- Semua fitur Starter.
+                        - Profil diberi tanda "Disukai" oleh perusahaan.
+                        - Akses eksklusif ke lowongan premium.</p>
+                    <button class="text-b2 border border-primary-1 h-max text-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white">Cek Sekarang</button>
+                </div>
+                <div class="body__content flex py-6 items-center">
+                    <p class="text-b1 text-primary-1 whitespace-pre-line w-1/4 body__content__paket">Elite Seeker
+                        (Rp. XXX)</p>
+                    <p class="text-b1 whitespace-pre-line w-[63%] body__content__fitur">- Semua fitur Pro Seeker.
+                        - Statistik lanjutan.
+                        - Prioritas pencarian oleh perusahaan di kategori lowongan eksklusif.</p>
+                    <button class="text-b2 border border-primary-1 h-max text-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white">Cek Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="w-screen bg-primary-3 py-10 text-center text-black-1 footer mt-10">
+            <p class="text-h6 font-semibold sm:mt-5">LOGO KAWAN KARIR</p>
+        
+            <div class="mt-4 px-10 py-4 bg-primary-1 text-white-1 rounded-lg inline-block">
+                <ul class="flex flex-wrap justify-center gap-6 text-b2">
+                    <li><a href="#" class="hover:underline">Beranda</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Lowongan Kerja</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Perusahaan</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Artikel Karir</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+                </ul>
+            </div>
+        
+            <p class="text-b3 mt-6 mx-auto max-w-2xl leading-relaxed">
+                Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp imuvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
+            </p>
+        
+            <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/navbar.js"></script>
+</body>
+</html>
