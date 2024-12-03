@@ -49,6 +49,24 @@ button:hover .arrow__icon path {
     font-size: 14px;
 }
 
+@media (max-width: 576px) {
+    body {
+        font-size: 11px;
+        width: 100vw;
+    }
+    .main__container {
+        background-position: left;
+        min-height: 25vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 1.5rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.15rem;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 768px)  {
     body {
       font-size: 14px;
@@ -76,6 +94,19 @@ button:hover .arrow__icon path {
     html {
         font-size: 14px;
         width: 100vw;
+    }
+    .main__container {
+        background-position: left;
+        height: 30vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.5rem;
+        padding: 0 3rem;
     }
     .footer {
         height: max-content;

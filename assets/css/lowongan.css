@@ -56,6 +56,17 @@ nav div {
       font-size: 14px;
       width: 100vw;
     }
+    .main__container {
+        background-position: left;
+        min-height: 25vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 1.5rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.15rem;
+    }
     .search__container {
         gap: .5rem;
     }
@@ -134,6 +145,19 @@ nav div {
     html {
         font-size: 14px;
         width: 100vw;
+    }
+    .main__container {
+        background-position: left;
+        height: 30vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.5rem;
+        padding: 0 3rem;
     }
     .perusahaan__info {
         top: 85%;
