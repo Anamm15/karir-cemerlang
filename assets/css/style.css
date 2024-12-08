@@ -14,7 +14,7 @@ nav div {
     stroke: #0046b1;
 }
 
-button:hover .arrow__icon path {
+button:hover .arrow__icon path, .arrow__icon__navbar path  {
     stroke: white;
 }
 
@@ -53,9 +53,8 @@ button:hover .arrow__icon path {
 }
 
 .search__icon {
-    width: 33% !important;
+    width: 25% !important;
     height: auto !important;
-    margin-left: .5rem;
 }
 
 .iklan {
@@ -181,11 +180,11 @@ button:hover .arrow__icon path {
 }
 
 .step {
-    width: 1490px;
+    width: 77.6vw;
     gap: 120px;
 }
 
-.step div {
+.step .step__info {
     width: 600px;
 }
 
@@ -1104,8 +1103,11 @@ button:hover .arrow__icon path {
         gap: 4rem;
         justify-content: center;
     }
-    .step div {
+    .step .step__info {
         width: 20vw;
+    }
+    .step__info div {
+        min-height: 8rem;
     }
     .step div p {
         font-size: 1.2rem;
@@ -1231,8 +1233,11 @@ button:hover .arrow__icon path {
         gap: 4rem;
         justify-content: center;
     }
-    .step div {
+    .step .step__info {
         width: 20vw;
+    }
+    .step .step__info div {
+        min-height: 6rem;
     }
     .step div p {
         font-size: 1.2rem;
