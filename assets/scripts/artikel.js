@@ -7,14 +7,9 @@ hamburgerMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
-
-const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
-    slidesPerView: 'auto',
-    loop: true,
-    watchOverflow: true,
+const artikelSwiper = new Swiper('.artikel__carousel', {
+    slidesPerView: 'auto', 
     breakpoints: {
-        577: { enabled: false, },
+        1025: { enabled: false }, 
     },
 });
-
-

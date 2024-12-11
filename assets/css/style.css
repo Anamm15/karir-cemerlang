@@ -14,6 +14,10 @@ nav div {
     stroke: #0046b1;
 }
 
+button {
+    transition: ease-in-out 0.2s;
+}
+
 button:hover .arrow__icon path, .arrow__icon__navbar path  {
     stroke: white;
 }
@@ -96,9 +100,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     padding: 0 70px;
 }
 
-.kategori__content {
-    gap: 1.35rem;
-}
 .kategori__content div {
     width: 16.85vw !important;
     height: auto !important;
@@ -153,7 +154,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 }
 
 .artikel__card p, .artikel__card button {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .artikel__card img {
@@ -430,7 +431,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         margin-top: 0;
     }
     .ajakan button {
-        width: 80%;
+        width: 90%;
         font-size: 0.875rem;
         justify-content: center;
         margin-top: 1rem;
@@ -517,7 +518,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 } 
 
-@media (min-width: 576px) and (max-width: 768px)  {
+@media (min-width: 576px) and (max-width: 767px)  {
     body {
       font-size: 14px;
       width: 100vw;
@@ -717,6 +718,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .artikel__content {
         display: flex  !important;
         transition: transform 0.5s ease;
+        gap: 0;
     }
     .artikel__content > div {
         flex-shrink: 0 !important;
@@ -754,7 +756,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         margin-top: 0;
     }
     .ajakan button {
-        width: 80%;
+        max-width: 63%;
         font-size: 1rem;
         justify-content: center;
         margin-top: 1rem;
@@ -812,7 +814,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         margin-bottom: 0;
     }
     .footer ul {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .footer p {
         width: 80vw;
@@ -1019,6 +1021,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .artikel__content {
         display: flex !important;
         transition: transform 0.5s ease !important;
+        flex-wrap: nowrap;
     }
     .artikel__content > div {
         flex-shrink: 0 !important;
@@ -1060,7 +1063,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         margin-top: 0;
     }
     .ajakan button {
-        width: 40%;
+        width: 45%;
         font-size: 1rem;
         justify-content: center;
         margin-top: 1rem;

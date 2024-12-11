@@ -64,46 +64,30 @@ carousel.addEventListener('touchend', (e) => {
 });
 
 const kategoriSwiper = new Swiper('.kategori__carousel', {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
+  spaceBetween: 22, 
   navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
   },
   loop: true,
   watchOverflow: true,
-  breakpoints: {
-      576: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 4 },
-      1440: { slidesPerView: 5 }, 
-      1920: { slidesPerView: 5 }, 
-  },
 });
 
 
 const artikelSwiper = new Swiper('.artikel__carousel', {
-    slidesPerView: 1,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        576: { slidesPerView: 1 },
-        768: { slidesPerView: 1.75 },
-        1026: { 
-            enabled: false
-         },
-    },
+  slidesPerView: 'auto', 
+  spaceBetween: 16,     
+  breakpoints: {
+      1025: { enabled: false }, 
+  },
 });
 
 const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     loop: true,
     watchOverflow: true,
     breakpoints: {
-        576: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 2.05 },
         1025: { 
             enabled: false,
          },

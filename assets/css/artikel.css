@@ -11,7 +11,15 @@ nav div {
     height: 10vh;
 }
 
+button {
+    transition: ease-in-out 0.2s;
+}
+
 button:hover .arrow__icon path {
+    stroke: white;
+}
+
+button:hover .arrow__icon path, .arrow__icon__navbar path  {
     stroke: white;
 }
 
@@ -25,28 +33,19 @@ button:hover .arrow__icon path {
 }
 
 .artikel__card {
-    width: 29.2vw !important;
+    width: 28.6vw !important;
     height: max-content !important;
     padding-bottom: 1.5rem !important;
+}
+
+.artikel__card p, .artikel__card button {
+    margin-top: 1rem;
 }
 
 .artikel__card img {
     height: 50% !important;
     object-fit: cover;
     object-position: center;
-}
-
-.footer {
-    height: max-content;
-}
-.footer ul {
-    font-size: 1rem;
-}
-.footer p {
-    width: 80vw;
-    text-align: center;
-    margin: 1rem auto;
-    font-size: 14px;
 }
 
 @media (max-width: 576px) {
@@ -65,22 +64,97 @@ button:hover .arrow__icon path {
     .main__container .text-b1 {
         font-size: 1.15rem;
     }
+    .rekomendasi, .new__artikel, .search {
+        padding: 0 1rem;
+    }
+    .search__container {
+        gap: .5rem;
+    }
+    .search__container button p {
+        display: none;
+    }
+    .search form input {
+        font-size: 1rem;
+    }
+    .artikel__content {
+        display: flex  !important;
+        transition: transform 0.5s ease !important;
+        flex-wrap: nowrap !important;
+    }
+    .artikel__content > div {
+        flex-shrink: 0;
+        width: 97% !important;
+        margin: auto  !important;
+    }
+    .artikel__card {
+        height: max-content  !important;
+        padding-bottom: 2rem  !important;
+    }
+    .artikel__card p:nth-child(2) {
+        font-size: 1rem !important;
+        margin-top: 1rem;
+    }
+    .artikel__card p:nth-child(3) {
+        margin-top: 1rem;
+        font-size: 0.875rem !important;
+    }
+    .artikel__card button {
+        margin-top: 1rem;
+        width: 90% !important;
+    }
 }
 
-@media (min-width: 576px) and (max-width: 768px)  {
+@media (min-width: 576px) and (max-width: 767px)  {
     body {
       font-size: 14px;
       width: 100vw;
     }
-    button#prev, button#next {
-        display: none;
+    .main__container {
+        background-position: left;
+        min-height: 27vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 1.63rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.22rem;
+    }
+    .rekomendasi, .new__artikel, .search {
+        padding: 0 2rem;
+    }
+    .artikel__content {
+        display: flex  !important;
+        transition: transform 0.5s ease;
+        flex-wrap: nowrap !important;
+        gap: 0;
+    }
+    .artikel__content > div {
+        flex-shrink: 0 !important;
+        width: 70% !important;
+    }
+    .artikel__card {
+        height: max-content !important;
+        padding-bottom: 2rem !important;
+    }
+    .artikel__card p:nth-child(2) {
+        font-size: 1.5rem !important;
+        margin-top: 1.2rem !important;
+    }
+    .artikel__card p:nth-child(3) {
+        font-size: 1.2rem;
+        margin-top: 1.2rem !important;
+    }
+    .artikel__card button {
+        margin-top: 1.2rem !important;
+        width: 90% !important;
     }
     .footer {
         height: max-content;
         margin-bottom: 0;
     }
     .footer ul {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .footer p {
         width: 80vw;
@@ -108,6 +182,35 @@ button:hover .arrow__icon path {
         font-size: 1.5rem;
         padding: 0 3rem;
     }
+    .rekomendasi, .new__artikel, .search {
+        padding: 0 3rem;
+    }
+    .artikel__content {
+        display: flex !important;
+        transition: transform 0.5s ease !important;
+        flex-wrap: nowrap;
+    }
+    .artikel__content > div {
+        flex-shrink: 0 !important;
+        width: 55% !important;
+        margin: auto !important;
+    }
+    .artikel__card {
+        height: max-content !important;
+        padding-bottom: 2rem !important;
+    }
+    .artikel__card button {
+        width: 90%  !important;
+        margin-top: 1.5rem !important;
+    }
+    .artikel__card p:nth-child(2) {
+        margin-top: 1rem;
+        font-size: 1.8rem  !important;
+    }
+    .artikel__card p:nth-child(3) {
+        margin-top: 1rem;
+        font-size: 1.3rem  !important;
+    }
     .footer {
         height: max-content;
         margin-bottom: 0;
@@ -128,8 +231,13 @@ button:hover .arrow__icon path {
         font-size: 14px;
         width: 100vw;
     }
+    .rekomendasi, .new__artikel, .search {
+        padding: 0 2rem;
+    }
     .artikel__card {
-        width: 27.8vw !important;
+        width: 30vw !important;
+        height: max-content;
+        padding-bottom: 1rem;
     }
     .artikel__card__title {
         font-size: 1.35rem;

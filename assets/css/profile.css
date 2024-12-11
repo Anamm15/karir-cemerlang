@@ -11,6 +11,10 @@ nav div {
     height: 10vh;
 }
 
+button:hover .arrow__icon path, .arrow__icon__navbar path  {
+    stroke: white;
+}
+
 .main__container {
     width: 100%;
     height: 35vh;
@@ -18,19 +22,6 @@ nav div {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.footer {
-    height: max-content;
-}
-.footer ul {
-    font-size: 1rem;
-}
-.footer p {
-    width: 80vw;
-    text-align: center;
-    margin: 1rem auto;
-    font-size: 14px;
 }
 
 @media (max-width: 576px) {
@@ -73,6 +64,9 @@ nav div {
     .informasi__data form div {
         width: 100%;
         text-wrap: wrap;
+    }
+    .input__group input, .input__group .select__form__group {
+        width: 100%;
     }
     .footer {
         height: max-content;
@@ -118,12 +112,15 @@ nav div {
         width: 100%;
         text-wrap: wrap;
     }
+    .input__group input, .input__group .select__form__group {
+        width: 75%;
+    }
     .footer {
         height: max-content;
         margin-bottom: 0;
     }
     .footer ul {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .footer p {
         width: 80vw;
@@ -166,6 +163,9 @@ nav div {
         width: 50%;
         text-wrap: wrap;
     }
+    .input__group input, .input__group .select__form__group {
+        width: 90%;
+    }
     .footer {
         height: max-content;
         margin-bottom: 0;
@@ -190,6 +190,9 @@ nav div {
         width: 100%;
         padding: 3rem;
     }
+    .input__group input, .input__group .select__form__group {
+        width: 90%;
+    }
     .footer {
         height: max-content;
         margin-bottom: 0;
@@ -209,5 +212,8 @@ nav div {
     .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
         width: 100%;
         padding: 4rem;
+    }
+    .input__group input, .input__group .select__form__group {
+        width: 80%;
     }
 }

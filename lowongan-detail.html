@@ -32,21 +32,25 @@
             </button>
             
             <!-- Desktop Menu -->
-            <ul class="hidden lg:flex gap-x-8 items-center text-black-2">
-                <a href="./index.html" class="font-bold lg:text-sm 2xl:text-h6 xl:text-b3">Kawan Karir</a>
-                <li><a href="./index.html" class="lg:text-sm 2xl:text-h6 xl:text-b3">Beranda</a></li>
-                <li><a href="./lowongan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Lowongan Kerja</a></li>
-                <li><a href="./perusahaan.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Perusahaan</a></li>
-                <li><a href="./artikel-karir.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Artikel Karir</a></li>
-                <li><a href="./premium.html" class=" lg:text-sm 2xl:text-b2 xl:text-b3">Premium</a></li>
+            <ul class="hidden lg:flex xl:gap-x-8 lg:gap-x-4 items-center text-black-2">
+                <a href="./index.html" class="font-bold lg:text-base xl:text-h6">Kawan Karir</a>
+                <li><a href="./index.html" class="lg:text-base text xl:text-h6">Beranda</a></li>
+                <li><a href="./lowongan.html" class=" lg:text-base xl:text-b2">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class=" lg:text-base xl:text-b2">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class=" lg:text-base xl:text-b2">Artikel Karir</a></li>
+                <li><a href="./premium.html" class=" lg:text-base xl:text-b2">Premium</a></li>
             </ul>
     
             <!-- Desktop Buttons -->
             <div class="hidden lg:flex gap-4 items-center me-4">
-                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"> <a href="./register.html">Daftar</a> </button>
-                <button class="text-black-2 xl:text-b3 lg:text-sm 2xl:text-b2"><a href="./login.html">Masuk</a></button>
-                <button class="bg-primary-1 xl:text-b3 lg:text-sm 2xl:text-b2 text-white px-4 py-2 rounded-lg">
-                    <a href="#">Buat Iklan Lowongan</a>
+                <button class="text-black-2 lg:text-base xl:text-b2"> <a href="./register.html">Daftar</a> </button>
+                <button class="text-black-2 lg:text-base xl:text-b2"><a href="./login.html">Masuk</a></button>
+                <button class="bg-primary-1 lg:text-base xl:text-b2 text-white px-4 py-3 rounded-lg flex items-center gap-3 duration-300 hover:bg-blue-900">
+                    <a href="./homepage-perusahaan.html">Buat Iklan Lowongan</a>
+                    <svg width="17" height="17" class="arrow__icon__navbar" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -66,8 +70,12 @@
                     <button class="w-full text-b2 text-left text-black-2"><a href="./login.html">Masuk</a></button>
                 </li>
                 <li class="w-full">
-                    <button class="w-max text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center">
-                        <a href="#">Buat Iklan Lowongan</a>
+                    <button class="w-max text-b2 bg-primary-1 text-white px-4 py-2 rounded-lg text-center flex items-center gap-3 duration-300 hover:bg-blue-900">
+                        <a href="./homepage-perusahaan.html">Buat Iklan Lowongan</a>
+                        <svg width="17" height="17" class="arrow__icon__navbar" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5L18.5 8.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15.5L19 8.5L12 1.5" stroke="#0046B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </button>
                 </li>
             </ul>
@@ -90,9 +98,17 @@
 
     <section class="content mt-40 px-40">
         <div class="content__container">
-            <div class="main__content flex gap-56">
+            <div class="main__content flex gap-56 relative items-start">
                 <div class="content__left w-3/5">
-                    <div class="content__deskripsi">
+                    <div class="content__header">
+                        <h3 class="text-h3 font-semibold">Senior UI/UX Desainer</>
+                        <div class="content__category__wrapper flex flex-wrap gap-3 mt-5 font-normal">
+                            <p class="bg-primary-3 px-3 py-2 rounded-lg text-b3">Full Time</p>
+                            <p class="bg-primary-3 px-3 py-2 rounded-lg text-b3">WFO</p>
+                            <p class="bg-primary-3 px-3 py-2 rounded-lg text-b3">Karyawan Tetap</p>
+                        </div>
+                    </div>
+                    <div class="content__deskripsi mt-10">
                         <h5 class="text-h5 font-semibold">Deskripsi Pekerjaan</h5>
                         <p style="white-space: pre-line;" class="text-b2 text-black-2 text-justify">Mengembangkan dan mengimplementasikan strategi desain UI/UX yang selaras dengan visi perusahaan dan tujuan produk, melakukan riset pasar dan analisis kompetitor untuk mengidentifikasi tren desain terkini dan kebutuhan pengguna, membuat roadmap desain jangka panjang dan mengelola prioritas proyek.</p>
                     </div>
@@ -127,8 +143,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="content__right">
-                    <div class="text-h5 font-semibold">Kontak dan Alamat</div>
+                <div class="content__right sticky top-32">
+                    <div class="content__button flex gap-5 self-start">
+                        <button class="flex text-b2 text-primary-1 gap-2 items-center border py-3 px-5 rounded-lg duration-300 w-52 justify-center hover:bg-primary-1 hover:text-white">
+                            <svg width="20" height="24" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 5.13403C0 3.33712 -8.9407e-08 2.43866 0.363333 1.75199C0.682906 1.14825 1.19282 0.657386 1.82 0.349755C2.53333 -1.19209e-07 3.46667 0 5.33333 0H14.6667C16.5333 0 17.4667 -1.19209e-07 18.18 0.349755C18.8072 0.657386 19.3171 1.14825 19.6367 1.75199C20 2.43866 20 3.33712 20 5.13403V26.4803C20 27.2601 20 27.6499 19.8317 27.8633C19.7589 27.9561 19.6661 28.0326 19.5596 28.0874C19.4531 28.1423 19.3356 28.1742 19.215 28.181C18.9367 28.197 18.6 27.9804 17.9267 27.5489L10 22.4614L2.07333 27.5473C1.4 27.9804 1.06333 28.197 0.783333 28.181C0.66306 28.174 0.545794 28.142 0.439621 28.0871C0.333447 28.0323 0.240891 27.9559 0.168333 27.8633C-2.83122e-07 27.6499 0 27.2601 0 26.4803V5.13403Z" stroke="#0046B1"/>
+                            </svg>
+                            Simpan
+                        </button>
+                        <button class="flex text-h6 font-semibold gap-2 items-center border py-3 px-5 rounded-lg w-52 justify-center duration-300  bg-primary-1 text-white hover:bg-transparent hover:text-primary-1">
+                            Lamar Sekarang
+                        </button>
+                    </div>
+                    <div class="text-h5 font-semibold mt-10">Kontak dan Alamat</div>
                     <div class="flex gap-4 items-center mt-3">
                         <img src="./assets/img/lokasi-v2.png" alt="" class="w-4 h-6">
                         <p class="text-b2 text-black-2">Kabupaten Serang, Banten, Indonesia</p>
@@ -226,36 +253,34 @@
         </div>  
         <div class="button__container mt-10 w-full flex justify-center">
             <a href="">
-                <button class="border font-semibold text-blue-700 py-3 px-6 rounded-lg"> Muat lebih banyak </button>
+                <button class="border font-semibold text-blue-700 py-3 w-44 duration-300 rounded-lg hover:bg-primary-1 hover:text-white"> Muat lebih banyak </button>
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="w-screen bg-primary-3 py-10 text-center text-black-1 footer mt-10">
-            <p class="text-h6 font-semibold sm:mt-5">LOGO KAWAN KARIR</p>
-        
-            <div class="mt-4 px-10 py-4 bg-primary-1 text-white-1 rounded-lg inline-block">
-                <ul class="flex flex-wrap justify-center gap-6 text-b2">
-                    <li><a href="#" class="hover:underline">Beranda</a></li>
-                    <li>|</li>
-                    <li><a href="#" class="hover:underline">Lowongan Kerja</a></li>
-                    <li>|</li>
-                    <li><a href="#" class="hover:underline">Perusahaan</a></li>
-                    <li>|</li>
-                    <li><a href="#" class="hover:underline">Artikel Karir</a></li>
-                    <li>|</li>
-                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
-                </ul>
-            </div>
-        
-            <p class="text-b3 mt-6 mx-auto max-w-2xl leading-relaxed">
-                Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp imuvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
-            </p>
-        
-            <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
+    <footer class="w-screen bg-primary-3 py-10 text-center text-black-1 footer mt-10 flex flex-col items-center">
+        <p class="text-h6 font-semibold sm:mt-5">LOGO KAWAN KARIR</p>
+    
+        <div class="mt-4 py-4 bg-primary-1 text-white-1 rounded-lg footer__list px-10 2xl:mr-8">
+            <ul class="flex flex-wrap justify-center text-b2 gap-y-4 gap-x-8">
+                <li><a href="/" class="hover:underline">Beranda</a></li>
+                <li>|</li>
+                <li><a href="./lowongan.html" class="hover:underline">Lowongan Kerja</a></li>
+                <li>|</li>
+                <li><a href="./perusahaan.html" class="hover:underline">Perusahaan</a></li>
+                <li>|</li>
+                <li><a href="./artikel-karir.html" class="hover:underline">Artikel Karir</a></li>
+                <li>|</li>
+                <li><a href="./premium.html" class="hover:underline">Premium</a></li>
+            </ul>
         </div>
+    
+        <p class="text-b3 mt-6 mx-auto max-w-2xl leading-relaxed">
+            Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp imuvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
+        </p>
+    
+        <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
     </footer>
 
     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>

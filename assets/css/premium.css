@@ -11,6 +11,14 @@ nav div {
     height: 10vh;
 }
 
+button {
+    transition: ease-in-out 0.2s;
+}
+
+button:hover .arrow__icon path, .arrow__icon__navbar path  {
+    stroke: white;
+}
+
 .main__container__detail {
     background-image: url('../img/background-premium.png');
     background-size: cover;
@@ -22,19 +30,6 @@ nav div {
 
 .perusahaan__info {
     top: 80%;
-}
-
-.footer {
-    height: max-content;
-}
-.footer ul {
-    font-size: 1rem;
-}
-.footer p {
-    width: 80vw;
-    text-align: center;
-    margin: 1rem auto;
-    font-size: 14px;
 }
 
 @media (max-width: 575px) {
@@ -88,7 +83,7 @@ nav div {
         margin-bottom: 0;
     }
     .footer ul {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .footer p {
         width: 80vw;
