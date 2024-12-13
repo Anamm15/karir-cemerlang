@@ -140,7 +140,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 }
 
 .perusahaan__content {
-    width: 38vw;
+    min-width: 38vw;
 }
 
 .artikel {
@@ -1006,14 +1006,21 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         justify-content: center;
     }
     .perusahaan__content div div {
-        width: 30vw;
-        height: 10vh;
+        width: max-content;
+        height: 9vh;
+    }
+    .perusahaan__content div {
+        width: 90%;
+    }
+    .perusahaan__content div div img {
+        width: 4rem !important;
+        height: auto;
     }
     .perusahaan__content div div p:nth-child(1) {
-        font-size: 1.25rem;
+        font-size: 1.6rem;
     }
     .perusahaan__content div div p:nth-child(2) {
-        font-size: .875rem;
+        font-size: 1.2rem;
     }
     .decoration {
         display: none;
@@ -1186,12 +1193,12 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 28vw !important;
     }
     .perusahaan {
-        padding: 5rem 1rem;
+        padding: 3rem 4rem;
         height: max-content;
-        gap: 5rem;
+        gap: 3rem;
     }
     .perusahaan button img {
-        width: 1rem;
+        width: .8rem;
     }
     .artikel__card {
         height: max-content;
