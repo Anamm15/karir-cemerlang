@@ -11,9 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+    <!-- SWIPER CAROUSEL -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>KARIR CEMERLANG</title>
 </head>
 <body>
+
+
     <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
         <div class="flex justify-between items-center px-6 py-4 lg:h-24">
             <!-- Logo -->
@@ -86,66 +94,116 @@
         </div>
     </main>
 
-    <section class="layanan__premium px-20 mt-60">
+    <section class="layanan__premium px-40 mt-60">
         <h4 class="text-h4 font-semibold">Layanan Fitur Premium Pencari Kerja</h4>
-        <p class="text-b2 mt-4">Penawaran lengkap untuk mendukung karir Anda</p>
-        <div class="layanan__premium__content border rounded-2xl mt-10">
-            <table class="table-auto w-full border-collapse ">
-                <thead class="bg-primary-1 text-white p-10 ">
-                    <tr class="">
-                        <th class="w-1/5 py-7 ps-16 text-left text-h5 font-semibold rounded-tl-2xl">Paket</th>
-                        <th class="w-3/5 text-left text-h5 font-semibold">Fitur</th>
-                        <th class="rounded-tr-2xl"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-b1 ps-16">Starter<br>(Rp. 1.000.000)</td>
-                        <td class="text-b1 py-8">
-                            - Semua fitur Starter.<br>
-                            - Profil diberi tanda "Disukai" oleh perusahaan.<br>
-                            - Akses eksklusif ke lowongan premium.
-                        </td>
-                        <td class="text-h6 p-2 text-center">
-                            <a href="#">
-                                <button class="text-primary-1 border border-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white transition">
-                                    Beli Sekarang
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-b1 ps-16">Starter<br>(Rp. XXX)</td>
-                        <td class="text-b1 py-8">
-                            - Semua fitur Starter.<br>
-                            - Profil diberi tanda "Disukai" oleh perusahaan.<br>
-                            - Akses eksklusif ke lowongan premium.
-                        </td>
-                        <td class="text-h6 p-2 text-center">
-                            <a href="#">
-                                <button class="text-primary-1 border border-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white transition">
-                                    Beli Sekarang
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-b1 ps-16">Starter<br>(Rp. XXX)</td>
-                        <td class="text-b1 py-8">
-                            - Semua fitur Starter.<br>
-                            - Profil diberi tanda "Disukai" oleh perusahaan.<br>
-                            - Akses eksklusif ke lowongan premium.
-                        </td>
-                        <td class="text-h6 p-2 text-center">
-                            <a href="#">
-                                <button class="text-primary-1 border border-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white transition">
-                                    Beli Sekarang
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>            
+        <p class="text-b1 mt-4">Penawaran lengkap untuk mendukung karir Anda</p>
+        <div class="layanan__premium__content mt-10 flex swiper">
+            <div class="premium__card__container flex swiper-wrapper">
+                <div class="premium__card flex flex-col gap-4 border border-primary-1 rounded-lg p-6 swiper-slide">
+                    <div class="packet__header">
+                        <p class="text-h5 font-semibold">Starter</p>
+                        <p class="text-b3">Pilihan terbaik untuk pemula</p>
+                    </div>
+                    <div class="packet__price mt-4">
+                        <p class="text-h5 font-semibold">Rp 100.000/bulan</p>
+                    </div>
+                    <div class="packet__button flex justify-center mt-7">
+                        <a href="#" class="w-11/12">
+                            <button class="text-primary-1 border border-primary-1 text-center py-2 w-full duration-200 rounded-lg hover:bg-primary-1 hover:text-white">
+                                Beli Sekarang
+                            </button>
+                        </a>
+                    </div>
+                    <div class="packet__fitur text-b3 mt-7">
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Akses eksklusif ke lowongan premium.
+                    </div>
+                </div>
+                <div class="premium__card flex flex-col gap-4 border border-primary-1 rounded-lg p-6 swiper-slide">
+                    <div class="packet__header">
+                        <p class="text-h5 font-semibold">Starter</p>
+                        <p class="text-b3">Pilihan terbaik untuk pemula</p>
+                    </div>
+                    <div class="packet__price mt-4">
+                        <p class="text-h5 font-semibold">Rp 100.000/bulan</p>
+                    </div>
+                    <div class="packet__button flex justify-center mt-7">
+                        <a href="#" class="w-11/12">
+                            <button class="text-primary-1 border border-primary-1 text-center py-2 w-full duration-200 rounded-lg hover:bg-primary-1 hover:text-white">
+                                Beli Sekarang
+                            </button>
+                        </a>
+                    </div>
+                    <div class="packet__fitur text-b3 mt-7">
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Akses eksklusif ke lowongan premium.
+                    </div>
+                </div>
+                <div class="premium__card flex flex-col gap-4 border border-primary-1 rounded-lg p-6 swiper-slide">
+                    <div class="packet__header">
+                        <p class="text-h5 font-semibold">Starter</p>
+                        <p class="text-b3">Pilihan terbaik untuk pemula</p>
+                    </div>
+                    <div class="packet__price mt-4">
+                        <p class="text-h5 font-semibold">Rp 100.000/bulan</p>
+                    </div>
+                    <div class="packet__button flex justify-center mt-7">
+                        <a href="#" class="w-11/12">
+                            <button class="text-primary-1 border border-primary-1 text-center py-2 w-full duration-200 rounded-lg hover:bg-primary-1 hover:text-white">
+                                Beli Sekarang
+                            </button>
+                        </a>
+                    </div>
+                    <div class="packet__fitur text-b3 mt-7">
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Akses eksklusif ke lowongan premium.
+                    </div>
+                </div>
+                <div class="premium__card flex flex-col gap-4 border border-primary-1 rounded-lg p-6 swiper-slide">
+                    <div class="packet__header">
+                        <p class="text-h5 font-semibold">Starter</p>
+                        <p class="text-b3">Pilihan terbaik untuk pemula</p>
+                    </div>
+                    <div class="packet__price mt-4">
+                        <p class="text-h5 font-semibold">Rp 100.000/bulan</p>
+                    </div>
+                    <div class="packet__button flex justify-center mt-7">
+                        <a href="#" class="w-11/12">
+                            <button class="text-primary-1 border border-primary-1 text-center py-2 w-full duration-200 rounded-lg hover:bg-primary-1 hover:text-white">
+                                Beli Sekarang
+                            </button>
+                        </a>
+                    </div>
+                    <div class="packet__fitur text-b3 mt-7">
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Semua fitur Starter.<br>
+                        - Profil diberi tanda "Disukai" oleh perusahaan.<br>
+                        - Akses eksklusif ke lowongan premium.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 
@@ -174,6 +232,8 @@
         <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
     </footer>
 
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/premium.js"></script>
 </body>
 </html>

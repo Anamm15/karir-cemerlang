@@ -32,6 +32,11 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     top: 80%;
 }
 
+.premium__card {
+    width: 24rem !important;
+    height: 55vh !important;
+}
+
 @media (max-width: 575px) {
     .layanan__premium {
         padding: 1rem;
