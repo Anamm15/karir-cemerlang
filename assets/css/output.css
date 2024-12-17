@@ -1168,8 +1168,16 @@ video {
   width: 2rem;
 }
 
+.w-\[24\%\] {
+  width: 24%;
+}
+
 .w-\[24\.3\%\] {
   width: 24.3%;
+}
+
+.w-\[38\%\] {
+  width: 38%;
 }
 
 .w-\[40\%\] {
@@ -1207,18 +1215,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[38\%\] {
-  width: 38%;
 }
 
 .max-w-2xl {
@@ -1831,6 +1827,14 @@ video {
   row-gap: 1.25rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2358,16 +2362,6 @@ video {
   background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2511,10 +2505,6 @@ video {
   padding: 1.75rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2580,6 +2570,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2595,11 +2590,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -2608,16 +2598,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pl-2 {
@@ -3380,10 +3360,6 @@ video {
 @media (min-width: 640px) {
   .sm\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .sm\:gap-0 {
-    gap: 0px;
   }
 
   .sm\:underline {

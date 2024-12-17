@@ -23,3 +23,12 @@ const perusahaanSwiper = new Swiper('.perusahaan__carousel', {
     },
 });
 
+Fancybox.bind("[data-fancybox]", {
+    Image: {
+        fit: "contain", 
+        maxWidth: "60%", 
+        maxHeight: "80%",
+    },
+});
+
+

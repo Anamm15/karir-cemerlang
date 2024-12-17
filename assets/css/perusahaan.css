@@ -54,6 +54,14 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     height: max-content !important;
 }
 
+.fancybox__image {
+    width: 60%; 
+    height: 80vh; 
+    object-fit: contain; 
+    object-position: center;
+    border-radius: 8px;
+}
+
 @media  (max-width: 576px) {
     body {
       font-size: 11px;
@@ -140,15 +148,15 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .content__container {
         margin-top: 2rem;
     }   
+    .content__left {
+        width: 100%;
+    }   
     .img-left {
-        width: 50%;
+        width: 100%;
     }
     .img-right {
         width: 100%;
     }
-    .content__left {
-        width: 100%;
-    }   
     .pekerjaan__card__container {
         flex-wrap: nowrap !important;
         gap: 0;
@@ -255,7 +263,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         gap: 2rem;
     } 
     .img-left {
-        width: 50%;
+        width: 100%;
     }
     .img-right {
         width: 100%;
@@ -348,7 +356,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .content__life div {
         flex-direction: column;
     }
-    .img-left {
+    .img-left-container {
         width: 100%;
     }
     .content__life div div {
@@ -356,7 +364,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 100%;
     }
     .img-right {
-        width: 48.7%;
+        width: 100%;
     }
     .pekerjaan__card__container {
         justify-content: center;

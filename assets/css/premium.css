@@ -34,54 +34,28 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 
 .premium__card {
     width: 24rem !important;
-    height: 55vh !important;
+    min-height: 33rem !important;
 }
 
 @media (max-width: 575px) {
     .layanan__premium {
         padding: 1rem;
     }
-    .layanan__premium__content {
-        border: none;
-    }
-    .table-auto {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .table-auto thead {
-        display: none; 
-    }
-    .table-auto tbody tr {
-        display: block;
-        margin-bottom: 1rem;
-        border: 1px solid #66A0D3;
-        border-radius: 0.5rem;
-        overflow: hidden;
-    }
-    .table-auto td {
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-    .table-auto td:first-child {
-        font-weight: bold;
-    }
-    .table-auto td:last-child {
-        text-align: center;
-        margin-top: 0.5rem;
+    .premium__card {
+        width: 100% !important;
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px)  {
+@media (min-width: 576px) and (max-width: 767px)  {
     body {
       font-size: 14px;
       width: 100vw;
     }
-    button#prev, button#next {
-        display: none;
+    .layanan__premium {
+        padding: 2rem;
+    }
+    .premium__card {
+        width: 70% !important;
     }
     .footer {
         height: max-content;
@@ -105,17 +79,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .layanan__premium {
         margin-top: 6rem;
+        padding: 3rem;
+    }
+    .premium__card {
+        width: 48% !important;
     }
     .text-h4 {
         font-size: 1.75rem;
     }
     .text-b2 {
         font-size: 1.15rem;
-    }
-    .table-auto th, 
-    .table-auto td {
-        font-size: 0.9rem;
-        padding: 0.5rem;
     }
     .footer {
         height: max-content;
@@ -137,12 +110,12 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         font-size: 14px;
         width: 100vw;
     }
-    .body__content__paket {
-        font-size: 1.35rem;
+    .layanan__premium {
+        margin-top: 6rem;
+        padding: 6rem;
     }
-    .body__content__fitur {
-        font-size: 1.35rem;
-        width: 58.5%;
+    .premium__card {
+        width: 40% !important;
     }
     .text-h5, .text-b1 {
         font-size: 1.25rem;
@@ -152,12 +125,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .text-h4 {
         font-size: 2rem;
-    }
-    table tr th:nth-child(1) {
-        width: 27%;
-    }
-    table tr th:nth-child(2) {
-        width: 55%;
     }
     .footer {
         height: max-content;

@@ -83,7 +83,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         justify-content: space-between;
     }
     .input form {
-        width: 47%;
+        width: 49%;
     }
     .pekerjaan__carousel {
         width: 100%;
@@ -137,13 +137,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px)  {
+@media (min-width: 577px) and (max-width: 767px)  {
     body {
       font-size: 14px;
       width: 100vw;
     }
     form input, form select {
         font-size: 1.1rem !important;
+    }
+    .input__container form {
+        width: 49%;
     }
     .input, .card, .search, .content, .pekerjaan {
         padding: 0 2rem;
@@ -230,6 +233,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .perusahaan__info {
         top: 85%;
     }
+    .input__container form {
+        width: 49%;
+    }
     .input, .card, .search, .content, .pekerjaan {
         padding: 0 3rem;
         width: 100%;
@@ -250,9 +256,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .search__container button {
         width: 7rem;
-    }
-    .input form {
-        width: 32%;
     }
     .pekerjaan__card {
         width: 48% !important;
@@ -278,7 +281,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         gap: .5rem;
     }
     .input__container form {
-        width: 23.6%;
+        width: 24.5%;
     }
     .pekerjaan__card__container {
         column-gap: 3%;
