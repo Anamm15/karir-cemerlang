@@ -1100,10 +1100,6 @@ video {
   min-height: 11rem;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-0\.5 {
   width: 0.125rem;
 }

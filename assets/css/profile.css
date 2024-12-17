@@ -72,7 +72,8 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .modal__content {
         width: 100%;
-        height: max-content;
+        overflow: scroll;
+        max-height: max-content;
     }
     .modal__content form {
         width: 100%;
@@ -126,6 +127,8 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .modal__content {
         width: 100%;
+        overflow: scroll;
+        max-height: max-content;
     }
     .modal__content form {
         width: 100%;
@@ -187,6 +190,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .modal__content {
         width: 80%;
         height: max-content;
+        overflow: scroll;
     }
     .modal__content form {
         width: 90%;
@@ -218,32 +222,20 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 100%;
         padding: 3rem;
     }
-    /* .input__group input, .input__group .select__form__group {
+    .input__group input, .input__group .select__form__group {
         width: 90%;
-    } */
+    }
     .modal {
         height: 110vh;
     }
     .modal__content {
         width: 65%;
-        height: max-content;
+        overflow: scroll;
     }
-    .sertifikasi__modal form, .pengalaman__modal form {
-        /* background: #000; */
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 8px;
+    .modal__content form {
+        width: 65%;
     }
-    .group-1, .group-2 {
-        width: 100%;
-        display: flex;
-        column-gap: 1rem;
-    }
-    .group-1 div {
-        flex-grow: 1;
-    }
-    .group-3, .group-4 {
+    .modal__content .input__group input {
         width: 100%;
     }
     .footer {
@@ -268,5 +260,11 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .input__group input, .input__group .select__form__group {
         width: 80%;
+    }
+    .modal__content {
+        overflow: scroll;
+    }
+    .modal__content .input__group input {
+        width: 100%;
     }
 }
