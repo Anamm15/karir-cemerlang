@@ -1,6 +1,5 @@
 body {
     font-family: 'Nunito';
-    overflow-y: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden !important;
     box-sizing: border-box;
@@ -46,10 +45,10 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .text-b2 {
         font-size: 1.15rem;
     }
-    .informasi, .pengalaman, .keahlian, .portofolio {
+    .informasi, .pengalaman, .keahlian, .portofolio, .sertifikasi {
         padding: 0 1rem;
     }
-    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container, .sertifikasi__container {
         width: 100%;
         padding: 2rem;
     }
@@ -68,6 +67,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .input__group input, .input__group .select__form__group {
         width: 100%;
     }
+    .modal {
+        height: 110vh;
+    }
+    .modal__content {
+        width: 100%;
+        height: max-content;
+    }
+    .modal__content form {
+        width: 100%;
+    }
     .footer {
         height: max-content;
     }
@@ -82,7 +91,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px)  {
+@media (min-width: 576px) and (max-width: 767px)  {
     body {
       font-size: 14px;
       width: 100vw;
@@ -93,10 +102,10 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .text-b2 {
         font-size: 1.2rem;
     }
-    .informasi, .pengalaman, .keahlian, .portofolio {
+    .informasi, .pengalaman, .keahlian, .portofolio, .sertifikasi {
         padding: 0 1.5rem;
     }
-    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container, .sertifikasi__container {
         width: 100%;
         padding: 2.5rem;
     }
@@ -114,6 +123,12 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .input__group input, .input__group .select__form__group {
         width: 75%;
+    }
+    .modal__content {
+        width: 100%;
+    }
+    .modal__content form {
+        width: 100%;
     }
     .footer {
         height: max-content;
@@ -148,7 +163,10 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         font-size: 1.5rem;
         padding: 0 3rem;
     }
-    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+    .informasi, .pengalaman, .keahlian, .portofolio, .sertifikasi {
+        padding: 0 3rem;
+    }
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container, .sertifikasi__container {
         width: 100%;
         padding: 3rem;
     }
@@ -165,6 +183,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .input__group input, .input__group .select__form__group {
         width: 90%;
+    }
+    .modal__content {
+        width: 80%;
+        height: max-content;
+    }
+    .modal__content form {
+        width: 90%;
+    }
+    .modal__content .input__group input {
+        width: 100%;
     }
     .footer {
         height: max-content;
@@ -186,12 +214,37 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         font-size: 14px;
         width: 100vw;
     }
-    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container, .sertifikasi__container {
         width: 100%;
         padding: 3rem;
     }
-    .input__group input, .input__group .select__form__group {
+    /* .input__group input, .input__group .select__form__group {
         width: 90%;
+    } */
+    .modal {
+        height: 110vh;
+    }
+    .modal__content {
+        width: 65%;
+        height: max-content;
+    }
+    .sertifikasi__modal form, .pengalaman__modal form {
+        /* background: #000; */
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px;
+    }
+    .group-1, .group-2 {
+        width: 100%;
+        display: flex;
+        column-gap: 1rem;
+    }
+    .group-1 div {
+        flex-grow: 1;
+    }
+    .group-3, .group-4 {
+        width: 100%;
     }
     .footer {
         height: max-content;
@@ -209,7 +262,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 }
 
 @media (min-width: 1441px) and (max-width: 1700px) {
-    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container {
+    .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container, .sertifikasi__container {
         width: 100%;
         padding: 4rem;
     }

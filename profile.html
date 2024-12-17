@@ -14,6 +14,8 @@
     <title>KARIR CEMERLANG</title>
 </head>
 <body>
+
+    <!-- NAVBAR -->
     <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
         <div class="flex justify-between items-center px-6 py-4 lg:h-24">
             <!-- Logo -->
@@ -84,11 +86,12 @@
         </div>
     </main>
 
+    <!-- INFORMASI -->
     <section class="informasi px-20">
         <div class="informasi__container bg-white rounded-lg p-20 mt-20 flex flex-col gap-y-10">
             <div class="informasi__header flex justify-between">
                 <p class="text-h5 font-semibold">Informasi Personal</p>
-                <img src="./assets/img/pencil.png" alt="" class="h-5 max-w-5 cursor-pointer informasi__edit__button">
+                <img src="./assets/img/edit.svg" class="w-7 h-7 cursor-pointer informasi__edit__button" alt="Edit">
             </div>
             <div class="informasi__pp w-36 h-36 flex flex-col gap-2 items-center">
                 <img src="./assets/img/Profil.png" class="w-full h-auto rounded-full" alt="">
@@ -107,7 +110,7 @@
                     <div class="input__group w-1/3">
                         <h3 class="font-semibold text-h6">Email</h3>
                         <p class="text-b2">deniputraar16@gmail.com</p>
-                        <input class="text-b2 pl-2 hidden border rounded-md py-2 w-3/5 mt-2" type="email" value="deniputraar16@gmail.com" placeholder="Masukkan email anda" name="email">
+                        <input class="text-b2 px-2 hidden border rounded-md py-2 w-3/5 mt-2" type="email" value="deniputraar16@gmail.com" placeholder="Masukkan email anda" name="email">
                     </div>
                     <div class="input__group w-1/3">
                         <h3 class="font-semibold text-h6">Tanggal Lahir</h3>
@@ -135,45 +138,173 @@
                         <p class="text-b2">082139601220</p>
                         <input class="text-b2 hidden pl-2 border rounded-md py-2 w-3/5 mt-2" type="text" value="082139601220" placeholder="Masukkan nomor anda" name="no_telp">
                     </div>
-                    <button class="bg-primary-1 text-b2 border hidden px-10 text-white py-2 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1 informasi__button">Submit</button>
+                    <div class="button__group flex gap-4">
+                        <button class="border border-primary-1 hidden text-b2 duration-300 text-primary-1 py-2 px-10 rounded-md hover:bg-primary-1 hover:text-white informasi__button" id="batal__informasi">Batal</button>
+                        <button class="bg-primary-1 text-b2 border hidden px-10 text-white py-2 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1 informasi__button" id="simpan__informasi">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- PENGALAMAN -->
     <section class="pengalaman px-20">
         <div class="pengalaman__container bg-white rounded-lg p-20 mt-20">
             <div class="flex justify-between">
                 <p class="text-h5 font-semibold">Pengalaman Kerja</p>
-                <img src="./assets/img/pencil.png" alt="" class="h-5 max-w-5 cursor-pointer">
+                <img src="./assets/img/add-icon.svg" alt="" class="cursor-pointer" id="tambah__pengalaman">
             </div>
-            <p class="text-b2 mt-4 text-black-2">Tidak ada pengalaman bekerja</p>
+            <div class="pengalaman__content__wrapper mt-2">
+                <div class="pengalaman__content mt-4">
+                    <div class="pengalaman__content__header flex justify-between items-center">
+                        <p class="text-h6 font-semibold">
+                            Software Engineer 
+                        </p>
+                        <div class="flex gap-2 items-center">
+                            <img src="./assets/img/edit.svg" class="w-6 h-6 cursor-pointer" alt="Edit">
+                            <a href=""><img src="./assets/img/delete.svg" class="w-6 h-6 cursor-pointer" alt="Delete"></a>
+                            <img src="./assets/img/Arrow-down.svg" 
+                                 class="w-10 h-10 cursor-pointer arrow-toggle" 
+                                 alt="Toggle Deskripsi">
+                        </div>
+                    </div>
+                    <div class="pengalaman__content__perusahaan text-b2">Microsoft</div>
+                    <p class="pengalaman__content__tanggal text-lg">September 2021 - Agustus 2022</p>
+                    <div class="pengalaman__content__deskripsi overflow-hidden max-h-8 transition-all duration-300 ease-in-out">
+                        <p class="text-lg w-11/12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis adipisci voluptatum voluptas dolores quam rerum? Nihil aliquam iure, sit numquam quod facilis fugit cupiditate veniam natus maiores amet, minus eveniet laboriosam! Corporis incidunt facere quos perferendis rem voluptatum eveniet natus magni, temporibus commodi doloremque nesciunt enim aliquid at voluptas recusandae earum laboriosam nemo illo excepturi dolore corrupti eius. Repellat illum inventore exercitationem repudiandae quae ab, alias ipsum quia iste rerum minima excepturi dolorum explicabo incidunt consequuntur nisi voluptate voluptatem eligendi eum. Sed libero maxime, voluptate tempora nesciunt magnam inventore quasi deserunt quisquam quos incidunt quibusdam, molestias dolor, eos cupiditate?
+                        </p>
+                    </div>
+                </div>                
+                <div class="pengalaman__content mt-4">
+                    <div class="pengalaman__content__header flex justify-between items-center">
+                        <p class="text-h6 font-semibold">Artificial Intelligence Engineer</p>
+                        <div class="flex gap-2 items-center">
+                            <img src="./assets/img/edit.svg" class="w-6 h-6 cursor-pointer" alt="Edit">
+                            <a href=""><img src="./assets/img/delete.svg" class="w-6 h-6 cursor-pointer" alt="Delete"></a>
+                            <img src="./assets/img/Arrow-down.svg" class="w-10 h-10 cursor-pointer arrow-toggle" alt="Toggle Deskripsi">
+                        </div>
+                    </div>
+                    <div class="pengalaman__content__perusahaan text-b2">Open AI</div>
+                    <p class="pengalaman__content__tanggal text-lg">September 2021 - Agustus 2022</p>
+                    <div class="pengalaman__content__deskripsi overflow-hidden max-h-8 transition-all duration-300 ease-in-out">
+                        <p class="text-lg w-11/12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis adipisci voluptatum voluptas dolores quam rerum? Nihil aliquam iure, sit numquam quod facilis fugit cupiditate veniam natus maiores amet, minus eveniet laboriosam! Corporis incidunt facere quos perferendis rem voluptatum eveniet natus magni, temporibus commodi doloremque nesciunt enim aliquid at voluptas recusandae earum laboriosam nemo illo excepturi dolore corrupti eius. Repellat illum inventore exercitationem repudiandae quae ab, alias ipsum quia iste rerum minima excepturi dolorum explicabo incidunt consequuntur nisi voluptate voluptatem eligendi eum. Sed libero maxime, voluptate tempora nesciunt magnam inventore quasi deserunt quisquam quos incidunt quibusdam, molestias dolor, eos cupiditate?
+                        </p>
+                    </div>
+                </div>                
+            </div>
+            <p class="text-b2 mt-4 text-black-2" >Tidak ada pengalaman</p>
         </div>
     </section>
 
+    <!-- SERTIFIKASI -->
+    <section class="sertifikasi px-20">
+        <div class="sertifikasi__container bg-white rounded-lg p-20 mt-20">
+            <div class="flex justify-between">
+                <p class="text-h5 font-semibold">Sertifikasi</p>
+                <img src="./assets/img/add-icon.svg" alt="" class="cursor-pointer" id="tambah__sertifikasi">
+            </div>
+            <div class="sertifikasi__content__wrapper mt-2">
+                <div class="sertifikasi__content mt-4">
+                    <div class="sertifikasi__content__header flex justify-between items-center">
+                        <p class="text-h6 font-semibold">Sertifikasi 1</p>
+                        <div class="sertifikasi__content__button flex items-center gap-3">
+                            <img src="./assets/img/edit.svg" class="w-6 h-6 cursor-pointer" alt="Edit">
+                            <a href="">
+                                <img src="./assets/img/delete.svg" class="w-6 h-6 cursor-pointer" alt="Delete">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sertifikasi__content__penerbit text-b2">Penerbit</div>
+                    <div class="sertifikasi__content__tanggal text-lg">November 2028 - Sekarang</div>
+                    <div class="sertifikasi__content__tanggal text-lg w-11/12">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem consequatur libero, mollitia corrupti reiciendis quos autem earum debitis excepturi!
+                    </div>
+                    <a href="google.com" class="text-primary-1">
+                        Link
+                    </a>
+                </div>
+                <div class="sertifikasi__content mt-4">
+                    <div class="sertifikasi__content__header flex justify-between items-center">
+                        <p class="text-h6 font-semibold">Sertifikasi 2 </p>
+                        <div class="sertifikasi__content__button flex items-center gap-3">
+                            <img src="./assets/img/edit.svg" class="w-6 h-6 cursor-pointer" alt="Edit">
+                            <a href="">
+                                <img src="./assets/img/delete.svg" class="w-6 h-6 cursor-pointer" alt="Delete">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sertifikasi__content__penerbit text-b2">Penerbit 2</div>
+                    <div class="sertifikasi__content__tanggal text-lg">November 2024 - Sekarang</div>
+                    <div class="sertifikasi__content__tanggal text-lg w-11/12">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem consequatur libero, mollitia corrupti reiciendis quos autem earum debitis excepturi!
+                    </div>
+                    <a href="google.com" class="text-primary-1">
+                        Link
+                    </a>
+                </div>
+            </div>
+            <p class="text-b2 mt-4 text-black-2" >Tidak ada sertifikat</p>
+        </div>
+    </section>
+    
+    <!-- KEAHLIAN -->
     <section class="keahlian px-20">
         <div class="keahlian__container bg-white rounded-lg p-20 mt-20">
             <div class="flex justify-between">
-                <p class="text-h5 font-semibold">Keahlian dan Sertifikat</p>
-                <img src="./assets/img/pencil.png" alt="" class="h-5 max-w-5 cursor-pointer">
+                <p class="text-h5 font-semibold">Keahlian</p>
+                <img src="./assets/img/add-icon.svg" alt="" class="cursor-pointer" id="tambah__keahlian">
             </div>
-            <p class="text-b2 mt-4 text-black-2" >Tidak ada keahlian sertifikat</p>
+            <div class="content__category__wrapper flex flex-wrap gap-3 mt-5 font-normal w-3/4">
+                <p class="bg-primary-3 px-3 py-2 rounded-lg text-b3 flex items-center gap-2">
+                    Full Time 
+                    <a href=""><img src="./assets/img/close-icon.svg" class="w-4 h-4 cursor-pointer" alt=""></a> </p>
+                <p class="bg-primary-3 px-3 py-2 rounded-lg text-b3 flex items-center gap-2">
+                    WFO
+                    <a href=""><img src="./assets/img/close-icon.svg" class="w-4 h-4 cursor-pointer" alt=""></a>
+                </p>
+                <p class="bg-primary-3 px-3 py-2 rounded-lg text-b3 flex items-center gap-2">
+                    Karyawan Tetap
+                    <a href=""><img src="./assets/img/close-icon.svg" class="w-4 h-4 cursor-pointer" alt=""></a>
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- PORTOFOLIO -->
     <section class="portofolio px-20">
         <div class="portofolio__container bg-white rounded-lg p-20 mt-20">
             <p class="text-h5 font-semibold">CV dan Portofolio</p>
-            <a href="">
-                <button class="flex items-center gap-x-4 mt-4 text-blue-700 text-b2 border px-4 py-2 rounded-lg">
-                    Unggah CV dan Portofolio
-                    <img src="./assets/img/unduh.png" alt="" class="h-5 max-w-5 cursor-pointer">
-                </button>
-            </a>
+            <div class="portofolio__content__wrapper mt-2">
+                <div class="portofolio__content mt-4">
+                    <div class="portofolio__content__header flex justify-between items-center">
+                        <a href="" class="text-h5 font-semibold w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        <a href="">
+                            <img src="./assets/img/delete.svg" class="w-6 h-6 cursor-pointer" alt="Delete">
+                        </a>
+                    </div>
+                    <p>Ditambahkan 2 hari yang lalu</p>
+                </div>
+                <div class="portofolio__content mt-4">
+                    <div class="portofolio__content__header flex justify-between items-center">
+                        <a href="" class="text-h5 font-semibold w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        <a href="">
+                            <img src="./assets/img/delete.svg" class="w-6 h-6 cursor-pointer" alt="Delete">
+                        </a>
+                    </div>
+                    <p>Ditambahkan 2 hari yang lalu</p>
+                </div>
+            </div>
+            <button class="flex items-center gap-x-4 mt-4 text-blue-700 text-b2 border px-4 py-2 rounded-lg" id="tambah__portofolio">
+                Unggah CV dan Portofolio
+                <img src="./assets/img/unduh.png" alt="" class="h-5 max-w-5 cursor-pointer" id="tambah__portofolio">
+            </button>
+            <p class="mt-4">Anda memiliki 8 portofolio tersisa</p>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="w-screen bg-primary-3 py-10 text-center text-black-1 footer mt-10 flex flex-col items-center">
         <p class="text-h6 font-semibold sm:mt-5">LOGO KAWAN KARIR</p>
     
@@ -199,8 +330,122 @@
     </footer>
     
 
-    <!-- Modal -->
+    <!-- PENGALAMAN MODAL -->
+    <div class="modal pengalaman__modal fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 justify-center items-center hidden opacity-0 transition-opacity duration-300 ease-in-out" role="dialog" aria-modal="true">
+        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-[70%]">
+            <div class="flex justify-between">
+                <p class="text-h5 font-semibold">Pengalaman Kerja</p>
+                <img src="./assets/img/close-icon.svg" alt="Close modal" class="h-6 w-6 cursor-pointer">
+            </div>
+            <div class="form__pengalaman__wrapper flex justify-center w-full">
+                <form action="" method="" class="w-3/5">
+                    <div class="group-1">
+                        <div class="input__group mt-4 text-black-2">
+                            <label for="pekerjaan">Nama Pekerjaan</label>
+                            <input type="text" placeholder="Masukkan nama pekerjaan Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="pekerjaan" id="pekerjaan">
+                        </div>
+                        <div class="input__group mt-4 text-black-2">
+                            <label for="perusahaan">Nama Perusahaan</label>
+                            <input type="text" placeholder="Masukkan nama perusahaan Anda" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="perusahaan" id="perusahaan">
+                        </div>
+                    </div>
+                    <div class="group-2">
+                        <div class="input__group mt-4 text-black-2">
+                            <label for="start">Mulai Pekerjaan</label>
+                            <input type="date" class="w-full py-3 px-4 mt-2 border rounded-md border-black-1" name="start" id="start">
+                        </div>
+                        <div class="input__group mt-4 text-black-2">
+                            <label for="end">Akhir Pekerjaan</label>
+                            <input type="date" class="w-full py-3 px-4 mt-2 border rounded-md border-black-1" name="end" id="end">
+                        </div>
+                    </div>
+                    <div class="input__group mt-4 text-black-2 group-3">
+                        <label for="deskripsi">Deskripsi Pekerjaan</label>
+                        <textarea name="deskripsi" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" id="deskripsi" placeholder="Masukkan deskripsi pekerjaan"></textarea>
+                    </div>
+                    <button type="submit" class="bg-primary-1 w-full text-b2 border mt-4 px-10 text-white py-3 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1">Tambah</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
+    <!-- SERTIFIKASI MODAL -->
+    <div class="modal sertifikasi__modal fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 justify-center items-center hidden opacity-0 transition-opacity duration-300 ease-in-out" role="dialog" aria-modal="true">
+        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-[70%]">
+            <div class="flex justify-between">
+                <p class="text-h5 font-semibold">Sertifikasi</p>
+                <img src="./assets/img/close-icon.svg" alt="Close modal" class="h-6 w-6 cursor-pointer">
+            </div>
+            <div class="form__pengalaman__wrapper flex justify-center w-full">
+                <form action="" method="" class="w-3/5">
+                    <div class="group-1">
+                        <div class="input__group mt-4 text-black-2">
+                            <label for="lisensi">Nama Lisensi</label>
+                            <input type="text" placeholder="Masukkan nama lisensi sertifikat" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="lisensi" id="lisensi">
+                        </div>
+                        <div class="input__group mt-4 text-black-2">
+                            <label for="penerbit">Penerbit</label>
+                            <input type="text" placeholder="Masukkan nama penerbit sertifikat" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="penerbit" id="penerbit">
+                        </div>
+                    </div>
+                    <div class="input__tanggal__group mt-4 flex gap-4 group-2">
+                        <div class="input__group text-black-2 flex-1">
+                            <label for="tanggal_terbit">Tanggal Terbit</label>
+                            <input type="date" class="w-full py-3 px-4 mt-2 border rounded-md border-black-1" name="tanggal_terbit" id="tanggal_terbit">
+                        </div>
+                        <div class="input__group text-black-2 flex-1">
+                            <label for="tanggal_kadaluarsa">Tanggal Kadaluarsa</label>
+                            <input type="date" class="w-full py-3 px-4 mt-2 border rounded-md border-black-1" name="tanggal_kadaluarsa" id="tanggal_kadaluarsa">
+                        </div>
+                    </div>
+                    <div class="input__group mt-4 text-black-2 group-3">
+                        <label for="deskripsi">Deskripsi Pekerjaan</label>
+                        <textarea name="deskripsi" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" id="deskripsi" placeholder="Masukkan deskripsi sertifikat Anda"></textarea>
+                    </div>
+                    <div class="input__group mt-4 text-black-2 group-4">
+                        <label for="link">Link Sertifikat</label>
+                        <input name="link" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" id="link" placeholder="Masukkan link sertifikat Anda">
+                    </div>
+                    <button type="submit" class="bg-primary-1 w-full text-b2 border mt-4 px-10 text-white py-3 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1">Tambah</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- KEAHLIAN MODAL -->
+    <div class="modal keahlian__modal fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 justify-center items-center hidden opacity-0 transition-opacity duration-300 ease-in-out" role="dialog" aria-modal="true">
+        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-max">
+            <div class="flex justify-between">
+                <p class="text-h5 font-semibold">Keahlian</p>
+                <img src="./assets/img/close-icon.svg" alt="Close modal" class="h-6 w-6 cursor-pointer">
+            </div>
+            <div class="form__keahlian__wrapper flex justify-center w-full">
+                <form action="" method="" class="flex w-11/12 gap-4">
+                    <input type="text" placeholder="Masukkan nama lisensi sertifikat" class="mt-4 text-black-2 w-full py-3 pl-4 border rounded-md border-black-1" name="lisensi" id="lisensi">
+                    <button type="submit" class="bg-primary-1 w-max text-b2 border px-8 mt-4 h-max text-white py-3 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTOFOLIO MODAL -->
+    <div class="modal portofolio__modal fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 justify-center items-center hidden opacity-0 transition-opacity duration-300 ease-in-out" role="dialog" aria-modal="true">
+        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-max">
+            <div class="flex justify-between">
+                <p class="text-h5 font-semibold">Portofolio</p>
+                <img src="./assets/img/close-icon.svg" alt="Close modal" class="h-6 w-6 cursor-pointer">
+            </div>
+            <div class="form__portofoli__wrapper flex justify-center w-full">
+                <form action="" method="" class="w-11/12">
+                    <div class="input__group mt-4 text-black-2">
+                        <label for="file">Masukkan File</label>
+                        <input type="file" class="w-full py-3 pl-4 mt-2 border rounded-md border-black-1" name="file" id="file">
+                    </div>
+                    <button type="submit" class="bg-primary-1 w-max text-b2 border px-8 mt-4 h-max text-white py-3 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/scripts/profile.js"></script>
 </body>
