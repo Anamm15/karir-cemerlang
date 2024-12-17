@@ -23,6 +23,43 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     background-repeat: no-repeat;
 }
 
+.modal {
+    opacity: 0; 
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    pointer-events: none;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.modal__content {
+    transform: scale(0.8);
+}
+
+.modal__content.show {
+    transform: scale(1);
+}
+
+.loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #0046B1; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media (max-width: 576px) {
     body {
         font-size: 14px;
@@ -72,7 +109,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .modal__content {
         width: 100%;
-        overflow: scroll;
         max-height: max-content;
     }
     .modal__content form {
@@ -92,7 +128,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px)  {
+@media (min-width: 577px) and (max-width: 767px)  {
     body {
       font-size: 14px;
       width: 100vw;
@@ -127,7 +163,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .modal__content {
         width: 100%;
-        overflow: scroll;
         max-height: max-content;
     }
     .modal__content form {
@@ -148,7 +183,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     html {
         font-size: 14px;
         width: 100vw;
@@ -190,7 +225,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .modal__content {
         width: 80%;
         height: max-content;
-        overflow: scroll;
     }
     .modal__content form {
         width: 90%;
@@ -213,7 +247,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 1026px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     body {
         font-size: 14px;
         width: 100vw;
@@ -230,7 +264,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .modal__content {
         width: 65%;
-        overflow: scroll;
     }
     .modal__content form {
         width: 65%;
@@ -260,9 +293,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .input__group input, .input__group .select__form__group {
         width: 80%;
-    }
-    .modal__content {
-        overflow: scroll;
     }
     .modal__content .input__group input {
         width: 100%;

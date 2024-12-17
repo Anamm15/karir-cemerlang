@@ -16,26 +16,14 @@ const inputInformasi = document.querySelectorAll('.input__group input');
 const selectInformasi = document.querySelectorAll('.select__form__group');
 const buttonSimpan = document.getElementById('simpan__informasi');
 const buttonBatal = document.getElementById('batal__informasi');
+const spinner = document.getElementById('loading-spinner');
+const informasiDataForm = document.getElementById('informasi__data__form');
 
 buttonBatal.addEventListener('click', () => {
-    if (isInputing) isInputing = false;
-});
+    spinner.classList.remove('hidden');
 
-editInformasiButton.addEventListener('click', () => {
-    if (!isInputing) {
-        textInformasi.forEach((p) => {
-            p.classList.add('hidden');
-        });
-        inputInformasi.forEach((input) => {
-            input.classList.remove('hidden');
-        });
-        selectInformasi.forEach((select) => {
-            select.classList.remove('hidden');
-        });
-        buttonSimpan.classList.remove('hidden');
-        buttonBatal.classList.remove('hidden');
-        isInputing = true;
-    } else {
+    setTimeout(() => {
+        spinner.classList.add('hidden');
         textInformasi.forEach((p) => {
             p.classList.remove('hidden');
         });
@@ -47,7 +35,53 @@ editInformasiButton.addEventListener('click', () => {
         });
         buttonSimpan.classList.add('hidden');
         buttonBatal.classList.add('hidden');
+        informasi__data__form.classList.remove('hidden');
         isInputing = false;
+    }, 500);
+});
+
+editInformasiButton.addEventListener('click', () => {
+    informasi__data__form.classList.add('hidden');
+    if (!isInputing) {
+        // Tampilkan spinner
+        spinner.classList.remove('hidden');
+
+        // Setelah 500ms, lakukan transisi
+        setTimeout(() => {
+            spinner.classList.add('hidden');
+            textInformasi.forEach((p) => {
+                p.classList.add('hidden');
+            });
+            inputInformasi.forEach((input) => {
+                input.classList.remove('hidden');
+            });
+            selectInformasi.forEach((select) => {
+                select.classList.remove('hidden');
+            });
+            buttonSimpan.classList.remove('hidden');
+            buttonBatal.classList.remove('hidden');
+            informasi__data__form.classList.remove('hidden');
+            isInputing = true;
+        }, 500);
+    } else {
+        spinner.classList.remove('hidden');
+
+        setTimeout(() => {
+            spinner.classList.add('hidden');
+            textInformasi.forEach((p) => {
+                p.classList.remove('hidden');
+            });
+            inputInformasi.forEach((input) => {
+                input.classList.add('hidden');
+            });
+            selectInformasi.forEach((select) => {
+                select.classList.add('hidden');
+            });
+            buttonSimpan.classList.add('hidden');
+            buttonBatal.classList.add('hidden');
+            informasi__data__form.classList.remove('hidden');
+            isInputing = false;
+        }, 500);
     }
 });
 
@@ -110,20 +144,25 @@ const tambahPortofolio = document.getElementById('tambah__portofolio');
 const portofolioModal = document.querySelector('.portofolio__modal');
 const closePortofolioModalButton = document.querySelector('.portofolio__modal img');
 
-
 const body = document.body;
+const modalContent = document.querySelector('.modal__content');
 
 function openModal(modal) {
     modal.classList.remove('hidden');
-    modal.classList.add('flex', 'opacity-100');
+    setTimeout(() => {
+        modal.classList.add('show', 'flex');
+        modalContent.classList.add('show');
+    }, 10);
     body.classList.add('overflow-hidden');
-    trapFocus(modal); 
+    trapFocus(modal);
 }
 
 function closeModal(modal) {
-    modal.classList.add('hidden');
-    modal.classList.remove('flex', 'opacity-100');
-    body.classList.remove('overflow-hidden'); 
+    modal.classList.remove('show');
+    modal.classList.remove('flex');
+    modal.classList.add('hidden'); 
+    modalContent.classList.remove('show');
+    body.classList.remove('overflow-hidden');
 }
 
 tambahPengalaman.addEventListener('click', () => openModal(pengalamanModal));

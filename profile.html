@@ -101,7 +101,10 @@
                 </form>
             </div>
             <div class="informasi__data">
-                <form action="" method="" class="flex flex-wrap gap-y-5">
+                <div id="loading-spinner" class="hidden flex items-center justify-center z-50 w-full h-full mt-12">
+                    <div class="loader"></div>
+                </div>                
+                <form action="" method="" class="flex flex-wrap gap-y-5" id="informasi__data__form">
                     <div class="input__group w-1/3">
                         <h3 class="font-semibold text-h6">Nama Lengkap</h3>
                         <p class="text-b2">Deni Putra Ardiansyah</p>
@@ -139,8 +142,8 @@
                         <input class="text-b2 hidden pl-2 border rounded-md py-2 w-3/5 mt-2" type="text" value="082139601220" placeholder="Masukkan nomor anda" name="no_telp">
                     </div>
                     <div class="button__group flex gap-4">
-                        <button class="border border-primary-1 hidden text-b2 duration-300 text-primary-1 py-2 px-10 rounded-md hover:bg-primary-1 hover:text-white informasi__button" id="batal__informasi">Batal</button>
-                        <button class="bg-primary-1 text-b2 border hidden px-10 text-white py-2 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1 informasi__button" id="simpan__informasi">Submit</button>
+                        <div class="border border-primary-1 hidden text-b2 duration-300 text-primary-1 py-2 px-10 rounded-md hover:bg-primary-1 hover:text-white informasi__div" id="batal__informasi">Batal</div>
+                        <button type class="bg-primary-1 text-b2 border hidden px-10 text-white py-2 rounded-md duration-300 hover:bg-transparent hover:text-primary-1 hover:border-primary-1 informasi__button" id="simpan__informasi">Submit</button>
                     </div>
                 </form>
             </div>
@@ -332,7 +335,7 @@
 
     <!-- PENGALAMAN MODAL -->
     <div class="modal pengalaman__modal fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 justify-center items-center hidden opacity-0 transition-opacity duration-300 ease-in-out" role="dialog" aria-modal="true">
-        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-[70%]">
+        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-[70%] overflow-auto">
             <div class="flex justify-between">
                 <p class="text-h5 font-semibold">Pengalaman Kerja</p>
                 <img src="./assets/img/close-icon.svg" alt="Close modal" class="h-6 w-6 cursor-pointer">
@@ -367,7 +370,7 @@
 
     <!-- SERTIFIKASI MODAL -->
     <div class="modal sertifikasi__modal fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 justify-center items-center hidden opacity-0 transition-opacity duration-300 ease-in-out" role="dialog" aria-modal="true">
-        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-[70%]">
+        <div class="modal__content pengalaman__modal__container bg-white rounded-lg p-6 transform scale-95 transition-transform duration-300 ease-in-out w-1/2 h-[70%] overflow-auto">
             <div class="flex justify-between">
                 <p class="text-h5 font-semibold">Sertifikasi</p>
                 <img src="./assets/img/close-icon.svg" alt="Close modal" class="h-6 w-6 cursor-pointer">
