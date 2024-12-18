@@ -65,6 +65,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         font-size: 14px;
         width: 100vw;
     }
+    #batal__informasi {
+        width: max-content;
+    }
     .main__container {
         background-position: left;
         min-height: 25vh;
@@ -87,14 +90,13 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .informasi__container, .pengalaman__container, .keahlian__container, .portofolio__container, .sertifikasi__container {
         width: 100%;
-        padding: 2rem;
+        padding: 1.5rem 1rem;
     }
     .informasi__pp {
-        margin: 0 auto;
-        width: 12rem;
+        justify-content: center;
+        align-items: center;
     }
     .informasi__data form {
-        margin-top: 4rem;
         flex-direction: column;
     }
     .informasi__data form div {
@@ -134,6 +136,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
       font-size: 14px;
       width: 100vw;
     }
+    #batal__informasi {
+        width: max-content;
+    }
     .text-h5 {
         font-size: 1.35rem;
     }
@@ -148,11 +153,10 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         padding: 2.5rem;
     }
     .informasi__pp {
-        margin: 0 auto;
-        width: 12rem;
+        justify-content: center;
+        align-items: center;
     }
     .informasi__data form {
-        margin-top: 3rem;
         flex-direction: column;
     }
     .informasi__data form div {
@@ -189,6 +193,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         font-size: 14px;
         width: 100vw;
     }
+    #batal__informasi {
+        width: max-content;
+    }
     .main__container {
         background-position: left;
         height: 30vh;
@@ -210,11 +217,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         padding: 3rem;
     }
     .informasi__pp {
-        margin: 0 auto;
         width: 12rem;
-    }
-    .informasi__data form {
-        margin-top: 4rem;
     }
     .informasi__data form div {
         width: 50%;
