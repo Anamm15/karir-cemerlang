@@ -209,7 +209,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     html {
         font-size: 14px;
         width: 100vw;
@@ -269,7 +269,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
 }
 
-@media (min-width: 1026px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     body {
         font-size: 14px;
         width: 100vw;
@@ -284,7 +284,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 24.5%;
     }
     .pekerjaan__card__container {
-        column-gap: 3%;
+        column-gap: 2%;
         justify-content: center;
     }
     .content, .pekerjaan {
@@ -297,7 +297,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         gap: 5rem;
     }
     .pekerjaan__card {
-        width: 25.5vw !important;
+        width: 27vw !important;
         height: max-content !important;
     }
     .pekerjaan__card__nama, .pekerjaan__card__harga, .pekerjaan__card__lokasi, .pekerjaan__card__deskripsi {

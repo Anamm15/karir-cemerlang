@@ -9,6 +9,7 @@ hamburgerMenu.addEventListener('click', () => {
 
 const artikelSwiper = new Swiper('.artikel__carousel', {
     slidesPerView: 'auto', 
+    spaceBetween: 16,
     breakpoints: {
         1025: { enabled: false }, 
     },

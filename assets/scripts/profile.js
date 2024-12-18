@@ -20,8 +20,8 @@ const spinner = document.getElementById('loading-spinner');
 const informasiDataForm = document.getElementById('informasi__data__form');
 
 buttonBatal.addEventListener('click', () => {
+    informasiDataForm.classList.add('hidden');
     spinner.classList.remove('hidden');
-
     setTimeout(() => {
         spinner.classList.add('hidden');
         textInformasi.forEach((p) => {
@@ -35,18 +35,15 @@ buttonBatal.addEventListener('click', () => {
         });
         buttonSimpan.classList.add('hidden');
         buttonBatal.classList.add('hidden');
-        informasi__data__form.classList.remove('hidden');
+        informasiDataForm.classList.remove('hidden');
         isInputing = false;
     }, 500);
 });
 
 editInformasiButton.addEventListener('click', () => {
-    informasi__data__form.classList.add('hidden');
+    informasiDataForm.classList.add('hidden');
+    spinner.classList.remove('hidden');
     if (!isInputing) {
-        // Tampilkan spinner
-        spinner.classList.remove('hidden');
-
-        // Setelah 500ms, lakukan transisi
         setTimeout(() => {
             spinner.classList.add('hidden');
             textInformasi.forEach((p) => {
@@ -60,12 +57,10 @@ editInformasiButton.addEventListener('click', () => {
             });
             buttonSimpan.classList.remove('hidden');
             buttonBatal.classList.remove('hidden');
-            informasi__data__form.classList.remove('hidden');
+            informasiDataForm.classList.remove('hidden');
             isInputing = true;
         }, 500);
     } else {
-        spinner.classList.remove('hidden');
-
         setTimeout(() => {
             spinner.classList.add('hidden');
             textInformasi.forEach((p) => {
@@ -79,7 +74,7 @@ editInformasiButton.addEventListener('click', () => {
             });
             buttonSimpan.classList.add('hidden');
             buttonBatal.classList.add('hidden');
-            informasi__data__form.classList.remove('hidden');
+            informasiDataForm.classList.remove('hidden');
             isInputing = false;
         }, 500);
     }

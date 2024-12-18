@@ -65,7 +65,7 @@ carousel.addEventListener('touchend', (e) => {
 
 const kategoriSwiper = new Swiper('.kategori__carousel', {
   slidesPerView: 'auto',
-  spaceBetween: 22, 
+  spaceBetween: 16, 
   navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -74,6 +74,17 @@ const kategoriSwiper = new Swiper('.kategori__carousel', {
   watchOverflow: true,
 });
 
+const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
+  slidesPerView: 'auto',
+  loop: true,
+  spaceBetween: 16, 
+  watchOverflow: true,
+  breakpoints: {
+      1025: { 
+          enabled: false,
+       },
+  },
+});
 
 const artikelSwiper = new Swiper('.artikel__carousel', {
   slidesPerView: 'auto', 
@@ -81,16 +92,5 @@ const artikelSwiper = new Swiper('.artikel__carousel', {
   breakpoints: {
       1025: { enabled: false }, 
   },
-});
-
-const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
-    slidesPerView: 'auto',
-    loop: true,
-    watchOverflow: true,
-    breakpoints: {
-        1025: { 
-            enabled: false,
-         },
-    },
 });
 
