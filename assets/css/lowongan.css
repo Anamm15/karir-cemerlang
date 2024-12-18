@@ -83,7 +83,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         justify-content: space-between;
     }
     .input form {
-        width: 49%;
+        width: 100%;
     }
     .pekerjaan__carousel {
         width: 100%;

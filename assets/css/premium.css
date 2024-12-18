@@ -38,8 +38,19 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 }
 
 @media (max-width: 575px) {
+    body {
+        font-size: 12px;
+        width: 100vw;
+    }
     .layanan__premium {
         padding: 1rem;
+        margin-top: 8rem;
+    }
+    .layanan__premium h4 {
+        font-size: 1.8rem;
+    }
+    .layanan__premium .text-b1 {
+        font-size: 1.25rem;
     }
     .premium__card {
         width: 100% !important;
@@ -48,11 +59,18 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 
 @media (min-width: 576px) and (max-width: 767px)  {
     body {
-      font-size: 14px;
+      font-size: 12px;
       width: 100vw;
     }
     .layanan__premium {
         padding: 2rem;
+        margin-top: 5rem;
+    }
+    .layanan__premium h4 {
+        font-size: 2rem;
+    }
+    .layanan__premium .text-b1 {
+        font-size: 1.35rem;
     }
     .premium__card {
         width: 70% !important;
@@ -74,7 +92,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 
 @media (min-width: 768px) and (max-width: 1025px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
         width: 100vw;
     }
     .layanan__premium {
