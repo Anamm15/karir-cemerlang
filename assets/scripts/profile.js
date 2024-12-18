@@ -145,9 +145,9 @@ const portofolioModal = document.querySelector('.portofolio__modal');
 const closePortofolioModalButton = document.querySelector('.portofolio__modal img');
 
 const body = document.body;
-const modalContent = document.querySelector('.modal__content');
 
 function openModal(modal) {
+    const modalContent = modal.querySelector('.modal__content');
     modal.classList.remove('hidden');
     setTimeout(() => {
         modal.classList.add('show', 'flex');
@@ -158,6 +158,7 @@ function openModal(modal) {
 }
 
 function closeModal(modal) {
+    const modalContent = modal.querySelector('.modal__content');
     modal.classList.remove('show');
     modal.classList.remove('flex');
     modal.classList.add('hidden'); 

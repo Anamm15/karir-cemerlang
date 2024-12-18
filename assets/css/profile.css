@@ -104,15 +104,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .input__group input, .input__group .select__form__group {
         width: 100%;
     }
-    .modal {
-        height: 110vh;
-    }
     .modal__content {
-        width: 100%;
+        width: 100% !important;
         max-height: max-content;
     }
     .modal__content form {
         width: 100%;
+    }
+    .form__keahlian__wrapper form {
+        flex-direction: column;
+        gap: 0;
     }
     .footer {
         height: max-content;
