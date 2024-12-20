@@ -34,18 +34,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 
 .artikel__card {
     width: 32% !important;
-    height: max-content !important;
+    height: max-content;
     padding-bottom: 1.5rem !important;
+}
+
+.artikel__card img {
+    height: 18rem !important;
 }
 
 .artikel__card p, .artikel__card button {
     margin-top: 1rem;
-}
-
-.artikel__card img {
-    height: 50% !important;
-    object-fit: cover;
-    object-position: center;
 }
 
 @media (max-width: 576px) {
@@ -87,8 +85,10 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 100% !important;
     }
     .artikel__card {
-        height: max-content  !important;
-        padding-bottom: 2rem  !important;
+        height: max-content !important;
+    }
+    .artikel__card img {
+        height: 13rem !important;
     }
     .artikel__card p:nth-child(2) {
         font-size: 1rem !important;
@@ -191,13 +191,16 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         flex-wrap: nowrap;
         justify-content: start;
     }
-    .artikel__content > div {
-        flex-shrink: 0 !important;
-        width: 55% !important;
-    }
     .artikel__card {
         height: max-content !important;
         padding-bottom: 2rem !important;
+    }
+    .artikel__card img {
+        height: 13rem !important;
+    }
+    .artikel__content > div {
+        flex-shrink: 0 !important;
+        width: 50% !important;
     }
     .artikel__card button {
         width: 90%  !important;
@@ -205,11 +208,11 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .artikel__card p:nth-child(2) {
         margin-top: 1rem;
-        font-size: 1.8rem  !important;
+        font-size: 1.4rem  !important;
     }
     .artikel__card p:nth-child(3) {
         margin-top: 1rem;
-        font-size: 1.3rem  !important;
+        font-size: 1rem  !important;
     }
     .footer {
         height: max-content;
@@ -236,14 +239,19 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .artikel__card {
         width: 31.6% !important;
-        height: max-content;
+        height: max-content !important;
         padding-bottom: 1rem;
     }
-    .artikel__card__title {
-        font-size: 1.35rem;
+    .artikel__card img {
+        height: 13rem !important;
     }
-    .artikel__card__content {
-        font-size: 1rem;
+    .artikel__card p:nth-child(2) {
+        margin-top: 1rem;
+        font-size: 1.5rem  !important;
+    }
+    .artikel__card p:nth-child(3) {
+        margin-top: 1.15rem;
+        font-size: 1.1rem  !important;
     }
     .footer {
         height: max-content;
@@ -262,6 +270,18 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 
 @media (min-width: 1441px) and (max-width: 1700px) {
     .artikel__card {
-        width: 32% !important;
+        width: 31% !important;
+        height: max-content !important;
+    }
+    .artikel__card img {
+        height: 15rem !important;
+    }
+    .artikel__card p:nth-child(2) {
+        margin-top: 1rem;
+        font-size: 1.6rem  !important;
+    }
+    .artikel__card p:nth-child(3) {
+        margin-top: 1.15rem;
+        font-size: 1.15rem  !important;
     }
 }

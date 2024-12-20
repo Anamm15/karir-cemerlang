@@ -896,6 +896,10 @@ video {
   margin-top: 10rem;
 }
 
+.mt-48 {
+  margin-top: 12rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -2264,6 +2268,11 @@ video {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .rounded-bl {
@@ -3656,6 +3665,11 @@ video {
   .xl\:text-h6 {
     font-size: 20px;
   }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -3689,6 +3703,10 @@ video {
   }
 
   .\32xl\:text-h6 {
+    font-size: 20px;
+  }
+
+  .\32xl\:text-b2 {
     font-size: 20px;
   }
 }
