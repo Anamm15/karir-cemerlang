@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/output.css">
-    <link rel="stylesheet" href="./assets/css/premium.css">
+    <link rel="stylesheet" href="./assets/css/acara.css">
 
     <!-- FONT NUNITO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <!-- SWIPER CAROUSEL -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>KARIR CEMERLANG</title>
 </head>
 <body>
+
     <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
         <div class="flex justify-between items-center px-6 py-4 lg:h-24">
             <!-- Logo -->
@@ -34,6 +41,7 @@
                 <li><a href="./perusahaan.html" class=" lg:text-base xl:text-b2">Perusahaan</a></li>
                 <li><a href="./artikel-karir.html" class=" lg:text-base xl:text-b2">Artikel Karir</a></li>
                 <li><a href="./premium.html" class=" lg:text-base xl:text-b2">Premium</a></li>
+                <li><a href="./acara.html" class=" lg:text-base xl:text-b2">Acara</a></li>
             </ul>
     
             <!-- Desktop Buttons -->
@@ -51,7 +59,7 @@
         </div>
     
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max">
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max transition-all transform opacity-0 -translate-y-full duration-300 ease-in-out">
             <ul class="flex flex-col items-start p-6 gap-y-4 text-black-2">
                 <li><a href="./index.html" class="text-h6">Beranda</a></li>
                 <li><a href="./lowongan.html" class="text-b2">Lowongan Kerja</a></li>
@@ -75,77 +83,70 @@
                 </li>
             </ul>
         </div>
+        
     </nav>
 
     <main>
-        <div class="main__container__detail mt-24 relative flex justify-center">
-            <div class="perusahaan__info bg-white rounded-lg py-7 px-16 absolute">
-                <p class="text-h5 font-semibold text-primary-1 text-center">Fitur Premium </p>
-                <p class="text-b2 text-black-2 mt-0.5">Memaksimalkan visibilitas lowongan lebih luas</p>
-            </div>
+        <div class="main__container mt-24 flex justify-center items-center text-white flex-col">
+            <h3 class="text-h4 font-semibold text-center">Temukan Karir Impianmu</h3>
+            <p class="text-b1 mt-4 text-center">Jangan hanya menunggu, temukan pekerjaan yang cocok untukmu sekarang</p>
         </div>
     </main>
 
-    <section class="layanan__premium px-20 mt-60">
-        <h4 class="text-h4 font-semibold">Layanan Fitur Premium Pencari Kerja</h4>
-        <p class="text-b2 mt-4">Penawaran lengkap untuk mendukung karir Anda</p>
-        <div class="layanan__premium__content border rounded-2xl mt-10">
-            <table class="table-auto w-full border-collapse ">
-                <thead class="bg-primary-1 text-white p-10 ">
-                    <tr class="">
-                        <th class="w-1/5 py-7 ps-16 text-left text-h5 font-semibold rounded-tl-2xl">Paket</th>
-                        <th class="w-3/5 text-left text-h5 font-semibold">Fitur</th>
-                        <th class="rounded-tr-2xl"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-b1 ps-16">Starter<br>(Rp. 1.000.000)</td>
-                        <td class="text-b1 py-8">
-                            - Semua fitur Starter.<br>
-                            - Profil diberi tanda "Disukai" oleh perusahaan.<br>
-                            - Akses eksklusif ke lowongan premium.
-                        </td>
-                        <td class="text-h6 p-2 text-center">
-                            <a href="#">
-                                <button class="text-primary-1 border border-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white transition">
-                                    Beli Sekarang
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-b1 ps-16">Starter<br>(Rp. XXX)</td>
-                        <td class="text-b1 py-8">
-                            - Semua fitur Starter.<br>
-                            - Profil diberi tanda "Disukai" oleh perusahaan.<br>
-                            - Akses eksklusif ke lowongan premium.
-                        </td>
-                        <td class="text-h6 p-2 text-center">
-                            <a href="#">
-                                <button class="text-primary-1 border border-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white transition">
-                                    Beli Sekarang
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-b1 ps-16">Starter<br>(Rp. XXX)</td>
-                        <td class="text-b1 py-8">
-                            - Semua fitur Starter.<br>
-                            - Profil diberi tanda "Disukai" oleh perusahaan.<br>
-                            - Akses eksklusif ke lowongan premium.
-                        </td>
-                        <td class="text-h6 p-2 text-center">
-                            <a href="#">
-                                <button class="text-primary-1 border border-primary-1 px-4 py-2 rounded-lg hover:bg-primary-1 hover:text-white transition">
-                                    Beli Sekarang
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>            
+    <section class="search px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mt-20">
+        <form action="" method="" class="search__container flex justify-between gap-6">
+            <input type="search" placeholder="Cari Lowongan Kerja" class="w-[93%] text-b2 text-black-2 pl-4 rounded-lg border focus:outline-none">
+            <button class="bg-primary-1 text-h6 font-semibold text-white px-4 py-3 rounded-lg text-center flex gap-4 items-center">
+                <p>Cari</p>
+                <img src="./assets/img/search-icon.png" alt="" class="w-5 h-5">
+            </button>
+        </form>
+    </section>
+
+    <section class="card px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 md:mt-8">
+        <div class="relative acara__carousel overflow-hidden justify-center">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-auto transition-transform duration-500 mt-10 gap-4 card__wrapper">
+                <a href="./acara-detail.html">
+                    <div class="acara__card rounded-2xl border bg-white duration-200 hover:shadow-lg cursor-pointer max-h-96">
+                        <img src="./assets/img/2.png" class="object-cover object-center h-3/4 w-full" alt="">
+                        <h6 class="text-h6 sm:text-h5 md:text-lg lg:text-h6 font-semibold mt-2 px-3">Seminar Bisnis Pola Pikir dan Skill yang Dibutuhkan CEO Masa Depan</h6>
+                        <p class="sm:text-b3 md:text-sm mt-2 lg:text-b3 px-3 pb-2">16 Desember 2024</p>
+                    </div>
+                </a>
+                <a href="./acara-detail.html">
+                    <div class="acara__card rounded-2xl border bg-white duration-200 hover:shadow-lg cursor-pointer max-h-96">
+                        <img src="./assets/img/2.png" class="object-cover object-center h-3/4 w-full" alt="">
+                        <h6 class="text-h6 sm:text-h5 md:text-lg lg:text-h6 font-semibold mt-2 px-3">Seminar Bisnis Pola Pikir dan Skill yang Dibutuhkan CEO Masa Depan</h6>
+                        <p class="sm:text-b3 md:text-sm mt-2 lg:text-b3 px-3 pb-2">16 Desember 2024</p>
+                    </div>
+                </a>
+                <a href="./acara-detail.html">
+                    <div class="acara__card rounded-2xl border bg-white duration-200 hover:shadow-lg cursor-pointer max-h-96">
+                        <img src="./assets/img/2.png" class="object-cover object-center h-3/4 w-full" alt="">
+                        <h6 class="text-h6 sm:text-h5 md:text-lg lg:text-h6 font-semibold mt-2 px-3">Seminar Bisnis Pola Pikir dan Skill yang Dibutuhkan CEO Masa Depan</h6>
+                        <p class="sm:text-b3 md:text-sm mt-2 lg:text-b3 px-3 pb-2">16 Desember 2024</p>
+                    </div>
+                </a>
+                <a href="./acara-detail.html">
+                    <div class="acara__card rounded-2xl border bg-white duration-200 hover:shadow-lg cursor-pointer max-h-96">
+                        <img src="./assets/img/2.png" class="object-cover object-center h-3/4 w-full" alt="">
+                        <h6 class="text-h6 sm:text-h5 md:text-lg lg:text-h6 font-semibold mt-2 px-3">Seminar Bisnis Pola Pikir dan Skill yang Dibutuhkan CEO Masa Depan</h6>
+                        <p class="sm:text-b3 md:text-sm mt-2 lg:text-b3 px-3 pb-2">16 Desember 2024</p>
+                    </div>
+                </a>
+                <a href="./acara-detail.html">
+                    <div class="acara__card rounded-2xl border bg-white duration-200 hover:shadow-lg cursor-pointer max-h-96">
+                        <img src="./assets/img/2.png" class="object-cover object-center h-3/4 w-full" alt="">
+                        <h6 class="text-h6 sm:text-h5 md:text-lg lg:text-h6 font-semibold mt-2 px-3">Seminar Bisnis Pola Pikir dan Skill yang Dibutuhkan CEO Masa Depan</h6>
+                        <p class="sm:text-b3 md:text-sm mt-2 lg:text-b3 px-3 pb-2">16 Desember 2024</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="button__container mt-10 w-full flex justify-center">
+            <a href="">
+                <button class="border font-semibold text-blue-700 py-3 w-44 rounded-lg duration-300 hover:bg-primary-1 hover:text-white"> Muat lebih banyak </button>
+            </a>
         </div>
     </section>
 
@@ -174,7 +175,22 @@
         <p class="text-b3 mt-8">Hak Cipta © 2024 | Kawan Karir</p>
     </footer>
 
-    <script src="./assets/scripts/premium.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/acara.js"></script>
+    <script>
+        const saveIcons = document.querySelectorAll('.save__icon');
+        saveIcons.forEach((icon) => {
+            icon.addEventListener('click', () => {
+                const currentSrc = icon.getAttribute('src');
+                
+                const newSrc = currentSrc === './assets/img/Icon-Save.svg' 
+                    ? './assets/img/Icon-Save Blue.svg' 
+                    : './assets/img/Icon-Save.svg';
+                
+                icon.setAttribute('src', newSrc);
+            });
+        });
+    </script>
 </body>
 </html>
-

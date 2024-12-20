@@ -1,0 +1,173 @@
+body {
+    font-family: 'Nunito';
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+nav div {
+    height: 10vh;
+}
+
+button {
+    transition: ease-in-out 0.2s;
+}
+
+button {
+    transition: ease-in-out 0.2s;
+}
+
+button:hover .arrow__icon path, .arrow__icon__navbar path  {
+    stroke: white;
+}
+
+.main__container {
+    width: 100%;
+    height: 35vh;
+    background-image: url('../img/Place.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    form input {
+        font-size: 1rem !important;
+    }
+    .main__container {
+        background-position: left;
+        min-height: 25vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 1.5rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.15rem;
+    }
+    .search__container {
+        gap: .5rem;
+    }
+    .search__container button p {
+        display: none;
+    }
+    .search {
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px)  {
+    body {
+      font-size: 14px;
+      width: 100vw;
+    }
+    form input {
+        font-size: 1.1rem !important;
+    }
+    .search {
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1.2rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+        width: 100vw;
+    }
+    form input{
+        font-size: 1.2rem !important;
+    }
+    .main__container {
+        background-position: left;
+        height: 30vh;
+        margin-top: 4rem;
+    }
+    .main__container .text-h4 {
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+    .main__container .text-b1 {
+        font-size: 1.5rem;
+        padding: 0 3rem;
+    }
+    .search {
+        padding: 0 3rem;
+        width: 100%;
+    }
+    .search__container {
+        gap: 1rem;
+    }
+    .search__container button {
+        width: 7rem;
+    }
+    .footer__list {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .footer__list ul {
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    form input, form select {
+        font-size: 1.2rem !important;
+    }
+    .search__container {
+        gap: .5rem;
+    }
+    .footer {
+        height: max-content;
+        margin-bottom: 0;
+    }
+    .footer ul {
+        font-size: 1rem;
+    }
+    .footer p {
+        width: 80vw;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1700px) {
+}
