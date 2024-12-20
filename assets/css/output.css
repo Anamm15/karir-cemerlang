@@ -880,6 +880,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -894,10 +898,6 @@ video {
 
 .mt-40 {
   margin-top: 10rem;
-}
-
-.mt-48 {
-  margin-top: 12rem;
 }
 
 .mt-5 {
@@ -3515,6 +3515,10 @@ video {
     margin-top: 2rem;
   }
 
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3538,6 +3542,10 @@ video {
     padding-right: 7rem;
   }
 
+  .md\:text-h3 {
+    font-size: 48px;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -3550,6 +3558,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-48 {
+    margin-top: 12rem;
+  }
+
   .lg\:flex {
     display: flex;
   }

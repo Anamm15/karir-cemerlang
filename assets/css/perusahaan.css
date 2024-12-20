@@ -102,8 +102,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         font-size: 1rem;
     }
     .perusahaan__card__description {
-        font-size: .8rem;
+        font-size: .75rem;
         gap: .75rem;
+        justify-content: center;
     }
     .search__container {
         flex-direction: column;

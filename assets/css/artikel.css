@@ -74,6 +74,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .search form input {
         font-size: 1rem;
     }
+    .artikel__content__detail img {
+        height: 12rem !important;
+    }
     .artikel__content {
         display: flex  !important;
         transition: transform 0.5s ease !important;
@@ -91,7 +94,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         height: 13rem !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1rem !important;
+        font-size: 1.25rem !important;
         margin-top: 1rem;
     }
     .artikel__card p:nth-child(3) {
@@ -138,7 +141,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         padding-bottom: 2rem !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
         margin-top: 1.2rem !important;
     }
     .artikel__card p:nth-child(3) {

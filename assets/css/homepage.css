@@ -419,7 +419,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 90vw !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1rem !important;
+        font-size: 1.25rem !important;
         margin-top: 1rem;
     }
     .artikel__card p:nth-child(3) {
@@ -769,7 +769,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         padding-bottom: 2rem !important;
     }
     .artikel__card p:nth-child(2) {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
         margin-top: 1.2rem !important;
     }
     .artikel__card p:nth-child(3) {
