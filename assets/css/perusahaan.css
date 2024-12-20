@@ -64,7 +64,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 
 @media  (max-width: 576px) {
     body {
-      font-size: 11px;
+      font-size: 14px;
       width: 100vw;
     }
     form input, form select {
