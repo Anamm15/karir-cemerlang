@@ -379,27 +379,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         align-items: center;
         justify-content: center;
     }
-    .perusahaan__content p:nth-child(1) {
-        font-size: 20px;  
-        text-align: center; 
-    }
-    .perusahaan__content p:nth-child(2) {
-        text-align: center; 
-        font-size: 10px;
-    }
-    .perusahaan__content div {
-        justify-content: center;
-    }
-    .perusahaan__content div div {
-        width: 40vw;
-        height: 7vh;
-    }
-    .perusahaan__content div div p:nth-child(1) {
-        font-size: 1rem;
-    }
-    .perusahaan__content div div p:nth-child(2) {
-        font-size: .5rem;
-    }
     .perusahaan button {
         font-size: 14px;
     }
@@ -729,27 +708,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 90vw;
         align-items: center;
         justify-content: center;
-    }
-    .perusahaan__content p:nth-child(1) {
-        font-size: 30px;  
-        text-align: center; 
-    }
-    .perusahaan__content p:nth-child(2) {
-        text-align: center; 
-        font-size: 15px;
-    }
-    .perusahaan__content div {
-        justify-content: center;
-    }
-    .perusahaan__content div div {
-        width: 30vw;
-        height: 7vh;
-    }
-    .perusahaan__content div div p:nth-child(1) {
-        font-size: 1rem;
-    }
-    .perusahaan__content div div p:nth-child(2) {
-        font-size: .6rem;
     }
     .decoration {
         display: none;
@@ -1295,6 +1253,9 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .perusahaan__content__header {
         max-width: 80%;
     }
+    .perusahaan__image {
+        width: 45%;
+    }
     .perusahaan button img {
         width: .8rem;
     }
@@ -1411,5 +1372,22 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .artikel__card p:nth-child(3) {
         margin-top: 1.15rem;
         font-size: 1.15rem  !important;
+    }
+    .perusahaan {
+        padding: 3rem 4rem;
+        height: max-content;
+        gap: 3rem;
+    }
+    .perusahaan__content {
+        min-width: 50%;
+    }
+    .perusahaan__content__header {
+        max-width: 80%;
+    }
+    .perusahaan__content__description {
+        max-width: 80%;
+    }
+    .perusahaan__image {
+        width: 45%;
     }
 }
