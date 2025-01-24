@@ -32,11 +32,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     background-repeat: no-repeat;
 }
 
-.pekerjaan__card {
-    width: 21.5vw !important;
-    height: max-content !important;
-}
-
 .main__container__detail {
     background-image: url('../img/background-detail.png');
     background-size: cover;
@@ -44,6 +39,11 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     background-repeat: no-repeat;
     width: 100%;
     height: 35vh;
+}
+
+.pekerjaan__card__container {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .perusahaan__info {
@@ -89,7 +89,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 100%;
     }
     .pekerjaan__card__container {
-        display: flex;
+        display: flex !important;
         flex-wrap: nowrap;
         transition: transform 0.5s ease;
         width: 100% !important;
@@ -153,7 +153,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 100%;
     }
     .pekerjaan__card__container {
-        display: flex;
+        display: flex !important;
         transition: transform 0.5s ease;
     }
     .pekerjaan__card__container > div {
@@ -257,8 +257,8 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     .search__container button {
         width: 7rem;
     }
-    .pekerjaan__card {
-        width: 48% !important;
+    .pekerjaan__card__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .footer__list {
         max-width: 100%;
@@ -284,8 +284,7 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         width: 24.5%;
     }
     .pekerjaan__card__container {
-        column-gap: 2%;
-        justify-content: center;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .content, .pekerjaan {
         padding: 0 4rem;
@@ -295,10 +294,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }
     .main__content {
         gap: 5rem;
-    }
-    .pekerjaan__card {
-        width: 27vw !important;
-        height: max-content !important;
     }
     .pekerjaan__card__nama, .pekerjaan__card__harga, .pekerjaan__card__lokasi, .pekerjaan__card__deskripsi {
         font-size: 1.1rem;
@@ -324,11 +319,5 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
         text-align: center;
         margin: 1rem auto;
         font-size: 14px;
-    }
-}
-
-@media (min-width: 1441px) and (max-width: 1700px) {
-    .pekerjaan__card {
-        width: 24vw !important;
     }
 }
