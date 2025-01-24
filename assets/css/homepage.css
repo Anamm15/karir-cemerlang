@@ -186,7 +186,8 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
 }
 
 .main__step {
-    height: 90vh;
+    height: max-content;
+    padding-bottom: 4rem;
 }
 
 .horizontal-line {
@@ -495,7 +496,6 @@ button:hover .arrow__icon path, .arrow__icon__navbar path  {
     }   
     .step__title {
         font-size: 1rem;
-        margin-top: 2rem;
     }
     .horizontal-line {
         width: 8px;

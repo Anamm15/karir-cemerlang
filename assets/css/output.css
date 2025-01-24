@@ -1120,6 +1120,10 @@ video {
   min-height: 11rem;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-0\.5 {
   width: 0.125rem;
 }
@@ -2667,6 +2671,11 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2697,6 +2706,10 @@ video {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -3507,16 +3520,16 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .md\:mt-48 {
     margin-top: 12rem;
   }
 
   .md\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .md\:mt-40 {
-    margin-top: 10rem;
   }
 
   .md\:grid-cols-2 {
@@ -3658,10 +3671,6 @@ video {
     padding-right: 10rem;
   }
 
-  .xl\:text-b2 {
-    font-size: 20px;
-  }
-
   .xl\:text-h2 {
     font-size: 64px;
   }
@@ -3672,10 +3681,6 @@ video {
 
   .xl\:text-h4 {
     font-size: 36px;
-  }
-
-  .xl\:text-h6 {
-    font-size: 20px;
   }
 
   .xl\:text-lg {
@@ -3698,6 +3703,10 @@ video {
     font-size: 24px;
   }
 
+  .\32xl\:text-b2 {
+    font-size: 20px;
+  }
+
   .\32xl\:text-h1 {
     font-size: 80px;
   }
@@ -3715,10 +3724,6 @@ video {
   }
 
   .\32xl\:text-h6 {
-    font-size: 20px;
-  }
-
-  .\32xl\:text-b2 {
     font-size: 20px;
   }
 }
